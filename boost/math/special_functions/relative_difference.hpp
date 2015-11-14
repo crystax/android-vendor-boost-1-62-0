@@ -74,6 +74,8 @@ namespace boost{
       inline boost::math::tools::promote_args<double, double>::type relative_difference(const double& arg_a, const double& arg_b)
       {
          BOOST_MATH_STD_USING
+         double a = arg_a;
+         double b = arg_b;
          //
          // On Mac OS X we evaluate "double" functions at "long double" precision,
          // but "long double" actually has a very slightly narrower range than "double"!  
@@ -100,7 +102,7 @@ namespace boost{
          //
          // If the values have different signs, treat as infinite difference:
          //
-         if((a < 0) != (b < 0))
+         if(((a < 0) != (b < 0)) && (a != 0) && (b != 0))
             return max_val;
          a = fabs(a);
          b = fabs(b);

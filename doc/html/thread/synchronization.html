@@ -11687,7 +11687,7 @@
           <span class="phrase"><a name="thread.synchronization.futures.shared.share__"></a></span><a class="link" href="synchronization.html#thread.synchronization.futures.shared.share__">share()</a>
         </h6>
 <p>
-          Namming the return type when declaring the <code class="computeroutput"><span class="identifier">shared_future</span></code>
+          Naming the return type when declaring the <code class="computeroutput"><span class="identifier">shared_future</span></code>
           is needed; auto is not available within template argument lists. Here
           <code class="computeroutput"><span class="identifier">share</span><span class="special">()</span></code>
           could be used to simplify the code
@@ -11711,7 +11711,7 @@
           on get()</a>
         </h6>
 <p>
-          The user can either read or write the future avariable.
+          The user can either read or write the future variable.
         </p>
 <pre class="programlisting"><span class="keyword">void</span> <span class="identifier">write_to_get</span><span class="special">(</span> <span class="identifier">type</span> <span class="identifier">arg</span> <span class="special">)</span> <span class="special">{</span>
 
@@ -11736,7 +11736,7 @@
           storage is thread safe.
         </p>
 <p>
-          There has been some work by the C++ standard committe on an <code class="computeroutput"><span class="identifier">atomic_future</span></code> that behaves as an <code class="computeroutput"><span class="identifier">atomic</span></code> variable, that is is thread_safe,
+          There has been some work by the C++ standard committee on an <code class="computeroutput"><span class="identifier">atomic_future</span></code> that behaves as an <code class="computeroutput"><span class="identifier">atomic</span></code> variable, that is thread_safe,
           and a <code class="computeroutput"><span class="identifier">shared_future</span></code> that
           can be shared between several threads, but there were not enough consensus
           and time to get it ready for C++11.
@@ -11861,7 +11861,7 @@
               the chaining of continuations.
             </li>
 <li class="listitem">
-              Executor: Providing an overload to <code class="computeroutput"><span class="special">.</span><span class="identifier">then</span></code>, to take a executor reference
+              Executor: Providing an overload to <code class="computeroutput"><span class="special">.</span><span class="identifier">then</span></code>, to take an executor reference
               places great flexibility over the execution of the future in the programmer's
               hand. As described above, often taking a launch policy is not sufficient
               for powerful asynchronous operations. The lifetime of the executor

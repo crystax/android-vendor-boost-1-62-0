@@ -39,33 +39,33 @@
   <span class="keyword">typedef</span> <span class="identifier">time_type</span><span class="special">::</span><span class="identifier">date_type</span>          <a name="boost.date_time.second_clock.date_type"></a><span class="identifier">date_type</span><span class="special">;</span>         
   <span class="keyword">typedef</span> <span class="identifier">time_type</span><span class="special">::</span><span class="identifier">time_duration_type</span> <a name="boost.date_time.second_clock.time_duration_type"></a><span class="identifier">time_duration_type</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="second_clock.html#idm46354589402240-bb">public static functions</a></span>
-  <span class="keyword">static</span> <span class="identifier">time_type</span> <a class="link" href="second_clock.html#idm46354589401680-bb"><span class="identifier">local_time</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">static</span> <span class="identifier">time_type</span> <a class="link" href="second_clock.html#idm46354589400560-bb"><span class="identifier">universal_time</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="second_clock.html#idm45507108539216-bb">public static functions</a></span>
+  <span class="keyword">static</span> <span class="identifier">time_type</span> <a class="link" href="second_clock.html#idm45507163381872-bb"><span class="identifier">local_time</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">static</span> <span class="identifier">time_type</span> <a class="link" href="second_clock.html#idm45507163380784-bb"><span class="identifier">universal_time</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> time_zone_type<span class="special">&gt;</span> 
-    <span class="keyword">static</span> <span class="identifier">time_type</span> <a class="link" href="second_clock.html#idm46354607580384-bb"><span class="identifier">local_time</span></a><span class="special">(</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span> <span class="identifier">time_zone_type</span> <span class="special">&gt;</span><span class="special">)</span><span class="special">;</span>
+    <span class="keyword">static</span> <span class="identifier">time_type</span> <a class="link" href="second_clock.html#idm45507163379408-bb"><span class="identifier">local_time</span></a><span class="special">(</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span> <span class="identifier">time_zone_type</span> <span class="special">&gt;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="second_clock.html#idm46354586785568-bb">private static functions</a></span>
-  <span class="keyword">static</span> <span class="identifier">time_type</span> <a class="link" href="second_clock.html#idm46354586784992-bb"><span class="identifier">create_time</span></a><span class="special">(</span><span class="special">::</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">tm</span> <span class="special">*</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="second_clock.html#idm45507102598288-bb">private static functions</a></span>
+  <span class="keyword">static</span> <span class="identifier">time_type</span> <a class="link" href="second_clock.html#idm45507102597712-bb"><span class="identifier">create_time</span></a><span class="special">(</span><span class="special">::</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">tm</span> <span class="special">*</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idm45398241092384"></a><h2>Description</h2>
+<a name="idm45555365146320"></a><h2>Description</h2>
 <p>This clock provides resolution to the 1 second level </p>
 <div class="refsect2">
-<a name="idm45398241091648"></a><h3>
-<a name="idm46354589402240-bb"></a><code class="computeroutput">second_clock</code> public static functions</h3>
+<a name="idm45555365145584"></a><h3>
+<a name="idm45507108539216-bb"></a><code class="computeroutput">second_clock</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><span class="keyword">static</span> <span class="identifier">time_type</span> <a name="idm46354589401680-bb"></a><span class="identifier">local_time</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">static</span> <span class="identifier">time_type</span> <a name="idm45507163381872-bb"></a><span class="identifier">local_time</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">time_type</span> <a name="idm46354589400560-bb"></a><span class="identifier">universal_time</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>Get the current day in universal date as a ymd_type. </li>
+<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">time_type</span> <a name="idm45507163380784-bb"></a><span class="identifier">universal_time</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>Get the current day in universal date as a ymd_type. </li>
 <li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> time_zone_type<span class="special">&gt;</span> 
-  <span class="keyword">static</span> <span class="identifier">time_type</span> <a name="idm46354607580384-bb"></a><span class="identifier">local_time</span><span class="special">(</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span> <span class="identifier">time_zone_type</span> <span class="special">&gt;</span> tz_ptr<span class="special">)</span><span class="special">;</span></pre></li>
+  <span class="keyword">static</span> <span class="identifier">time_type</span> <a name="idm45507163379408-bb"></a><span class="identifier">local_time</span><span class="special">(</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span> <span class="identifier">time_zone_type</span> <span class="special">&gt;</span> tz_ptr<span class="special">)</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idm45398241068000"></a><h3>
-<a name="idm46354586785568-bb"></a><code class="computeroutput">second_clock</code> private static functions</h3>
-<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><span class="keyword">static</span> <span class="identifier">time_type</span> <a name="idm46354586784992-bb"></a><span class="identifier">create_time</span><span class="special">(</span><span class="special">::</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">tm</span> <span class="special">*</span> current<span class="special">)</span><span class="special">;</span></pre></li></ol></div>
+<a name="idm45555365121872"></a><h3>
+<a name="idm45507102598288-bb"></a><code class="computeroutput">second_clock</code> private static functions</h3>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><span class="keyword">static</span> <span class="identifier">time_type</span> <a name="idm45507102597712-bb"></a><span class="identifier">create_time</span><span class="special">(</span><span class="special">::</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">tm</span> <span class="special">*</span> current<span class="special">)</span><span class="special">;</span></pre></li></ol></div>
 </div>
 </div>
 </div>

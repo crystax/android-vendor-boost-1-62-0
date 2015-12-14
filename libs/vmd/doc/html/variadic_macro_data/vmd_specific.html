@@ -4,8 +4,8 @@
 <title>Specific macros for working with data types</title>
 <link rel="stylesheet" href="../../../../../doc/src/boostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
-<link rel="home" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.8">
-<link rel="up" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.8">
+<link rel="home" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.9">
+<link rel="up" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.9">
 <link rel="prev" href="vmd_data_types.html" title="Data types">
 <link rel="next" href="vmd_specific/vmd_constraints.html" title="Macro constraints">
 </head>
@@ -299,9 +299,10 @@
       </h5>
 <p>
         The VC++ preprocessor is not a standard C++ conforming preprocessor in at
-        least two relevant situations. These situations combine to create a single
-        corner case which causes the BOOST_VMD_IS_EMPTY macro to not work properly
-        using VC++ when the input resolves to a function-like macro name.
+        least two relevant situations to our discussion of emptiness. These situations
+        combine to create a single corner case which causes the BOOST_VMD_IS_EMPTY
+        macro to not work properly using VC++ when the input resolves to a function-like
+        macro name.
       </p>
 <p>
         The first situation is that if a macro taking 'n' number of parameters is
@@ -388,7 +389,7 @@
       </p>
 <p>
         I want to reiterate that there is no perfect solution in C++ to the detection
-        of emptiness even for a C++ compiler whose preprocessor is complete conformant,
+        of emptiness even for a C++ compiler whose preprocessor is completely conformant,
         which VC++ obviously is not.
       </p>
 <h5>

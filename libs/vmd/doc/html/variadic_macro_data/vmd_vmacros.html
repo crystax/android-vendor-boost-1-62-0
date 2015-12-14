@@ -4,8 +4,8 @@
 <title>Using variadic macros</title>
 <link rel="stylesheet" href="../../../../../doc/src/boostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
-<link rel="home" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.8">
-<link rel="up" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.8">
+<link rel="home" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.9">
+<link rel="up" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.9">
 <link rel="prev" href="vmd_whyhow.html" title="Why and how to use">
 <link rel="next" href="vmd_vc.html" title="Visual C++ define">
 </head>
@@ -44,13 +44,15 @@
     </h4>
 <p>
       The Boost PP library has support for variadic macros and uses its own criteria
-      to determine if a particular compiler has that support. Boost PP uses the macro
-      BOOST_PP_VARIADICS to denote whether the compiler being used supports variadic
-      macros. When BOOST_PP_VARIADICS is set to 1 the compiler supports variadic
-      macros, otherwise when BOOST_PP_VARIADICS is set to 0 the compiler does not
-      support variadic macros. If a user of Boost PP sets this value, Boost PP uses
-      the value the end-user sets. This macro can also be checked to determine if
-      a compiler has support for variadic macros.
+      to determine if a particular compiler has that support. Boost PP defines or
+      uses the macro BOOST_PP_VARIADICS to denote whether the compiler being used
+      supports variadic macros. When BOOST_PP_VARIADICS is set to 1 the compiler
+      supports variadic macros, otherwise when BOOST_PP_VARIADICS is set to 0 the
+      compiler does not support variadic macros. If a user of Boost PP sets this
+      value, Boost PP uses the value the end-user sets, otherwise Boost PP defines
+      the value of BOOST_PP_VARIADICS based on its own analysis of the compiler being
+      used. This macro can also be checked to determine if a compiler has support
+      for variadic macros.
     </p>
 <h4>
 <a name="variadic_macro_data.vmd_vmacros.h1"></a>

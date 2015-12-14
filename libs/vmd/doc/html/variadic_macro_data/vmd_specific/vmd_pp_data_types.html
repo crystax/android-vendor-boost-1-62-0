@@ -4,7 +4,7 @@
 <title>VMD and Boost PP data types</title>
 <link rel="stylesheet" href="../../../../../../doc/src/boostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
-<link rel="home" href="../../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.8">
+<link rel="home" href="../../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.9">
 <link rel="up" href="../vmd_specific.html" title="Specific macros for working with data types">
 <link rel="prev" href="vmd_type.html" title="Types">
 <link rel="next" href="vmd_identifying.html" title="Identifying data types">
@@ -113,7 +113,7 @@
         The form of an array is a two element tuple, where the first element is a
         number and the second element is a tuple. The number specifies the size of
         the tuple. Since when using variadic macros it is never necessary to specify
-        the size of a tuple an array is largely obsolete. However VMD still supports
+        the size of a tuple, an array is largely obsolete. However VMD still supports
         it.
       </p>
 <p>
@@ -149,7 +149,8 @@
       </p>
 <p>
         The problem when testing for a list is that if the second element does not
-        obey the constraint on testing for an identifier, you will get UB.
+        obey the constraint on testing for an identifier, since BOOST_PP_NIL is an
+        identifier and is tested as such, you will get UB.
       </p>
 <pre class="programlisting"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">boost</span><span class="special">/</span><span class="identifier">vmd</span><span class="special">/</span><span class="identifier">is_list</span><span class="special">.</span><span class="identifier">hpp</span><span class="special">&gt;</span>
 <span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">boost</span><span class="special">/</span><span class="identifier">vmd</span><span class="special">/</span><span class="identifier">is_tuple</span><span class="special">.</span><span class="identifier">hpp</span><span class="special">&gt;</span>
@@ -279,9 +280,9 @@
 <span class="identifier">BOOST_VMD_IS_EMPTY_LIST</span><span class="special">(</span><span class="identifier">A_LIST</span><span class="special">)</span> <span class="identifier">will</span> <span class="keyword">return</span> <span class="number">0</span>
 </pre>
 <p>
-        Neither seqs or tuples can be empty. Because of this if you convert from
-        an empty array or list to a seq or tuple using Boost PP macros to do so you
-        will get undefined behavior.
+        Neither seqs or tuples can be empty when using Boost PP. Because of this
+        if you convert from an empty array or list to a seq or tuple using Boost
+        PP macros to do so you will get undefined behavior.
       </p>
 <p>
         The syntax '()', which is called an empty parenthesis, is neither a zero-element
@@ -326,10 +327,21 @@
         syntax is simpler; you never have to notate the tuple's size.
       </p>
 <p>
-        Since VMD fully supports passing and returning emptiness you can use a tuple
-        instead of an array in all situations and simply pass or return emptiness
+        Since VMD fully supports passing and returning emptiness you could use a
+        tuple instead of an array in all situations and simply pass or return emptiness
         to represent an "empty" tuple, and as an equivalent to an empty
         array.
+      </p>
+<p>
+        This notion of using emptiness to represent an "empty" tuple can
+        also be extended to using emptiness to represent an "empty" seq.
+        However functionality in Boost PP will not recognize emptiness as an empty
+        tuple or seq, nor can you work with emptiness to represent an empty tuple
+        or empty seq using the Boost PP functionality for a tuple or a seq. For a
+        solution to using emptiness to represent an "empty" tuple or an
+        "empty" seq VMD has functionality which will be explained when
+        we look at our last area of functionality in VMD, useful variadic macros
+        not in Boost PP.
       </p>
 <h5>
 <a name="variadic_macro_data.vmd_specific.vmd_pp_data_types.h6"></a>

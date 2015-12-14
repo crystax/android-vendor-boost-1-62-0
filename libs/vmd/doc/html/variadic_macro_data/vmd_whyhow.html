@@ -4,8 +4,8 @@
 <title>Why and how to use</title>
 <link rel="stylesheet" href="../../../../../doc/src/boostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
-<link rel="home" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.8">
-<link rel="up" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.8">
+<link rel="home" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.9">
+<link rel="up" href="../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.9">
 <link rel="prev" href="vmd_naming.html" title="Naming conventions">
 <link rel="next" href="vmd_vmacros.html" title="Using variadic macros">
 </head>
@@ -103,7 +103,10 @@
 </pre>
 <p>
       Here we use VMD's identifier registration system to determine and handle a
-      particular identifier we may be expecting as a macro parameter.
+      particular identifier we may be expecting as a macro parameter. If the input
+      to 'AMACRO1' is 'NAME' the output is 'Identifier is a NAME'. If the input to
+      'AMACRO1' is 'ADDRESS' the output is 'Identifier is an ADDRESS'. Otherwise
+      the output is 'Parameter is not an identifier'.
     </p>
 <p>
       Identifier pre-detection makes things clearer, allowing us to detect within
@@ -136,6 +139,11 @@
 <span class="preprocessor">#define</span> <span class="identifier">AMACRO2_NAME</span><span class="special">(</span><span class="identifier">param</span><span class="special">)</span> <span class="identifier">Identifier</span> <span class="identifier">is</span> <span class="identifier">a</span> <span class="identifier">NAME</span>
 <span class="preprocessor">#define</span> <span class="identifier">AMACRO2_ADDRESS</span><span class="special">(</span><span class="identifier">param</span><span class="special">)</span> <span class="identifier">Identifier</span> <span class="identifier">is</span> <span class="identifier">an</span> <span class="identifier">ADDRESS</span>
 </pre>
+<p>
+      If the input to 'AMACRO2' is 'NAME' the output is 'Identifier is a NAME'. If
+      the input to 'AMACRO2' is 'ADDRESS' the output is 'Identifier is an ADDRESS'.
+      Otherwise the output is 'Parameter is not a NAME or ADDRESS identifier'.
+    </p>
 <p>
       The VMD library also has 2 different subtypes of identifiers which can always
       be recognized. The first are numbers, equivalent to the number in Boost PP,

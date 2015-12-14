@@ -40,6 +40,13 @@
           enough Windows SDK and XP on others. The default is no longer chosen by
           Boost.Log but by the common WinAPI submodule used by different Boost libraries.
         </li>
+<li class="listitem">
+          Changed internal mutex type in the thread-safe queue implementation that
+          is used in asynchronous sink frontends with the <code class="computeroutput"><span class="identifier">unbounded_fifo_queue</span></code>
+          policy. The updated queue has improved performance in case of heavy thread
+          contention (hundreds and thousands of logging threads) on POSIX-compatible
+          systems.
+        </li>
 </ul></div>
 <p>
       <span class="bold"><strong>Bug fixes:</strong></span>

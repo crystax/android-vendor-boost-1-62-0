@@ -38,11 +38,53 @@
     </h6>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem">
-          improved API for datasets: initializer list for creating datasets, easier
-          to construct datasets
+          improved API for datasets
+          <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; ">
+<li class="listitem">
+                it is now possible to use initializer lists
+              </li>
+<li class="listitem">
+                the use of <code class="computeroutput"><span class="identifier">make</span></code> as
+                top left dataset is not necessary anymore
+              </li>
+</ul></div>
         </li>
 <li class="listitem">
           improved command line interface
+          <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; ">
+<li class="listitem">
+                clearer help commands
+              </li>
+<li class="listitem">
+                now proposes closest matching command in case of ambiguity
+              </li>
+<li class="listitem">
+<p class="simpara">
+                reports invalid or ambiguous parameters: this might break existing
+                calls when user defined commands are provided to the test module.
+                The following calling convention should be adopted:
+                <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: square; ">
+<li class="listitem">
+                      if the test module uses user supplied commands, those should
+                      be passed after an empty token <code class="computeroutput"><span class="special">--</span></code>
+                    </li>
+<li class="listitem">
+                      all boost.test related commands should be passed before <code class="computeroutput"><span class="special">--</span></code>, if any
+                    </li>
+</ul></div>
+              </p>
+<p class="simpara">
+                Example: the call
+              </p>
+<pre class="programlisting"><span class="identifier">test_module</span> <span class="special">--</span><span class="identifier">user</span><span class="special">-</span><span class="identifier">arg1</span><span class="special">=</span><span class="identifier">xy</span> <span class="special">--</span><span class="identifier">log_level</span><span class="special">=</span><span class="identifier">test_suite</span>
+</pre>
+<p class="simpara">
+                should be rewritten to
+              </p>
+<pre class="programlisting"><span class="identifier">test_module</span> <span class="special">--</span><span class="identifier">log_level</span><span class="special">=</span><span class="identifier">test_suite</span> <span class="special">--</span> <span class="special">--</span><span class="identifier">user</span><span class="special">-</span><span class="identifier">arg1</span><span class="special">=</span><span class="identifier">xy</span>
+</pre>
+</li>
+</ul></div>
         </li>
 </ul></div>
 <h6>
@@ -55,26 +97,27 @@
           <a href="https://svn.boost.org/trac/boost/ticket/3384" target="_top">#3384</a> Double-quoted arguments including spaces are divided by Boost.Test.
         </li>
 <li class="listitem">
-          <a href="https://svn.boost.org/trac/boost/ticket/3897" target="_top">#3897</a> Test framework does not include &lt;osreldate.h&gt; before testing
-          __FreeBSD_version (fixed in 1.59)
+          <a href="https://svn.boost.org/trac/boost/ticket/3897" target="_top">#3897</a> Test framework does not include <code class="computeroutput"><span class="special">&lt;</span><span class="identifier">osreldate</span><span class="special">.</span><span class="identifier">h</span><span class="special">&gt;</span></code>
+          before testing <code class="computeroutput"><span class="identifier">__FreeBSD_version</span></code>
+          (fixed in 1.59)
         </li>
 <li class="listitem">
-          <a href="https://svn.boost.org/trac/boost/ticket/6032" target="_top">#6032</a> Program options within init_unit_test_suite are incorrect when
-          using path and whitespaces
+          <a href="https://svn.boost.org/trac/boost/ticket/6032" target="_top">#6032</a> Program options within <code class="computeroutput"><span class="identifier">init_unit_test_suite</span></code>
+          are incorrect when using path and whitespaces
         </li>
 <li class="listitem">
           <a href="https://svn.boost.org/trac/boost/ticket/6859" target="_top">#6859</a> Boost.Test eats away last empty command line parameter
         </li>
 <li class="listitem">
-          <a href="https://svn.boost.org/trac/boost/ticket/7257" target="_top">#7257</a> Boost.Test alters and does not restore ostream precision after
-          any Test macro (fixed in 1.59)
+          <a href="https://svn.boost.org/trac/boost/ticket/7257" target="_top">#7257</a> Boost.Test alters and does not restore <code class="computeroutput"><span class="identifier">ostream</span></code>
+          precision after any Test macro (fixed in 1.59)
         </li>
 <li class="listitem">
           <a href="https://svn.boost.org/trac/boost/ticket/9228" target="_top">#9228</a> Patch to make Boost.Test work with RTTI disabled (fixed in 1.59)
         </li>
 <li class="listitem">
-          <a href="https://svn.boost.org/trac/boost/ticket/10317" target="_top">#10317</a> boost::test corrupts contents of argv if a paramter contains
-          whitespace
+          <a href="https://svn.boost.org/trac/boost/ticket/10317" target="_top">#10317</a> boost::test corrupts contents of <code class="computeroutput"><span class="identifier">argv</span></code>
+          if a paramter contains whitespace
         </li>
 <li class="listitem">
           <a href="https://svn.boost.org/trac/boost/ticket/11279" target="_top">#11279</a> invalid parameters should be reported

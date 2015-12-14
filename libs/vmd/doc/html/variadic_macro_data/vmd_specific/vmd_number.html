@@ -4,7 +4,7 @@
 <title>Numbers</title>
 <link rel="stylesheet" href="../../../../../../doc/src/boostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
-<link rel="home" href="../../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.8">
+<link rel="home" href="../../index.html" title="Chapter&#160;1.&#160;The Variadic Macro Data Library 1.9">
 <link rel="up" href="../vmd_specific.html" title="Specific macros for working with data types">
 <link rel="prev" href="vmd_identifier.html" title="Identifiers">
 <link rel="next" href="vmd_type.html" title="Types">
@@ -53,8 +53,9 @@
 <p>
         As can be seen from the explanation of an identifier, a number is merely
         a small subset of all possible identifiers, for which VMD internally provides
-        registration macros for its use and pre-detection macros. Therefore the particular
-        constraint on the input to test is exactly the same as for identifiers.
+        registration macros for its use and pre-detection macros for its use. Therefore
+        the particular constraint on the input to test is exactly the same as for
+        identifiers.
       </p>
 <p>
         The constraint is that the beginning input character, ignoring any whitespace,
@@ -76,26 +77,6 @@
         If this is not the case the behavior is undefined, and most likely a preprocessing
         error will occur.
       </p>
-<p>
-        Given the input:
-      </p>
-<pre class="programlisting"><span class="identifier">s_anything</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="identifier">S_anything</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="identifier">s_anYthiNg</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="identifier">s</span><span class="special">&amp;</span><span class="identifier">_anYthiNg</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="identifier">_anything</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="identifier">_Anything</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="identifier">_anytH</span><span class="special">?</span><span class="identifier">Ing</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="number">24</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="number">245e2</span><span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span>
-<span class="special">(</span><span class="identifier">anything</span><span class="special">)</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span><span class="special">,</span> <span class="identifier">tuple</span>
-<span class="special">(</span><span class="identifier">anything</span><span class="special">)</span> <span class="identifier">anything</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span><span class="special">,</span> <span class="identifier">tuple</span> <span class="special">+</span> <span class="identifier">identifier</span>
-<span class="identifier">anything</span> <span class="identifier">anything</span> <span class="special">:</span> <span class="identifier">can</span> <span class="identifier">be</span> <span class="identifier">tested</span><span class="special">,</span> <span class="identifier">identifier</span> <span class="identifier">followed</span> <span class="identifier">by</span> <span class="identifier">space</span> <span class="identifier">character</span>
-
-<span class="special">%</span><span class="identifier">_anything</span> <span class="special">:</span> <span class="identifier">undefined</span> <span class="identifier">behavior</span> <span class="keyword">and</span> <span class="identifier">most</span> <span class="identifier">likely</span> <span class="identifier">a</span> <span class="identifier">preprocessing</span> <span class="identifier">error</span> <span class="identifier">due</span> <span class="identifier">to</span> <span class="identifier">the</span> <span class="identifier">constraint</span>
-<span class="special">(</span><span class="identifier">_anything</span> <span class="special">:</span> <span class="identifier">undefined</span> <span class="identifier">behavior</span> <span class="keyword">and</span> <span class="identifier">most</span> <span class="identifier">likely</span> <span class="identifier">a</span> <span class="identifier">preprocessing</span> <span class="identifier">error</span> <span class="identifier">due</span> <span class="identifier">to</span> <span class="identifier">the</span> <span class="identifier">constraint</span><span class="special">,</span> <span class="identifier">since</span> <span class="identifier">a</span> <span class="identifier">single</span> <span class="char">'('</span> <span class="identifier">does</span> <span class="keyword">not</span> <span class="identifier">form</span> <span class="identifier">a</span> <span class="identifier">tuple</span>
-<span class="number">44.3</span> <span class="special">:</span> <span class="identifier">undefined</span> <span class="identifier">behavior</span> <span class="keyword">and</span> <span class="identifier">most</span> <span class="identifier">likely</span> <span class="identifier">a</span> <span class="identifier">preprocessing</span> <span class="identifier">error</span> <span class="identifier">due</span> <span class="identifier">to</span> <span class="identifier">the</span> <span class="identifier">constraint</span> <span class="identifier">since</span> <span class="char">'.'</span> <span class="identifier">is</span> <span class="keyword">not</span> <span class="identifier">alphanumeric</span>
-</pre>
 <h5>
 <a name="variadic_macro_data.vmd_specific.vmd_number.h1"></a>
         <span class="phrase"><a name="variadic_macro_data.vmd_specific.vmd_number.testing_for_a_number_macro"></a></span><a class="link" href="vmd_number.html#variadic_macro_data.vmd_specific.vmd_number.testing_for_a_number_macro">Testing

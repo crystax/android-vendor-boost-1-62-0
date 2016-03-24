@@ -7,8 +7,8 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="../../index.html" title="The Boost C++ Libraries BoostBook Documentation Subset">
 <link rel="up" href="../../xpressive/reference.html#header.boost.xpressive.traits.cpp_regex_traits_hpp" title="Header &lt;boost/xpressive/traits/cpp_regex_traits.hpp&gt;">
-<link rel="prev" href="has_fold_case_idp375929248.html" title="Struct has_fold_case&lt;c_regex_traits&lt; char &gt;&gt;">
-<link rel="next" href="has_fold_case_idp376032192.html" title="Struct has_fold_case&lt;cpp_regex_traits&lt; char &gt;&gt;">
+<link rel="prev" href="has_fold_case_idp375745856.html" title="Struct has_fold_case&lt;c_regex_traits&lt; char &gt;&gt;">
+<link rel="next" href="has_fold_case_idp375848800.html" title="Struct has_fold_case&lt;cpp_regex_traits&lt; char &gt;&gt;">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -21,7 +21,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="has_fold_case_idp375929248.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../xpressive/reference.html#header.boost.xpressive.traits.cpp_regex_traits_hpp"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="has_fold_case_idp376032192.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="has_fold_case_idp375745856.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../xpressive/reference.html#header.boost.xpressive.traits.cpp_regex_traits_hpp"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="has_fold_case_idp375848800.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="refentry">
 <a name="boost.xpressive.cpp_regex_traits"></a><div class="titlepage"></div>
@@ -43,55 +43,55 @@
   <span class="keyword">typedef</span> <span class="emphasis"><em><span class="identifier">unspecified</span></em></span>                    <a name="boost.xpressive.cpp_regex_traits.base_type"></a><span class="identifier">base_type</span><span class="special">;</span>      
 
   <span class="comment">// <a class="link" href="cpp_regex_traits.html#boost.xpressive.cpp_regex_traitsconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="cpp_regex_traits.html#idp376015824-bb"><span class="identifier">cpp_regex_traits</span></a><span class="special">(</span><span class="identifier">locale_type</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">locale_type</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="cpp_regex_traits.html#idp375832432-bb"><span class="identifier">cpp_regex_traits</span></a><span class="special">(</span><span class="identifier">locale_type</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">locale_type</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="cpp_regex_traits.html#idp375941744-bb">public member functions</a></span>
-  <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375942304-bb"><span class="keyword">operator</span><span class="special">==</span></a><span class="special">(</span><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a><span class="special">&lt;</span> <span class="identifier">char_type</span> <span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375946272-bb"><span class="keyword">operator</span><span class="special">!=</span></a><span class="special">(</span><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a><span class="special">&lt;</span> <span class="identifier">char_type</span> <span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375950240-bb"><span class="identifier">widen</span></a><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375953648-bb"><span class="identifier">translate_nocase</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375957072-bb"><span class="identifier">tolower</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375960496-bb"><span class="identifier">toupper</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">string_type</span> <a class="link" href="cpp_regex_traits.html#idp375963920-bb"><span class="identifier">fold_case</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375970816-bb"><span class="identifier">in_range_nocase</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="cpp_regex_traits.html#idp375758352-bb">public member functions</a></span>
+  <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375758912-bb"><span class="keyword">operator</span><span class="special">==</span></a><span class="special">(</span><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a><span class="special">&lt;</span> <span class="identifier">char_type</span> <span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375762880-bb"><span class="keyword">operator</span><span class="special">!=</span></a><span class="special">(</span><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a><span class="special">&lt;</span> <span class="identifier">char_type</span> <span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375766848-bb"><span class="identifier">widen</span></a><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375770256-bb"><span class="identifier">translate_nocase</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375773680-bb"><span class="identifier">tolower</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375777104-bb"><span class="identifier">toupper</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">string_type</span> <a class="link" href="cpp_regex_traits.html#idp375780528-bb"><span class="identifier">fold_case</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375787424-bb"><span class="identifier">in_range_nocase</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> FwdIter<span class="special">&gt;</span> 
-    <span class="identifier">string_type</span> <a class="link" href="cpp_regex_traits.html#idp375977264-bb"><span class="identifier">transform_primary</span></a><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+    <span class="identifier">string_type</span> <a class="link" href="cpp_regex_traits.html#idp375793872-bb"><span class="identifier">transform_primary</span></a><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> FwdIter<span class="special">&gt;</span> 
-    <span class="identifier">string_type</span> <a class="link" href="cpp_regex_traits.html#idp375981984-bb"><span class="identifier">lookup_collatename</span></a><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+    <span class="identifier">string_type</span> <a class="link" href="cpp_regex_traits.html#idp375798592-bb"><span class="identifier">lookup_collatename</span></a><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> FwdIter<span class="special">&gt;</span> 
-    <span class="identifier">char_class_type</span> <a class="link" href="cpp_regex_traits.html#idp375986672-bb"><span class="identifier">lookup_classname</span></a><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">,</span> <span class="keyword">bool</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375993424-bb"><span class="identifier">isctype</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_class_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">int</span> <a class="link" href="cpp_regex_traits.html#idp375998512-bb"><span class="identifier">value</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">,</span> <span class="keyword">int</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">locale_type</span> <a class="link" href="cpp_regex_traits.html#idp376003696-bb"><span class="identifier">imbue</span></a><span class="special">(</span><span class="identifier">locale_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">locale_type</span> <a class="link" href="cpp_regex_traits.html#idp376006800-bb"><span class="identifier">getloc</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp376008368-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="keyword">unsigned</span> <span class="keyword">char</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp376010192-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="keyword">char</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp376012016-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="keyword">signed</span> <span class="keyword">char</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp376013840-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span><span class="special">;</span>
+    <span class="identifier">char_class_type</span> <a class="link" href="cpp_regex_traits.html#idp375803280-bb"><span class="identifier">lookup_classname</span></a><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">,</span> <span class="keyword">bool</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375810032-bb"><span class="identifier">isctype</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_class_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">int</span> <a class="link" href="cpp_regex_traits.html#idp375815120-bb"><span class="identifier">value</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">,</span> <span class="keyword">int</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">locale_type</span> <a class="link" href="cpp_regex_traits.html#idp375820304-bb"><span class="identifier">imbue</span></a><span class="special">(</span><span class="identifier">locale_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">locale_type</span> <a class="link" href="cpp_regex_traits.html#idp375823408-bb"><span class="identifier">getloc</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp375824976-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="keyword">unsigned</span> <span class="keyword">char</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp375826800-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="keyword">char</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp375828624-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="keyword">signed</span> <span class="keyword">char</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp375830448-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="cpp_regex_traits.html#idp376018320-bb">public static functions</a></span>
-  <span class="keyword">static</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp376018880-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">static</span> <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp376022304-bb"><span class="identifier">translate</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">static</span> <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp376025648-bb"><span class="identifier">in_range</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="cpp_regex_traits.html#idp375834928-bb">public static functions</a></span>
+  <span class="keyword">static</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a class="link" href="cpp_regex_traits.html#idp375835488-bb"><span class="identifier">hash</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">static</span> <span class="identifier">char_type</span> <a class="link" href="cpp_regex_traits.html#idp375838912-bb"><span class="identifier">translate</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">static</span> <span class="keyword">bool</span> <a class="link" href="cpp_regex_traits.html#idp375842256-bb"><span class="identifier">in_range</span></a><span class="special">(</span><span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_type</span><span class="special">,</span> <span class="identifier">char_type</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp512014192"></a><h2>Description</h2>
+<a name="idp511982048"></a><h2>Description</h2>
 <div class="refsect2">
-<a name="idp512014608"></a><h3>
+<a name="idp511982464"></a><h3>
 <a name="boost.xpressive.cpp_regex_traitsconstruct-copy-destruct"></a><code class="computeroutput">cpp_regex_traits</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><a name="idp376015824-bb"></a><span class="identifier">cpp_regex_traits</span><span class="special">(</span><span class="identifier">locale_type</span> <span class="keyword">const</span> <span class="special">&amp;</span> loc <span class="special">=</span> <span class="identifier">locale_type</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp375832432-bb"></a><span class="identifier">cpp_regex_traits</span><span class="special">(</span><span class="identifier">locale_type</span> <span class="keyword">const</span> <span class="special">&amp;</span> loc <span class="special">=</span> <span class="identifier">locale_type</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Initialize a <code class="computeroutput"><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a></code> object to use the specified std::locale, or the global std::locale if none is specified. </p>
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp512026592"></a><h3>
-<a name="idp375941744-bb"></a><code class="computeroutput">cpp_regex_traits</code> public member functions</h3>
+<a name="idp511994448"></a><h3>
+<a name="idp375758352-bb"></a><code class="computeroutput">cpp_regex_traits</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp375942304-bb"></a><span class="keyword">operator</span><span class="special">==</span><span class="special">(</span><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a><span class="special">&lt;</span> <span class="identifier">char_type</span> <span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span> that<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp375758912-bb"></a><span class="keyword">operator</span><span class="special">==</span><span class="special">(</span><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a><span class="special">&lt;</span> <span class="identifier">char_type</span> <span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span> that<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Checks two <code class="computeroutput"><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a></code> objects for equality</p>
 <p>
 </p>
@@ -104,7 +104,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp375946272-bb"></a><span class="keyword">operator</span><span class="special">!=</span><span class="special">(</span><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a><span class="special">&lt;</span> <span class="identifier">char_type</span> <span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span> that<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp375762880-bb"></a><span class="keyword">operator</span><span class="special">!=</span><span class="special">(</span><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a><span class="special">&lt;</span> <span class="identifier">char_type</span> <span class="special">&gt;</span> <span class="keyword">const</span> <span class="special">&amp;</span> that<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Checks two <code class="computeroutput"><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a></code> objects for inequality</p>
 <p>
 </p>
@@ -117,7 +117,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">char_type</span> <a name="idp375950240-bb"></a><span class="identifier">widen</span><span class="special">(</span><span class="keyword">char</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">char_type</span> <a name="idp375766848-bb"></a><span class="identifier">widen</span><span class="special">(</span><span class="keyword">char</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Convert a char to a Char</p>
 <p>
 
@@ -143,7 +143,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">char_type</span> <a name="idp375953648-bb"></a><span class="identifier">translate_nocase</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">char_type</span> <a name="idp375770256-bb"></a><span class="identifier">translate_nocase</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Converts a character to lower-case using the internally-stored std::locale.</p>
 <p>
 
@@ -169,7 +169,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">char_type</span> <a name="idp375957072-bb"></a><span class="identifier">tolower</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">char_type</span> <a name="idp375773680-bb"></a><span class="identifier">tolower</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Converts a character to lower-case using the internally-stored std::locale.</p>
 <p>
 
@@ -195,7 +195,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">char_type</span> <a name="idp375960496-bb"></a><span class="identifier">toupper</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">char_type</span> <a name="idp375777104-bb"></a><span class="identifier">toupper</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Converts a character to upper-case using the internally-stored std::locale.</p>
 <p>
 
@@ -221,7 +221,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">string_type</span> <a name="idp375963920-bb"></a><span class="identifier">fold_case</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">string_type</span> <a name="idp375780528-bb"></a><span class="identifier">fold_case</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Returns a <code class="computeroutput">string_type</code> containing all the characters that compare equal disregrarding case to the one passed in. This function can only be called if <code class="computeroutput"><code class="computeroutput"><a class="link" href="has_fold_case.html" title="Struct template has_fold_case">has_fold_case</a></code>&lt;<code class="computeroutput"><a class="link" href="cpp_regex_traits.html" title="Struct template cpp_regex_traits">cpp_regex_traits</a></code>&lt;Char&gt; &gt;::value</code> is <code class="computeroutput">true</code>.</p>
 <p>
 
@@ -247,7 +247,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp375970816-bb"></a><span class="identifier">in_range_nocase</span><span class="special">(</span><span class="identifier">char_type</span> first<span class="special">,</span> <span class="identifier">char_type</span> last<span class="special">,</span> <span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp375787424-bb"></a><span class="identifier">in_range_nocase</span><span class="special">(</span><span class="identifier">char_type</span> first<span class="special">,</span> <span class="identifier">char_type</span> last<span class="special">,</span> <span class="identifier">char_type</span> ch<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Checks to see if a character is within a character range, irregardless of case.</p>
 <p>
 
@@ -293,7 +293,7 @@
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> FwdIter<span class="special">&gt;</span> 
-  <span class="identifier">string_type</span> <a name="idp375977264-bb"></a><span class="identifier">transform_primary</span><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+  <span class="identifier">string_type</span> <a name="idp375793872-bb"></a><span class="identifier">transform_primary</span><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Returns a sort key for the character sequence designated by the iterator range [F1, F2) such that if the character sequence [G1, G2) sorts before the character sequence [H1, H2) when character case is not considered then v.transform_primary(G1, G2) &lt; v.transform_primary(H1, H2).</p>
 <div class="note"><table border="0" summary="Note">
 <tr>
@@ -307,7 +307,7 @@
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> FwdIter<span class="special">&gt;</span> 
-  <span class="identifier">string_type</span> <a name="idp375981984-bb"></a><span class="identifier">lookup_collatename</span><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+  <span class="identifier">string_type</span> <a name="idp375798592-bb"></a><span class="identifier">lookup_collatename</span><span class="special">(</span><span class="identifier">FwdIter</span><span class="special">,</span> <span class="identifier">FwdIter</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Returns a sequence of characters that represents the collating element consisting of the character sequence designated by the iterator range [F1, F2). Returns an empty string if the character sequence is not a valid collating element.</p>
 <div class="note"><table border="0" summary="Note">
 <tr>
@@ -322,7 +322,7 @@
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> FwdIter<span class="special">&gt;</span> 
   <span class="identifier">char_class_type</span> 
-  <a name="idp375986672-bb"></a><span class="identifier">lookup_classname</span><span class="special">(</span><span class="identifier">FwdIter</span> begin<span class="special">,</span> <span class="identifier">FwdIter</span> end<span class="special">,</span> <span class="keyword">bool</span> icase<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+  <a name="idp375803280-bb"></a><span class="identifier">lookup_classname</span><span class="special">(</span><span class="identifier">FwdIter</span> begin<span class="special">,</span> <span class="identifier">FwdIter</span> end<span class="special">,</span> <span class="keyword">bool</span> icase<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>For the character class name represented by the specified character sequence, return the corresponding bitmask representation.</p>
 <p>
 
@@ -358,7 +358,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp375993424-bb"></a><span class="identifier">isctype</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">,</span> <span class="identifier">char_class_type</span> mask<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp375810032-bb"></a><span class="identifier">isctype</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">,</span> <span class="identifier">char_class_type</span> mask<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Tests a character against a character class bitmask.</p>
 <p>
 
@@ -395,7 +395,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">int</span> <a name="idp375998512-bb"></a><span class="identifier">value</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">,</span> <span class="keyword">int</span> radix<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">int</span> <a name="idp375815120-bb"></a><span class="identifier">value</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">,</span> <span class="keyword">int</span> radix<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Convert a digit character into the integer it represents.</p>
 <p>
 
@@ -432,7 +432,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">locale_type</span> <a name="idp376003696-bb"></a><span class="identifier">imbue</span><span class="special">(</span><span class="identifier">locale_type</span> loc<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">locale_type</span> <a name="idp375820304-bb"></a><span class="identifier">imbue</span><span class="special">(</span><span class="identifier">locale_type</span> loc<span class="special">)</span><span class="special">;</span></pre>
 <p>Imbues *this with loc</p>
 <p>
 
@@ -458,21 +458,21 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">locale_type</span> <a name="idp376006800-bb"></a><span class="identifier">getloc</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">locale_type</span> <a name="idp375823408-bb"></a><span class="identifier">getloc</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Returns the current std::locale used by *this. </p>
 </li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp376008368-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="keyword">unsigned</span> <span class="keyword">char</span> ch<span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp376010192-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="keyword">char</span> ch<span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp376012016-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="keyword">signed</span> <span class="keyword">char</span> ch<span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp376013840-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="keyword">wchar_t</span> ch<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp375824976-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="keyword">unsigned</span> <span class="keyword">char</span> ch<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp375826800-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="keyword">char</span> ch<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp375828624-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="keyword">signed</span> <span class="keyword">char</span> ch<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="special">&gt;</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp375830448-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="keyword">wchar_t</span> ch<span class="special">)</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp512239664"></a><h3>
-<a name="idp376018320-bb"></a><code class="computeroutput">cpp_regex_traits</code> public static functions</h3>
+<a name="idp512207392"></a><h3>
+<a name="idp375834928-bb"></a><code class="computeroutput">cpp_regex_traits</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp376018880-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> <a name="idp375835488-bb"></a><span class="identifier">hash</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span><span class="special">;</span></pre>
 <p>Returns a hash value for a Char in the range [0, UCHAR_MAX]</p>
 <p>
 
@@ -498,7 +498,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">char_type</span> <a name="idp376022304-bb"></a><span class="identifier">translate</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">char_type</span> <a name="idp375838912-bb"></a><span class="identifier">translate</span><span class="special">(</span><span class="identifier">char_type</span> ch<span class="special">)</span><span class="special">;</span></pre>
 <p>No-op</p>
 <p>
 
@@ -524,7 +524,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">bool</span> <a name="idp376025648-bb"></a><span class="identifier">in_range</span><span class="special">(</span><span class="identifier">char_type</span> first<span class="special">,</span> <span class="identifier">char_type</span> last<span class="special">,</span> <span class="identifier">char_type</span> ch<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">bool</span> <a name="idp375842256-bb"></a><span class="identifier">in_range</span><span class="special">(</span><span class="identifier">char_type</span> first<span class="special">,</span> <span class="identifier">char_type</span> last<span class="special">,</span> <span class="identifier">char_type</span> ch<span class="special">)</span><span class="special">;</span></pre>
 <p>Checks to see if a character is within a character range.</p>
 <p>
 
@@ -573,7 +573,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="has_fold_case_idp375929248.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../xpressive/reference.html#header.boost.xpressive.traits.cpp_regex_traits_hpp"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="has_fold_case_idp376032192.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="has_fold_case_idp375745856.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../xpressive/reference.html#header.boost.xpressive.traits.cpp_regex_traits_hpp"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="has_fold_case_idp375848800.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

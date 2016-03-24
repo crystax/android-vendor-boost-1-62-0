@@ -8,7 +8,7 @@
 <link rel="home" href="../../index.html" title="The Boost C++ Libraries BoostBook Documentation Subset">
 <link rel="up" href="../../date_time/doxy.html#header.boost.date_time.gregorian.greg_month_hpp" title="Header &lt;boost/date_time/gregorian/greg_month.hpp&gt;">
 <link rel="prev" href="bad_month.html" title="Struct bad_month">
-<link rel="next" href="../../BOOST_SERIALIZ_idp69629984.html" title="Function BOOST_SERIALIZATION_SPLIT_FREE">
+<link rel="next" href="../../BOOST_SERIALIZ_idp13899136.html" title="Function BOOST_SERIALIZATION_SPLIT_FREE">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -21,7 +21,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="bad_month.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../date_time/doxy.html#header.boost.date_time.gregorian.greg_month_hpp"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../../BOOST_SERIALIZ_idp69629984.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="bad_month.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../date_time/doxy.html#header.boost.date_time.gregorian.greg_month_hpp"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../../BOOST_SERIALIZ_idp13899136.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="refentry">
 <a name="boost.gregorian.greg_month"></a><div class="titlepage"></div>
@@ -41,63 +41,63 @@
   <span class="keyword">typedef</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span> <span class="identifier">month_map_type</span> <span class="special">&gt;</span>     <a name="boost.gregorian.greg_month.month_map_ptr_type"></a><span class="identifier">month_map_ptr_type</span><span class="special">;</span>
 
   <span class="comment">// <a class="link" href="greg_month.html#boost.gregorian.greg_monthconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="greg_month.html#idp71196960-bb"><span class="identifier">greg_month</span></a><span class="special">(</span><span class="identifier">month_enum</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="greg_month.html#idp71198192-bb"><span class="identifier">greg_month</span></a><span class="special">(</span><span class="keyword">unsigned</span> <span class="keyword">short</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="greg_month.html#idp83978240-bb"><span class="identifier">greg_month</span></a><span class="special">(</span><span class="identifier">month_enum</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="greg_month.html#idp83979472-bb"><span class="identifier">greg_month</span></a><span class="special">(</span><span class="keyword">unsigned</span> <span class="keyword">short</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="greg_month.html#idp11589664-bb">public member functions</a></span>
-  <a class="link" href="greg_month.html#idp11590224-bb"><span class="keyword">operator</span> <span class="keyword">unsigned</span> <span class="keyword">short</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">unsigned</span> <span class="keyword">short</span> <a class="link" href="greg_month.html#idp44462112-bb"><span class="identifier">as_number</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">month_enum</span> <a class="link" href="greg_month.html#idp44463536-bb"><span class="identifier">as_enum</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp44464656-bb"><span class="identifier">as_short_string</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp44465776-bb"><span class="identifier">as_long_string</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp44466896-bb"><span class="identifier">as_short_wstring</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp44468016-bb"><span class="identifier">as_long_wstring</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp44469136-bb"><span class="identifier">as_short_string</span></a><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp71191376-bb"><span class="identifier">as_long_string</span></a><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp71193184-bb"><span class="identifier">as_short_string</span></a><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp71194992-bb"><span class="identifier">as_long_string</span></a><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="greg_month.html#idp24438832-bb">public member functions</a></span>
+  <a class="link" href="greg_month.html#idp24439392-bb"><span class="keyword">operator</span> <span class="keyword">unsigned</span> <span class="keyword">short</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">unsigned</span> <span class="keyword">short</span> <a class="link" href="greg_month.html#idp24440816-bb"><span class="identifier">as_number</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">month_enum</span> <a class="link" href="greg_month.html#idp24442240-bb"><span class="identifier">as_enum</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp37615872-bb"><span class="identifier">as_short_string</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp37616880-bb"><span class="identifier">as_long_string</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp37618000-bb"><span class="identifier">as_short_wstring</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp37619120-bb"><span class="identifier">as_long_wstring</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp37620240-bb"><span class="identifier">as_short_string</span></a><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp37622048-bb"><span class="identifier">as_long_string</span></a><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp37623856-bb"><span class="identifier">as_short_string</span></a><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a class="link" href="greg_month.html#idp37625664-bb"><span class="identifier">as_long_string</span></a><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="greg_month.html#idp71199472-bb">public static functions</a></span>
-  <span class="keyword">static</span> <span class="identifier">month_map_ptr_type</span> <a class="link" href="greg_month.html#idp71200032-bb"><span class="identifier">get_month_map_ptr</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="greg_month.html#idp83980752-bb">public static functions</a></span>
+  <span class="keyword">static</span> <span class="identifier">month_map_ptr_type</span> <a class="link" href="greg_month.html#idp83981312-bb"><span class="identifier">get_month_map_ptr</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp125160960"></a><h2>Description</h2>
+<a name="idp125156288"></a><h2>Description</h2>
 <div class="refsect2">
-<a name="idp125161376"></a><h3>
+<a name="idp125156704"></a><h3>
 <a name="boost.gregorian.greg_monthconstruct-copy-destruct"></a><code class="computeroutput">greg_month</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a name="idp71196960-bb"></a><span class="identifier">greg_month</span><span class="special">(</span><span class="identifier">month_enum</span> theMonth<span class="special">)</span><span class="special">;</span></pre>Construct a month from the months_of_year enumeration. </li>
+<pre class="literallayout"><a name="idp83978240-bb"></a><span class="identifier">greg_month</span><span class="special">(</span><span class="identifier">month_enum</span> theMonth<span class="special">)</span><span class="special">;</span></pre>Construct a month from the months_of_year enumeration. </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp71198192-bb"></a><span class="identifier">greg_month</span><span class="special">(</span><span class="keyword">unsigned</span> <span class="keyword">short</span> theMonth<span class="special">)</span><span class="special">;</span></pre>Construct from a short value. </li>
+<pre class="literallayout"><a name="idp83979472-bb"></a><span class="identifier">greg_month</span><span class="special">(</span><span class="keyword">unsigned</span> <span class="keyword">short</span> theMonth<span class="special">)</span><span class="special">;</span></pre>Construct from a short value. </li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp125173248"></a><h3>
-<a name="idp11589664-bb"></a><code class="computeroutput">greg_month</code> public member functions</h3>
+<a name="idp125168640"></a><h3>
+<a name="idp24438832-bb"></a><code class="computeroutput">greg_month</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a name="idp11590224-bb"></a><span class="keyword">operator</span> <span class="keyword">unsigned</span> <span class="keyword">short</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Convert the value back to a short. </li>
+<pre class="literallayout"><a name="idp24439392-bb"></a><span class="keyword">operator</span> <span class="keyword">unsigned</span> <span class="keyword">short</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Convert the value back to a short. </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">unsigned</span> <span class="keyword">short</span> <a name="idp44462112-bb"></a><span class="identifier">as_number</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns month as number from 1 to 12. </li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">month_enum</span> <a name="idp44463536-bb"></a><span class="identifier">as_enum</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a name="idp44464656-bb"></a><span class="identifier">as_short_string</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a name="idp44465776-bb"></a><span class="identifier">as_long_string</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a name="idp44466896-bb"></a><span class="identifier">as_short_wstring</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a name="idp44468016-bb"></a><span class="identifier">as_long_wstring</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a name="idp44469136-bb"></a><span class="identifier">as_short_string</span><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a name="idp71191376-bb"></a><span class="identifier">as_long_string</span><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a name="idp71193184-bb"></a><span class="identifier">as_short_string</span><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a name="idp71194992-bb"></a><span class="identifier">as_long_string</span><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<pre class="literallayout"><span class="keyword">unsigned</span> <span class="keyword">short</span> <a name="idp24440816-bb"></a><span class="identifier">as_number</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns month as number from 1 to 12. </li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">month_enum</span> <a name="idp24442240-bb"></a><span class="identifier">as_enum</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a name="idp37615872-bb"></a><span class="identifier">as_short_string</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a name="idp37616880-bb"></a><span class="identifier">as_long_string</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a name="idp37618000-bb"></a><span class="identifier">as_short_wstring</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a name="idp37619120-bb"></a><span class="identifier">as_long_wstring</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a name="idp37620240-bb"></a><span class="identifier">as_short_string</span><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span> <a name="idp37622048-bb"></a><span class="identifier">as_long_string</span><span class="special">(</span><span class="keyword">char</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a name="idp37623856-bb"></a><span class="identifier">as_short_string</span><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">const</span> <span class="keyword">wchar_t</span> <span class="special">*</span> <a name="idp37625664-bb"></a><span class="identifier">as_long_string</span><span class="special">(</span><span class="keyword">wchar_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp125244896"></a><h3>
-<a name="idp71199472-bb"></a><code class="computeroutput">greg_month</code> public static functions</h3>
+<a name="idp125240096"></a><h3>
+<a name="idp83980752-bb"></a><code class="computeroutput">greg_month</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">month_map_ptr_type</span> <a name="idp71200032-bb"></a><span class="identifier">get_month_map_ptr</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>Shared pointer to a map of Month strings (Names &amp; Abbrev) &amp; numbers. </li></ol></div>
+<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">month_map_ptr_type</span> <a name="idp83981312-bb"></a><span class="identifier">get_month_map_ptr</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>Shared pointer to a map of Month strings (Names &amp; Abbrev) &amp; numbers. </li></ol></div>
 </div>
 </div>
 </div>
@@ -109,7 +109,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="bad_month.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../date_time/doxy.html#header.boost.date_time.gregorian.greg_month_hpp"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../../BOOST_SERIALIZ_idp69629984.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="bad_month.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../date_time/doxy.html#header.boost.date_time.gregorian.greg_month_hpp"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../../BOOST_SERIALIZ_idp13899136.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

@@ -50,46 +50,46 @@
   <span class="keyword">typedef</span> <span class="identifier">implementation_defined</span><span class="special">::</span><span class="identifier">handle_type</span>      <a name="boost.heap.binomial_heap.handle_type"></a><span class="identifier">handle_type</span><span class="special">;</span>     
 
   <span class="comment">// <a class="link" href="binomial_heap.html#boost.heap.binomial_heapconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <span class="keyword">explicit</span> <a class="link" href="binomial_heap.html#idp7342000-bb"><span class="identifier">binomial_heap</span></a><span class="special">(</span><span class="identifier">value_compare</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">value_compare</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="binomial_heap.html#idp7345664-bb"><span class="identifier">binomial_heap</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="binomial_heap.html#idp7353040-bb"><span class="identifier">binomial_heap</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> <a class="link" href="binomial_heap.html#idp7349072-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> <a class="link" href="binomial_heap.html#idp7357328-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="binomial_heap.html#idp7362192-bb"><span class="special">~</span><span class="identifier">binomial_heap</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">explicit</span> <a class="link" href="binomial_heap.html#idp7035760-bb"><span class="identifier">binomial_heap</span></a><span class="special">(</span><span class="identifier">value_compare</span> <span class="keyword">const</span> <span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">value_compare</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="binomial_heap.html#idp7039424-bb"><span class="identifier">binomial_heap</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="binomial_heap.html#idp7046800-bb"><span class="identifier">binomial_heap</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> <a class="link" href="binomial_heap.html#idp7042832-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> <a class="link" href="binomial_heap.html#idp7051088-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="binomial_heap.html#idp7055952-bb"><span class="special">~</span><span class="identifier">binomial_heap</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span>
 
   <span class="comment">// <a class="link" href="binomial_heap.html#idm7232-bb">public member functions</a></span>
   <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idm6672-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
   <span class="identifier">size_type</span> <a class="link" href="binomial_heap.html#idm2784-bb"><span class="identifier">size</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="binomial_heap.html#idp7220688-bb"><span class="identifier">max_size</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7224576-bb"><span class="identifier">clear</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">allocator_type</span> <a class="link" href="binomial_heap.html#idp7228256-bb"><span class="identifier">get_allocator</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7232176-bb"><span class="identifier">swap</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">const_reference</span> <a class="link" href="binomial_heap.html#idp7236128-bb"><span class="identifier">top</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">handle_type</span> <a class="link" href="binomial_heap.html#idp7240080-bb"><span class="identifier">push</span></a><span class="special">(</span><span class="identifier">value_type</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">class</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">handle_type</span> <a class="link" href="binomial_heap.html#idp7243488-bb"><span class="identifier">emplace</span></a><span class="special">(</span><span class="identifier">Args</span> <span class="special">&amp;&amp;</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7248080-bb"><span class="identifier">pop</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7251472-bb"><span class="identifier">update</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">,</span> <span class="identifier">const_reference</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7256448-bb"><span class="identifier">update</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7261232-bb"><span class="identifier">increase</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">,</span> <span class="identifier">const_reference</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7267104-bb"><span class="identifier">increase</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7271888-bb"><span class="identifier">decrease</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">,</span> <span class="identifier">const_reference</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7277760-bb"><span class="identifier">decrease</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7282592-bb"><span class="identifier">merge</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="binomial_heap.html#idp7286256-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="binomial_heap.html#idp7290240-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">ordered_iterator</span> <a class="link" href="binomial_heap.html#idp7294192-bb"><span class="identifier">ordered_begin</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">ordered_iterator</span> <a class="link" href="binomial_heap.html#idp7298224-bb"><span class="identifier">ordered_end</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp7302240-bb"><span class="identifier">erase</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">value_compare</span> <span class="keyword">const</span> <span class="special">&amp;</span> <a class="link" href="binomial_heap.html#idp7306800-bb"><span class="identifier">value_comp</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7309920-bb"><span class="keyword">operator</span><span class="special">&lt;</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7315184-bb"><span class="keyword">operator</span><span class="special">&gt;</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7320448-bb"><span class="keyword">operator</span><span class="special">&gt;=</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7325712-bb"><span class="keyword">operator</span><span class="special">&lt;=</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7330976-bb"><span class="keyword">operator</span><span class="special">==</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7336400-bb"><span class="keyword">operator</span><span class="special">!=</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="binomial_heap.html#idp6914448-bb"><span class="identifier">max_size</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6918336-bb"><span class="identifier">clear</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">allocator_type</span> <a class="link" href="binomial_heap.html#idp6922016-bb"><span class="identifier">get_allocator</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6925936-bb"><span class="identifier">swap</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">const_reference</span> <a class="link" href="binomial_heap.html#idp6929888-bb"><span class="identifier">top</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">handle_type</span> <a class="link" href="binomial_heap.html#idp6933840-bb"><span class="identifier">push</span></a><span class="special">(</span><span class="identifier">value_type</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">class</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">handle_type</span> <a class="link" href="binomial_heap.html#idp6937248-bb"><span class="identifier">emplace</span></a><span class="special">(</span><span class="identifier">Args</span> <span class="special">&amp;&amp;</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6941840-bb"><span class="identifier">pop</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6945232-bb"><span class="identifier">update</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">,</span> <span class="identifier">const_reference</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6950208-bb"><span class="identifier">update</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6954992-bb"><span class="identifier">increase</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">,</span> <span class="identifier">const_reference</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6960864-bb"><span class="identifier">increase</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6965648-bb"><span class="identifier">decrease</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">,</span> <span class="identifier">const_reference</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6971520-bb"><span class="identifier">decrease</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6976352-bb"><span class="identifier">merge</span></a><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="binomial_heap.html#idp6980016-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="binomial_heap.html#idp6984000-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">ordered_iterator</span> <a class="link" href="binomial_heap.html#idp6987952-bb"><span class="identifier">ordered_begin</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">ordered_iterator</span> <a class="link" href="binomial_heap.html#idp6991984-bb"><span class="identifier">ordered_end</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="binomial_heap.html#idp6996000-bb"><span class="identifier">erase</span></a><span class="special">(</span><span class="identifier">handle_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">value_compare</span> <span class="keyword">const</span> <span class="special">&amp;</span> <a class="link" href="binomial_heap.html#idp7000560-bb"><span class="identifier">value_comp</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7003680-bb"><span class="keyword">operator</span><span class="special">&lt;</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7008944-bb"><span class="keyword">operator</span><span class="special">&gt;</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7014208-bb"><span class="keyword">operator</span><span class="special">&gt;=</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7019472-bb"><span class="keyword">operator</span><span class="special">&lt;=</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7024736-bb"><span class="keyword">operator</span><span class="special">==</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="binomial_heap.html#idp7030160-bb"><span class="keyword">operator</span><span class="special">!=</span></a><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="binomial_heap.html#idp7363168-bb">public static functions</a></span>
-  <span class="keyword">static</span> <span class="identifier">handle_type</span> <a class="link" href="binomial_heap.html#idp7363728-bb"><span class="identifier">s_handle_from_iterator</span></a><span class="special">(</span><span class="identifier">iterator</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="binomial_heap.html#idp7056928-bb">public static functions</a></span>
+  <span class="keyword">static</span> <span class="identifier">handle_type</span> <a class="link" href="binomial_heap.html#idp7057488-bb"><span class="identifier">s_handle_from_iterator</span></a><span class="special">(</span><span class="identifier">iterator</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 
   <span class="comment">// public data members</span>
   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">bool</span> <span class="identifier">constant_time_size</span><span class="special">;</span>
@@ -99,7 +99,7 @@
   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">bool</span> <span class="identifier">has_reserve</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp5878112"></a><h2>Description</h2>
+<a name="idp5928112"></a><h2>Description</h2>
 <p>The template parameter T is the type to be managed by the container. The user can specify additional options and if no options are provided default options are used.</p>
 <p>The container supports the following options:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
@@ -112,7 +112,7 @@
 <p>
 </p>
 <div class="refsect2">
-<a name="idp5888368"></a><h3>
+<a name="idp5938368"></a><h3>
 <a name="boost.heap.binomial_heaptypes"></a><code class="computeroutput">binomial_heap</code> 
         public
        types</h3>
@@ -125,27 +125,27 @@
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp5896304"></a><h3>
+<a name="idp5946240"></a><h3>
 <a name="boost.heap.binomial_heapconstruct-copy-destruct"></a><code class="computeroutput">binomial_heap</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp7342000-bb"></a><span class="identifier">binomial_heap</span><span class="special">(</span><span class="identifier">value_compare</span> <span class="keyword">const</span> <span class="special">&amp;</span> cmp <span class="special">=</span> <span class="identifier">value_compare</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp7035760-bb"></a><span class="identifier">binomial_heap</span><span class="special">(</span><span class="identifier">value_compare</span> <span class="keyword">const</span> <span class="special">&amp;</span> cmp <span class="special">=</span> <span class="identifier">value_compare</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> constructs an empty priority queue.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp7345664-bb"></a><span class="identifier">binomial_heap</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp7039424-bb"></a><span class="identifier">binomial_heap</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> copy-constructs priority queue from rhs.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Linear. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp7353040-bb"></a><span class="identifier">binomial_heap</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp7046800-bb"></a><span class="identifier">binomial_heap</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> C++11-style move constructor.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant.</p>
 <p><span class="bold"><strong>Note:</strong></span> Only available, if BOOST_NO_CXX11_RVALUE_REFERENCES is not defined </p>
@@ -153,25 +153,25 @@
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> <a name="idp7349072-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> <a name="idp7042832-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Assigns priority queue from rhs.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Linear. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> <a name="idp7357328-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> <a name="idp7051088-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> C++11-style move assignment.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant.</p>
 <p><span class="bold"><strong>Note:</strong></span> Only available, if BOOST_NO_CXX11_RVALUE_REFERENCES is not defined </p>
 <p>
  </p>
 </li>
-<li class="listitem"><pre class="literallayout"><a name="idp7362192-bb"></a><span class="special">~</span><span class="identifier">binomial_heap</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a name="idp7055952-bb"></a><span class="special">~</span><span class="identifier">binomial_heap</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp5949584"></a><h3>
+<a name="idp5999376"></a><h3>
 <a name="idm7232-bb"></a><code class="computeroutput">binomial_heap</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
@@ -187,171 +187,171 @@
 <p><span class="bold"><strong>Complexity:</strong></span> Constant, if configured with constant_time_size&lt;true&gt;, otherwise linear. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp7220688-bb"></a><span class="identifier">max_size</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6914448-bb"></a><span class="identifier">max_size</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Returns the maximum number of elements the priority queue can contain.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7224576-bb"></a><span class="identifier">clear</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6918336-bb"></a><span class="identifier">clear</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Removes all elements from the priority queue.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Linear. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">allocator_type</span> <a name="idp7228256-bb"></a><span class="identifier">get_allocator</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">allocator_type</span> <a name="idp6922016-bb"></a><span class="identifier">get_allocator</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Returns allocator.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7232176-bb"></a><span class="identifier">swap</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6925936-bb"></a><span class="identifier">swap</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Swaps two priority queues.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">const_reference</span> <a name="idp7236128-bb"></a><span class="identifier">top</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">const_reference</span> <a name="idp6929888-bb"></a><span class="identifier">top</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Returns a const_reference to the maximum element.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">handle_type</span> <a name="idp7240080-bb"></a><span class="identifier">push</span><span class="special">(</span><span class="identifier">value_type</span> <span class="keyword">const</span> <span class="special">&amp;</span> v<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">handle_type</span> <a name="idp6933840-bb"></a><span class="identifier">push</span><span class="special">(</span><span class="identifier">value_type</span> <span class="keyword">const</span> <span class="special">&amp;</span> v<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Adds a new element to the priority queue. Returns handle to element</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">class</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">handle_type</span> <a name="idp7243488-bb"></a><span class="identifier">emplace</span><span class="special">(</span><span class="identifier">Args</span> <span class="special">&amp;&amp;</span><span class="special">...</span> args<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">class</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">handle_type</span> <a name="idp6937248-bb"></a><span class="identifier">emplace</span><span class="special">(</span><span class="identifier">Args</span> <span class="special">&amp;&amp;</span><span class="special">...</span> args<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Adds a new element to the priority queue. The element is directly constructed in-place. Returns handle to element.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7248080-bb"></a><span class="identifier">pop</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6941840-bb"></a><span class="identifier">pop</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Removes the top element from the priority queue.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7251472-bb"></a><span class="identifier">update</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">,</span> <span class="identifier">const_reference</span> v<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6945232-bb"></a><span class="identifier">update</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">,</span> <span class="identifier">const_reference</span> v<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Assigns <code class="computeroutput">v</code> to the element handled by <code class="computeroutput">handle</code> &amp; updates the priority queue.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7256448-bb"></a><span class="identifier">update</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6950208-bb"></a><span class="identifier">update</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Updates the heap after the element handled by <code class="computeroutput">handle</code> has been changed.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic.</p>
 <p><span class="bold"><strong>Note:</strong></span> If this is not called, after a handle has been updated, the behavior of the data structure is undefined! </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7261232-bb"></a><span class="identifier">increase</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">,</span> <span class="identifier">const_reference</span> v<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6954992-bb"></a><span class="identifier">increase</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">,</span> <span class="identifier">const_reference</span> v<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Assigns <code class="computeroutput">v</code> to the element handled by <code class="computeroutput">handle</code> &amp; updates the priority queue.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic.</p>
 <p><span class="bold"><strong>Note:</strong></span> The new value is expected to be greater than the current one </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7267104-bb"></a><span class="identifier">increase</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6960864-bb"></a><span class="identifier">increase</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Updates the heap after the element handled by <code class="computeroutput">handle</code> has been changed.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic.</p>
 <p><span class="bold"><strong>Note:</strong></span> If this is not called, after a handle has been updated, the behavior of the data structure is undefined! </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7271888-bb"></a><span class="identifier">decrease</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">,</span> <span class="identifier">const_reference</span> v<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6965648-bb"></a><span class="identifier">decrease</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">,</span> <span class="identifier">const_reference</span> v<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Assigns <code class="computeroutput">v</code> to the element handled by <code class="computeroutput">handle</code> &amp; updates the priority queue.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic.</p>
 <p><span class="bold"><strong>Note:</strong></span> The new value is expected to be less than the current one </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7277760-bb"></a><span class="identifier">decrease</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6971520-bb"></a><span class="identifier">decrease</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Updates the heap after the element handled by <code class="computeroutput">handle</code> has been changed.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic.</p>
 <p><span class="bold"><strong>Note:</strong></span> The new value is expected to be less than the current one. If this is not called, after a handle has been updated, the behavior of the data structure is undefined! </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7282592-bb"></a><span class="identifier">merge</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6976352-bb"></a><span class="identifier">merge</span><span class="special">(</span><a class="link" href="binomial_heap.html" title="Class template binomial_heap">binomial_heap</a> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Merge with priority queue rhs.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp7286256-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp6980016-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Returns an iterator to the first element contained in the priority queue.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp7290240-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp6984000-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Returns an iterator to the end of the priority queue.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Constant. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">ordered_iterator</span> <a name="idp7294192-bb"></a><span class="identifier">ordered_begin</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">ordered_iterator</span> <a name="idp6987952-bb"></a><span class="identifier">ordered_begin</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Returns an ordered iterator to the first element contained in the priority queue.</p>
 <p><span class="bold"><strong>Note:</strong></span> Ordered iterators traverse the priority queue in heap order. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">ordered_iterator</span> <a name="idp7298224-bb"></a><span class="identifier">ordered_end</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">ordered_iterator</span> <a name="idp6991984-bb"></a><span class="identifier">ordered_end</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Returns an ordered iterator to the end of the priority queue.</p>
 <p><span class="bold"><strong>Note:</strong></span> Ordered iterators traverse the priority queue in heap order. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp7302240-bb"></a><span class="identifier">erase</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6996000-bb"></a><span class="identifier">erase</span><span class="special">(</span><span class="identifier">handle_type</span> handle<span class="special">)</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effects:</strong></span> Removes the element handled by <code class="computeroutput">handle</code> from the <code class="computeroutput"><a class="link" href="priority_queue.html" title="Class template priority_queue">priority_queue</a></code>.</p>
 <p><span class="bold"><strong>Complexity:</strong></span> Logarithmic. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">value_compare</span> <span class="keyword">const</span> <span class="special">&amp;</span> <a name="idp7306800-bb"></a><span class="identifier">value_comp</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">value_compare</span> <span class="keyword">const</span> <span class="special">&amp;</span> <a name="idp7000560-bb"></a><span class="identifier">value_comp</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Effect:</strong></span> Returns the value_compare object used by the priority queue </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7309920-bb"></a><span class="keyword">operator</span><span class="special">&lt;</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7003680-bb"></a><span class="keyword">operator</span><span class="special">&lt;</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Returns:</strong></span> Element-wise comparison of heap data structures</p>
 <p><span class="bold"><strong>Requirement:</strong></span> the <code class="computeroutput">value_compare</code> object of both heaps must match. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7315184-bb"></a><span class="keyword">operator</span><span class="special">&gt;</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7008944-bb"></a><span class="keyword">operator</span><span class="special">&gt;</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Returns:</strong></span> Element-wise comparison of heap data structures</p>
 <p><span class="bold"><strong>Requirement:</strong></span> the <code class="computeroutput">value_compare</code> object of both heaps must match. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7320448-bb"></a><span class="keyword">operator</span><span class="special">&gt;=</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7014208-bb"></a><span class="keyword">operator</span><span class="special">&gt;=</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Returns:</strong></span> Element-wise comparison of heap data structures</p>
 <p><span class="bold"><strong>Requirement:</strong></span> the <code class="computeroutput">value_compare</code> object of both heaps must match. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7325712-bb"></a><span class="keyword">operator</span><span class="special">&lt;=</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7019472-bb"></a><span class="keyword">operator</span><span class="special">&lt;=</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p><span class="bold"><strong>Returns:</strong></span> Element-wise comparison of heap data structures</p>
 <p><span class="bold"><strong>Requirement:</strong></span> the <code class="computeroutput">value_compare</code> object of both heaps must match. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7330976-bb"></a><span class="keyword">operator</span><span class="special">==</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7024736-bb"></a><span class="keyword">operator</span><span class="special">==</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Equivalent comparison <span class="bold"><strong>Returns:</strong></span> True, if both heap data structures are equivalent. </p>
 <p><span class="bold"><strong>Requirement:</strong></span> the <code class="computeroutput">value_compare</code> object of both heaps must match. </p>
 <p>
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7336400-bb"></a><span class="keyword">operator</span><span class="special">!=</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> HeapType<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp7030160-bb"></a><span class="keyword">operator</span><span class="special">!=</span><span class="special">(</span><span class="identifier">HeapType</span> <span class="keyword">const</span> <span class="special">&amp;</span> rhs<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Equivalent comparison <span class="bold"><strong>Returns:</strong></span> True, if both heap data structures are not equivalent. </p>
 <p><span class="bold"><strong>Requirement:</strong></span> the <code class="computeroutput">value_compare</code> object of both heaps must match. </p>
 <p>
@@ -360,10 +360,10 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp6216624"></a><h3>
-<a name="idp7363168-bb"></a><code class="computeroutput">binomial_heap</code> public static functions</h3>
+<a name="idp6266528"></a><h3>
+<a name="idp7056928-bb"></a><code class="computeroutput">binomial_heap</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">handle_type</span> <a name="idp7363728-bb"></a><span class="identifier">s_handle_from_iterator</span><span class="special">(</span><span class="identifier">iterator</span> <span class="keyword">const</span> <span class="special">&amp;</span> it<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">handle_type</span> <a name="idp7057488-bb"></a><span class="identifier">s_handle_from_iterator</span><span class="special">(</span><span class="identifier">iterator</span> <span class="keyword">const</span> <span class="special">&amp;</span> it<span class="special">)</span><span class="special">;</span></pre>
 <p>
  </p>
 </li></ol></div>

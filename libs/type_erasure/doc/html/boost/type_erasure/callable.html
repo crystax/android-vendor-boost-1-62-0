@@ -34,18 +34,18 @@
 </span><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Sig<span class="special">,</span> <span class="keyword">typename</span> F <span class="special">=</span> <a class="link" href="_self.html" title="Struct _self">_self</a><span class="special">&gt;</span> 
 <span class="keyword">struct</span> <a class="link" href="callable.html" title="Struct template callable">callable</a> <span class="special">{</span>
 
-  <span class="comment">// <a class="link" href="callable.html#idp10284832-bb">public static functions</a></span>
-  <span class="keyword">static</span> <span class="identifier">R</span> <a class="link" href="callable.html#idp10285392-bb"><span class="identifier">apply</span></a><span class="special">(</span><span class="identifier">F</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">T</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="callable.html#idp10035584-bb">public static functions</a></span>
+  <span class="keyword">static</span> <span class="identifier">R</span> <a class="link" href="callable.html#idp10036144-bb"><span class="identifier">apply</span></a><span class="special">(</span><span class="identifier">F</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">T</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp10734160"></a><h2>Description</h2>
+<a name="idp68618544"></a><h2>Description</h2>
 <p>The <a class="link" href="callable.html" title="Struct template callable">callable</a> concept allows an <a class="link" href="any.html" title="Class template any">any</a> to hold function objects. <code class="computeroutput">Sig</code> is interpreted in the same way as for Boost.Function, except that the arguments and return type are allowed to be placeholders. <code class="computeroutput">F</code> must be a <a class="link" href="placeholder.html" title="Struct placeholder">placeholder</a>.</p>
 <p>Multiple instances of <a class="link" href="callable.html" title="Struct template callable">callable</a> can be used simultaneously. Overload resolution works normally. Note that unlike Boost.Function, <a class="link" href="callable.html" title="Struct template callable">callable</a> does not provide result_type. It does, however, support <code class="computeroutput">boost::result_of</code>. </p>
 <div class="refsect2">
-<a name="idp10741744"></a><h3>
-<a name="idp10284832-bb"></a><code class="computeroutput">callable</code> public static functions</h3>
+<a name="idp68626128"></a><h3>
+<a name="idp10035584-bb"></a><code class="computeroutput">callable</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">R</span> <a name="idp10285392-bb"></a><span class="identifier">apply</span><span class="special">(</span><span class="identifier">F</span> <span class="special">&amp;</span> f<span class="special">,</span> <span class="identifier">T</span><span class="special">...</span> arg<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">static</span> <span class="identifier">R</span> <a name="idp10036144-bb"></a><span class="identifier">apply</span><span class="special">(</span><span class="identifier">F</span> <span class="special">&amp;</span> f<span class="special">,</span> <span class="identifier">T</span><span class="special">...</span> arg<span class="special">)</span><span class="special">;</span></pre>
 <p><code class="computeroutput">R</code> is the result type of <code class="computeroutput">Sig</code> and <code class="computeroutput">T</code> is the argument types of <code class="computeroutput">Sig</code>. </p>
 </li></ol></div>
 </div>

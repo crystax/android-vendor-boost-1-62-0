@@ -42,42 +42,42 @@
   <span class="keyword">typedef</span> <span class="identifier">UserAllocator</span><span class="special">::</span><span class="identifier">difference_type</span> <a name="boost.pool.difference_type"></a><span class="identifier">difference_type</span><span class="special">;</span>  <span class="comment">// A signed integral type that can represent the difference of any two pointers. </span>
 
   <span class="comment">// <a class="link" href="pool.html#boost.poolconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <span class="keyword">explicit</span> <a class="link" href="pool.html#idp6699664-bb"><span class="identifier">pool</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> <span class="special">=</span> <span class="number">32</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> <span class="special">=</span> <span class="number">0</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="pool.html#idp6704480-bb"><span class="special">~</span><span class="identifier">pool</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">explicit</span> <a class="link" href="pool.html#idp6942768-bb"><span class="identifier">pool</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> <span class="special">=</span> <span class="number">32</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> <span class="special">=</span> <span class="number">0</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="pool.html#idp6947584-bb"><span class="special">~</span><span class="identifier">pool</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="pool.html#idp6642624-bb">private member functions</a></span>
-  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6643120-bb"><span class="identifier">malloc_need_resize</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6645616-bb"><span class="identifier">ordered_malloc_need_resize</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="pool.html#idp6885728-bb">private member functions</a></span>
+  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6886224-bb"><span class="identifier">malloc_need_resize</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6888720-bb"><span class="identifier">ordered_malloc_need_resize</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="pool.html#idp6647520-bb">protected member functions</a></span>
-  <a class="link" href="simple_segregated_storage.html" title="Class template simple_segregated_storage">simple_segregated_storage</a><span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <a class="link" href="pool.html#idp6648016-bb"><span class="identifier">store</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">const</span> <a class="link" href="simple_segregated_storage.html" title="Class template simple_segregated_storage">simple_segregated_storage</a><span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <a class="link" href="pool.html#idp6649792-bb"><span class="identifier">store</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  details::PODptr<span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <a class="link" href="pool.html#idp6651936-bb"><span class="identifier">find_POD</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="pool.html#idp6654992-bb"><span class="identifier">alloc_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="pool.html#idp6890624-bb">protected member functions</a></span>
+  <a class="link" href="simple_segregated_storage.html" title="Class template simple_segregated_storage">simple_segregated_storage</a><span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <a class="link" href="pool.html#idp6891120-bb"><span class="identifier">store</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">const</span> <a class="link" href="simple_segregated_storage.html" title="Class template simple_segregated_storage">simple_segregated_storage</a><span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <a class="link" href="pool.html#idp6892896-bb"><span class="identifier">store</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  details::PODptr<span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <a class="link" href="pool.html#idp6895040-bb"><span class="identifier">find_POD</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="pool.html#idp6898096-bb"><span class="identifier">alloc_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="pool.html#idp6656976-bb">protected static functions</a></span>
-  <span class="keyword">static</span> <span class="keyword">bool</span> <a class="link" href="pool.html#idp6657472-bb"><span class="identifier">is_from</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">,</span> <span class="keyword">char</span> <span class="special">*</span><span class="keyword">const</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">static</span> <span class="keyword">void</span> <span class="special">*</span><span class="special">&amp;</span> <a class="link" href="pool.html#idp6662992-bb"><span class="identifier">nextof</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="pool.html#idp6900080-bb">protected static functions</a></span>
+  <span class="keyword">static</span> <span class="keyword">bool</span> <a class="link" href="pool.html#idp6900576-bb"><span class="identifier">is_from</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">,</span> <span class="keyword">char</span> <span class="special">*</span><span class="keyword">const</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">static</span> <span class="keyword">void</span> <span class="special">*</span><span class="special">&amp;</span> <a class="link" href="pool.html#idp6906096-bb"><span class="identifier">nextof</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="pool.html#idp6665600-bb">public member functions</a></span>
-  <span class="keyword">bool</span> <a class="link" href="pool.html#idp6666096-bb"><span class="identifier">release_memory</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="pool.html#idp6667728-bb"><span class="identifier">purge_memory</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="pool.html#idp6669616-bb"><span class="identifier">get_next_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="pool.html#idp6671520-bb"><span class="identifier">set_next_size</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="pool.html#idp6673824-bb"><span class="identifier">get_max_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="pool.html#idp6675584-bb"><span class="identifier">set_max_size</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="pool.html#idp6677344-bb"><span class="identifier">get_requested_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6679232-bb"><span class="identifier">malloc</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6681104-bb"><span class="identifier">ordered_malloc</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6682832-bb"><span class="identifier">ordered_malloc</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="pool.html#idp6685328-bb"><span class="identifier">free</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="pool.html#idp6688688-bb"><span class="identifier">ordered_free</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="pool.html#idp6690880-bb"><span class="identifier">free</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="pool.html#idp6693792-bb"><span class="identifier">ordered_free</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="pool.html#idp6696768-bb"><span class="identifier">is_from</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="pool.html#idp6908704-bb">public member functions</a></span>
+  <span class="keyword">bool</span> <a class="link" href="pool.html#idp6909200-bb"><span class="identifier">release_memory</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="pool.html#idp6910832-bb"><span class="identifier">purge_memory</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="pool.html#idp6912720-bb"><span class="identifier">get_next_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="pool.html#idp6914624-bb"><span class="identifier">set_next_size</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="pool.html#idp6916928-bb"><span class="identifier">get_max_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="pool.html#idp6918688-bb"><span class="identifier">set_max_size</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="pool.html#idp6920448-bb"><span class="identifier">get_requested_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6922336-bb"><span class="identifier">malloc</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6924208-bb"><span class="identifier">ordered_malloc</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <span class="special">*</span> <a class="link" href="pool.html#idp6925936-bb"><span class="identifier">ordered_malloc</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="pool.html#idp6928432-bb"><span class="identifier">free</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="pool.html#idp6931792-bb"><span class="identifier">ordered_free</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="pool.html#idp6933984-bb"><span class="identifier">free</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="pool.html#idp6936896-bb"><span class="identifier">ordered_free</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="pool.html#idp6939872-bb"><span class="identifier">is_from</span></a><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp6412832"></a><h2>Description</h2>
+<a name="idp64262752"></a><h2>Description</h2>
 <p>Whenever an object of type pool needs memory from the system, it will request it from its UserAllocator template parameter. The amount requested is determined using a doubling algorithm; that is, each time more system memory is allocated, the amount of system memory requested is doubled.</p>
 <p>Users may control the doubling algorithm by using the following extensions:</p>
 <p>Users may pass an additional constructor parameter to pool. This parameter is of type size_type, and is the number of chunks to request from the system the first time that object needs to allocate system memory. The default is 32. This parameter may not be 0.</p>
@@ -86,13 +86,13 @@
 <p><span class="bold"><strong>UserAllocator type</strong></span> - the method that the Pool will use to allocate memory from the system.</p>
 <p>There are essentially two ways to use class pool: the client can call malloc() and free() to allocate and free single chunks of memory, this is the most efficient way to use a pool, but does not allow for the efficient allocation of arrays of chunks. Alternatively, the client may call ordered_malloc() and ordered_free(), in which case the free list is maintained in an ordered state, and efficient allocation of arrays of chunks are possible. However, this latter option can suffer from poor performance when large numbers of allocations are performed. </p>
 <div class="refsect2">
-<a name="idp6417360"></a><h3>
+<a name="idp64267280"></a><h3>
 <a name="boost.poolconstruct-copy-destruct"></a><code class="computeroutput">pool</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp6699664-bb"></a><span class="identifier">pool</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span> nrequested_size<span class="special">,</span> 
+<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp6942768-bb"></a><span class="identifier">pool</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span> nrequested_size<span class="special">,</span> 
               <span class="keyword">const</span> <span class="identifier">size_type</span> nnext_size <span class="special">=</span> <span class="number">32</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> nmax_size <span class="special">=</span> <span class="number">0</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Constructs a new empty Pool that can be used to allocate chunks of size RequestedSize. 
 </p>
@@ -121,17 +121,17 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp6704480-bb"></a><span class="special">~</span><span class="identifier">pool</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp6947584-bb"></a><span class="special">~</span><span class="identifier">pool</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Destructs the Pool, freeing its list of memory blocks. </p>
 </li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp6442272"></a><h3>
-<a name="idp6642624-bb"></a><code class="computeroutput">pool</code> private member functions</h3>
+<a name="idp64292176"></a><h3>
+<a name="idp6885728-bb"></a><code class="computeroutput">pool</code> private member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6643120-bb"></a><span class="identifier">malloc_need_resize</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6886224-bb"></a><span class="identifier">malloc_need_resize</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>
 </p>
 <p>No memory in any of our storages; make a new storage, Allocates chunk in newly malloc aftert resize. 
@@ -151,7 +151,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6645616-bb"></a><span class="identifier">ordered_malloc_need_resize</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>Called if malloc needs to resize the free list. <p>No memory in any of our storages; make a new storage, 
+<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6888720-bb"></a><span class="identifier">ordered_malloc_need_resize</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>Called if malloc needs to resize the free list. <p>No memory in any of our storages; make a new storage, 
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -164,11 +164,11 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp6459296"></a><h3>
-<a name="idp6647520-bb"></a><code class="computeroutput">pool</code> protected member functions</h3>
+<a name="idp64309264"></a><h3>
+<a name="idp6890624-bb"></a><code class="computeroutput">pool</code> protected member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a class="link" href="simple_segregated_storage.html" title="Class template simple_segregated_storage">simple_segregated_storage</a><span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <a name="idp6648016-bb"></a><span class="identifier">store</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a class="link" href="simple_segregated_storage.html" title="Class template simple_segregated_storage">simple_segregated_storage</a><span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <a name="idp6891120-bb"></a><span class="identifier">store</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -180,7 +180,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">const</span> <a class="link" href="simple_segregated_storage.html" title="Class template simple_segregated_storage">simple_segregated_storage</a><span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <a name="idp6649792-bb"></a><span class="identifier">store</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">const</span> <a class="link" href="simple_segregated_storage.html" title="Class template simple_segregated_storage">simple_segregated_storage</a><span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <a name="idp6892896-bb"></a><span class="identifier">store</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -192,7 +192,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout">details::PODptr<span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <a name="idp6651936-bb"></a><span class="identifier">find_POD</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>finds which POD in the list 'chunk' was allocated from. <p>find which PODptr storage memory that this chunk is from. 
+<pre class="literallayout">details::PODptr<span class="special">&lt;</span> <span class="identifier">size_type</span> <span class="special">&gt;</span> <a name="idp6895040-bb"></a><span class="identifier">find_POD</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>finds which POD in the list 'chunk' was allocated from. <p>find which PODptr storage memory that this chunk is from. 
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -203,7 +203,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6654992-bb"></a><span class="identifier">alloc_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6898096-bb"></a><span class="identifier">alloc_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Calculated size of the memory chunks that will be allocated by this Pool. 
 </p>
 <div class="variablelist"><table border="0">
@@ -217,11 +217,11 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp6497392"></a><h3>
-<a name="idp6656976-bb"></a><code class="computeroutput">pool</code> protected static functions</h3>
+<a name="idp64347488"></a><h3>
+<a name="idp6900080-bb"></a><code class="computeroutput">pool</code> protected static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">bool</span> <a name="idp6657472-bb"></a><span class="identifier">is_from</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">,</span> <span class="keyword">char</span> <span class="special">*</span><span class="keyword">const</span> i<span class="special">,</span> 
+<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">bool</span> <a name="idp6900576-bb"></a><span class="identifier">is_from</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">,</span> <span class="keyword">char</span> <span class="special">*</span><span class="keyword">const</span> i<span class="special">,</span> 
                     <span class="keyword">const</span> <span class="identifier">size_type</span> sizeof_i<span class="special">)</span><span class="special">;</span></pre>
 <p>
 
@@ -258,7 +258,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">void</span> <span class="special">*</span><span class="special">&amp;</span> <a name="idp6662992-bb"></a><span class="identifier">nextof</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> ptr<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">void</span> <span class="special">*</span><span class="special">&amp;</span> <a name="idp6906096-bb"></a><span class="identifier">nextof</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> ptr<span class="special">)</span><span class="special">;</span></pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -272,11 +272,11 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp6528224"></a><h3>
-<a name="idp6665600-bb"></a><code class="computeroutput">pool</code> public member functions</h3>
+<a name="idp64378256"></a><h3>
+<a name="idp6908704-bb"></a><code class="computeroutput">pool</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp6666096-bb"></a><span class="identifier">release_memory</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp6909200-bb"></a><span class="identifier">release_memory</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>pool must be ordered. Frees every memory block that doesn't have any allocated chunks. 
 </p>
 <div class="variablelist"><table border="0">
@@ -288,7 +288,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp6667728-bb"></a><span class="identifier">purge_memory</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp6910832-bb"></a><span class="identifier">purge_memory</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>pool must be ordered. Frees every memory block.</p>
 <p>This function invalidates any pointers previously returned by allocation functions of t. 
 </p>
@@ -301,7 +301,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6669616-bb"></a><span class="identifier">get_next_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6912720-bb"></a><span class="identifier">get_next_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Number of chunks to request from the system the next time that object needs to allocate system memory. This value should never be 0. 
 </p>
 <div class="variablelist"><table border="0">
@@ -313,7 +313,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp6671520-bb"></a><span class="identifier">set_next_size</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span> nnext_size<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6914624-bb"></a><span class="identifier">set_next_size</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span> nnext_size<span class="special">)</span><span class="special">;</span></pre>
 <p>Set number of chunks to request from the system the next time that object needs to allocate system memory. This value should never be set to 0. 
 </p>
 <div class="variablelist"><table border="0">
@@ -325,7 +325,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6673824-bb"></a><span class="identifier">get_max_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6916928-bb"></a><span class="identifier">get_max_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -337,11 +337,11 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp6675584-bb"></a><span class="identifier">set_max_size</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span> nmax_size<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6918688-bb"></a><span class="identifier">set_max_size</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">size_type</span> nmax_size<span class="special">)</span><span class="special">;</span></pre>
 <p>Set max_size. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6677344-bb"></a><span class="identifier">get_requested_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp6920448-bb"></a><span class="identifier">get_requested_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -353,7 +353,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6679232-bb"></a><span class="identifier">malloc</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6922336-bb"></a><span class="identifier">malloc</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Allocates a chunk of memory. Searches in the list of memory blocks for a block that has a free chunk, and returns that free chunk if found. Otherwise, creates a new memory block, adds its free list to pool's free list, 
 </p>
 <div class="variablelist"><table border="0">
@@ -365,7 +365,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6681104-bb"></a><span class="identifier">ordered_malloc</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6924208-bb"></a><span class="identifier">ordered_malloc</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Same as malloc, only merges the free lists, to preserve order. Amortized O(1). 
 </p>
 <div class="variablelist"><table border="0">
@@ -377,7 +377,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6682832-bb"></a><span class="identifier">ordered_malloc</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <span class="special">*</span> <a name="idp6925936-bb"></a><span class="identifier">ordered_malloc</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
 <p>Gets address of a chunk n, allocating new memory if not already available. 
 </p>
 <div class="variablelist"><table border="0">
@@ -392,7 +392,7 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp6685328-bb"></a><span class="identifier">free</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6928432-bb"></a><span class="identifier">free</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">)</span><span class="special">;</span></pre>
 <p>Same as malloc, only allocates enough contiguous chunks to cover n * requested_size bytes. Amortized O(n). 
 </p>
 <p>Deallocates a chunk of memory. Note that chunk may not be 0. O(1).</p>
@@ -406,22 +406,22 @@ Returns false if chunk was allocated from some other pool, or may be returned as
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp6688688-bb"></a><span class="identifier">ordered_free</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6931792-bb"></a><span class="identifier">ordered_free</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">)</span><span class="special">;</span></pre>
 <p>Same as above, but is order-preserving.</p>
 <p>Note that chunk may not be 0. O(N) with respect to the size of the free list. chunk must have been previously returned by t.malloc() or t.ordered_malloc(). </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp6690880-bb"></a><span class="identifier">free</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunks<span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6933984-bb"></a><span class="identifier">free</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunks<span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
 <p>Assumes that chunk actually refers to a block of chunks.</p>
 <p>chunk must have been previously returned by t.ordered_malloc(n) spanning n * partition_sz bytes. Deallocates each chunk in that block. Note that chunk may not be 0. O(n). </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp6693792-bb"></a><span class="identifier">ordered_free</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunks<span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp6936896-bb"></a><span class="identifier">ordered_free</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunks<span class="special">,</span> <span class="keyword">const</span> <span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
 <p>Assumes that chunk actually refers to a block of chunks spanning n * partition_sz bytes; deallocates each chunk in that block.</p>
 <p>Note that chunk may not be 0. Order-preserving. O(N + n) where N is the size of the free list. chunk must have been previously returned by t.malloc() or t.ordered_malloc(). </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp6696768-bb"></a><span class="identifier">is_from</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp6939872-bb"></a><span class="identifier">is_from</span><span class="special">(</span><span class="keyword">void</span> <span class="special">*</span><span class="keyword">const</span> chunk<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">

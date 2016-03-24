@@ -41,44 +41,44 @@
   <span class="keyword">typedef</span> <span class="identifier">array_type</span><span class="special">::</span><span class="identifier">const_iterator</span> <a name="boost.compute.extents.const_iterator"></a><span class="identifier">const_iterator</span><span class="special">;</span>
 
   <span class="comment">// <a class="link" href="extents.html#boost.compute.extentsconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="extents.html#idp13175904-bb"><span class="identifier">extents</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">explicit</span> <a class="link" href="extents.html#idp13177680-bb"><span class="identifier">extents</span></a><span class="special">(</span><span class="identifier">size_t</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="extents.html#idp13180848-bb"><span class="identifier">extents</span></a><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">initializer_list</span><span class="special">&lt;</span> <span class="identifier">size_t</span> <span class="special">&gt;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="extents.html#idp13433840-bb"><span class="identifier">extents</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">explicit</span> <a class="link" href="extents.html#idp13435616-bb"><span class="identifier">extents</span></a><span class="special">(</span><span class="identifier">size_t</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="extents.html#idp13438784-bb"><span class="identifier">extents</span></a><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">initializer_list</span><span class="special">&lt;</span> <span class="identifier">size_t</span> <span class="special">&gt;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="extents.html#idp13149744-bb">public member functions</a></span>
-  <span class="identifier">size_type</span> <a class="link" href="extents.html#idp13150304-bb"><span class="identifier">size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="extents.html#idp13151760-bb"><span class="identifier">linear</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_t</span> <span class="special">*</span> <a class="link" href="extents.html#idp13153392-bb"><span class="identifier">data</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="identifier">size_t</span> <span class="special">*</span> <a class="link" href="extents.html#idp13155488-bb"><span class="identifier">data</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="extents.html#idp13157152-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="extents.html#idp13158000-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="extents.html#idp13159120-bb"><span class="identifier">cbegin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="extents.html#idp13160240-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="extents.html#idp13161088-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="extents.html#idp13162208-bb"><span class="identifier">cend</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_t</span> <span class="special">&amp;</span> <a class="link" href="extents.html#idp13163328-bb"><span class="keyword">operator</span><span class="special">[</span><span class="special">]</span></a><span class="special">(</span><span class="identifier">size_t</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="identifier">size_t</span> <span class="special">&amp;</span> <a class="link" href="extents.html#idp13165616-bb"><span class="keyword">operator</span><span class="special">[</span><span class="special">]</span></a><span class="special">(</span><span class="identifier">size_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="extents.html#idp13167968-bb"><span class="keyword">operator</span><span class="special">==</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="extents.html" title="Class template extents">extents</a> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="extents.html#idp13171856-bb"><span class="keyword">operator</span><span class="special">!=</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="extents.html" title="Class template extents">extents</a> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="extents.html#idp13407680-bb">public member functions</a></span>
+  <span class="identifier">size_type</span> <a class="link" href="extents.html#idp13408240-bb"><span class="identifier">size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="extents.html#idp13409696-bb"><span class="identifier">linear</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_t</span> <span class="special">*</span> <a class="link" href="extents.html#idp13411328-bb"><span class="identifier">data</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="identifier">size_t</span> <span class="special">*</span> <a class="link" href="extents.html#idp13413424-bb"><span class="identifier">data</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="extents.html#idp13415088-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="extents.html#idp13415936-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="extents.html#idp13417056-bb"><span class="identifier">cbegin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="extents.html#idp13418176-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="extents.html#idp13419024-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="extents.html#idp13420144-bb"><span class="identifier">cend</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_t</span> <span class="special">&amp;</span> <a class="link" href="extents.html#idp13421264-bb"><span class="keyword">operator</span><span class="special">[</span><span class="special">]</span></a><span class="special">(</span><span class="identifier">size_t</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="identifier">size_t</span> <span class="special">&amp;</span> <a class="link" href="extents.html#idp13423552-bb"><span class="keyword">operator</span><span class="special">[</span><span class="special">]</span></a><span class="special">(</span><span class="identifier">size_t</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="extents.html#idp13425904-bb"><span class="keyword">operator</span><span class="special">==</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="extents.html" title="Class template extents">extents</a> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="extents.html#idp13429792-bb"><span class="keyword">operator</span><span class="special">!=</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="extents.html" title="Class template extents">extents</a> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
   <span class="comment">// public data members</span>
   <span class="keyword">static</span> <span class="keyword">const</span> <span class="identifier">size_type</span> <span class="identifier">static_size</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp83320320"></a><h2>Description</h2>
+<a name="idp55272672"></a><h2>Description</h2>
 <p>The extents class contains an array of n-dimensional extents.</p>
 <p><span class="bold"><strong>See Also:</strong></span></p>
 <p>dim() </p>
 <p>
 </p>
 <div class="refsect2">
-<a name="idp83322176"></a><h3>
+<a name="idp55274656"></a><h3>
 <a name="boost.compute.extentsconstruct-copy-destruct"></a><code class="computeroutput">extents</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a name="idp13175904-bb"></a><span class="identifier">extents</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp13433840-bb"></a><span class="identifier">extents</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Creates an extents object with each component set to zero.</p>
 <p>For example: </p>
 <pre class="programlisting"> <span class="identifier">extents</span><span class="special">&lt;</span><span class="number">3</span><span class="special">&gt;</span> <span class="identifier">exts</span><span class="special">(</span><span class="special">)</span><span class="special">;</span> <span class="comment">// (0, 0, 0)</span>
@@ -86,7 +86,7 @@
 <p> </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp13177680-bb"></a><span class="identifier">extents</span><span class="special">(</span><span class="identifier">size_t</span> value<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp13435616-bb"></a><span class="identifier">extents</span><span class="special">(</span><span class="identifier">size_t</span> value<span class="special">)</span><span class="special">;</span></pre>
 <p>Creates an extents object with each component set to <code class="computeroutput">value</code>.</p>
 <p>For example: </p>
 <pre class="programlisting"> <span class="identifier">extents</span><span class="special">&lt;</span><span class="number">3</span><span class="special">&gt;</span> <span class="identifier">exts</span><span class="special">(</span><span class="number">1</span><span class="special">)</span><span class="special">;</span> <span class="comment">// (1, 1, 1)</span>
@@ -94,44 +94,44 @@
 <p> </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp13180848-bb"></a><span class="identifier">extents</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">initializer_list</span><span class="special">&lt;</span> <span class="identifier">size_t</span> <span class="special">&gt;</span> values<span class="special">)</span><span class="special">;</span></pre>Creates an extents object with <code class="computeroutput">values</code>. </li>
+<pre class="literallayout"><a name="idp13438784-bb"></a><span class="identifier">extents</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">initializer_list</span><span class="special">&lt;</span> <span class="identifier">size_t</span> <span class="special">&gt;</span> values<span class="special">)</span><span class="special">;</span></pre>Creates an extents object with <code class="computeroutput">values</code>. </li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp83352208"></a><h3>
-<a name="idp13149744-bb"></a><code class="computeroutput">extents</code> public member functions</h3>
+<a name="idp55307936"></a><h3>
+<a name="idp13407680-bb"></a><code class="computeroutput">extents</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp13150304-bb"></a><span class="identifier">size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns the size (i.e. dimensionality) of the extents array. </li>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp13408240-bb"></a><span class="identifier">size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns the size (i.e. dimensionality) of the extents array. </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp13151760-bb"></a><span class="identifier">linear</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp13409696-bb"></a><span class="identifier">linear</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Returns the linear size of the extents. This is equivalent to the product of each extent in each dimension. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_t</span> <span class="special">*</span> <a name="idp13153392-bb"></a><span class="identifier">data</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_t</span> <span class="special">*</span> <a name="idp13411328-bb"></a><span class="identifier">data</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Returns a pointer to the extents data array.</p>
 <p>This is useful for passing the extents data to OpenCL APIs which expect an array of <code class="computeroutput">size_t</code>. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">const</span> <span class="identifier">size_t</span> <span class="special">*</span> <a name="idp13155488-bb"></a><span class="identifier">data</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">const</span> <span class="identifier">size_t</span> <span class="special">*</span> <a name="idp13413424-bb"></a><span class="identifier">data</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 </li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">iterator</span> <a name="idp13157152-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp13158000-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp13159120-bb"></a><span class="identifier">cbegin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">iterator</span> <a name="idp13160240-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp13161088-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp13162208-bb"></a><span class="identifier">cend</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">iterator</span> <a name="idp13415088-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp13415936-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp13417056-bb"></a><span class="identifier">cbegin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">iterator</span> <a name="idp13418176-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp13419024-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp13420144-bb"></a><span class="identifier">cend</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_t</span> <span class="special">&amp;</span> <a name="idp13163328-bb"></a><span class="keyword">operator</span><span class="special">[</span><span class="special">]</span><span class="special">(</span><span class="identifier">size_t</span> index<span class="special">)</span><span class="special">;</span></pre>Returns a reference to the extent at <code class="computeroutput">index</code>. </li>
+<pre class="literallayout"><span class="identifier">size_t</span> <span class="special">&amp;</span> <a name="idp13421264-bb"></a><span class="keyword">operator</span><span class="special">[</span><span class="special">]</span><span class="special">(</span><span class="identifier">size_t</span> index<span class="special">)</span><span class="special">;</span></pre>Returns a reference to the extent at <code class="computeroutput">index</code>. </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">const</span> <span class="identifier">size_t</span> <span class="special">&amp;</span> <a name="idp13165616-bb"></a><span class="keyword">operator</span><span class="special">[</span><span class="special">]</span><span class="special">(</span><span class="identifier">size_t</span> index<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">const</span> <span class="identifier">size_t</span> <span class="special">&amp;</span> <a name="idp13423552-bb"></a><span class="keyword">operator</span><span class="special">[</span><span class="special">]</span><span class="special">(</span><span class="identifier">size_t</span> index<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp13167968-bb"></a><span class="keyword">operator</span><span class="special">==</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="extents.html" title="Class template extents">extents</a> <span class="special">&amp;</span> other<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns <code class="computeroutput">true</code> if the extents in <code class="computeroutput">*this</code> are the same as <code class="computeroutput">other</code>. </li>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp13425904-bb"></a><span class="keyword">operator</span><span class="special">==</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="extents.html" title="Class template extents">extents</a> <span class="special">&amp;</span> other<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns <code class="computeroutput">true</code> if the extents in <code class="computeroutput">*this</code> are the same as <code class="computeroutput">other</code>. </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp13171856-bb"></a><span class="keyword">operator</span><span class="special">!=</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="extents.html" title="Class template extents">extents</a> <span class="special">&amp;</span> other<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns <code class="computeroutput">true</code> if the extents in <code class="computeroutput">*this</code> are not the same as <code class="computeroutput">other</code>. </li>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp13429792-bb"></a><span class="keyword">operator</span><span class="special">!=</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="extents.html" title="Class template extents">extents</a> <span class="special">&amp;</span> other<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns <code class="computeroutput">true</code> if the extents in <code class="computeroutput">*this</code> are not the same as <code class="computeroutput">other</code>. </li>
 </ol></div>
 </div>
 </div>

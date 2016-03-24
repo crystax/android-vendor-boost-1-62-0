@@ -7,8 +7,8 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="../../../index.html" title="The Boost C++ Libraries BoostBook Documentation Subset">
 <link rel="up" href="../../../proto/reference.html#header.boost.proto.functional.std.iterator_hpp" title="Header &lt;boost/proto/functional/std/iterator.hpp&gt;">
-<link rel="prev" href="distance/result_This_I_idp305363680.html" title="Struct template result&lt;This(InputIterator, InputIterator)&gt;">
-<link rel="next" href="next/result_This_F_idp305380048.html" title="Struct template result&lt;This(ForwardIterator)&gt;">
+<link rel="prev" href="distance/result_This_I_idp305236752.html" title="Struct template result&lt;This(InputIterator, InputIterator)&gt;">
+<link rel="next" href="next/result_This_F_idp305253120.html" title="Struct template result&lt;This(ForwardIterator)&gt;">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -21,7 +21,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="distance/result_This_I_idp305363680.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../../proto/reference.html#header.boost.proto.functional.std.iterator_hpp"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="next/result_This_F_idp305380048.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="distance/result_This_I_idp305236752.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../../proto/reference.html#header.boost.proto.functional.std.iterator_hpp"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="next/result_This_F_idp305253120.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="refentry">
 <a name="boost.proto.functional.next"></a><div class="titlepage"></div>
@@ -37,37 +37,37 @@
 <span class="keyword">struct</span> <a class="link" href="next.html" title="Struct next">next</a> <span class="special">:</span> <span class="keyword"></span> <a class="link" href="../callable.html" title="Struct callable">proto::callable</a> <span class="special">{</span>
   <span class="comment">// member classes/structs/unions</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> This<span class="special">,</span> <span class="keyword">typename</span> ForwardIterator<span class="special">&gt;</span> 
-  <span class="keyword">struct</span> <a class="link" href="next/result_This_F_idp305380048.html" title="Struct template result&lt;This(ForwardIterator)&gt;">result</a><span class="special">&lt;</span><span class="identifier">This</span><span class="special">(</span><span class="identifier">ForwardIterator</span><span class="special">)</span><span class="special">&gt;</span> <span class="special">{</span>
+  <span class="keyword">struct</span> <a class="link" href="next/result_This_F_idp305253120.html" title="Struct template result&lt;This(ForwardIterator)&gt;">result</a><span class="special">&lt;</span><span class="identifier">This</span><span class="special">(</span><span class="identifier">ForwardIterator</span><span class="special">)</span><span class="special">&gt;</span> <span class="special">{</span>
     <span class="comment">// types</span>
     <span class="keyword">typedef</span> <span class="keyword">typename</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">remove_const</span><span class="special">&lt;</span>
       <span class="keyword">typename</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">remove_reference</span><span class="special">&lt;</span><span class="identifier">ForwardIterator</span><span class="special">&gt;</span><span class="special">::</span><span class="identifier">type</span>
-    <span class="special">&gt;</span><span class="special">::</span><span class="identifier">type</span> <a class="link" href="next/result_This_F_idp305380048.html#boost.proto.functional.next.result_This(F_idp305380048.type"><span class="identifier">type</span></a><span class="special">;</span>
+    <span class="special">&gt;</span><span class="special">::</span><span class="identifier">type</span> <a class="link" href="next/result_This_F_idp305253120.html#boost.proto.functional.next.result_This(F_idp305253120.type"><span class="identifier">type</span></a><span class="special">;</span>
   <span class="special">}</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> This<span class="special">,</span> <span class="keyword">typename</span> ForwardIterator<span class="special">,</span> <span class="keyword">typename</span> Distance<span class="special">&gt;</span> 
-  <span class="keyword">struct</span> <a class="link" href="next/result_This_F_idp305384480.html" title="Struct template result&lt;This(ForwardIterator, Distance)&gt;">result</a><span class="special">&lt;</span><span class="identifier">This</span><span class="special">(</span><span class="identifier">ForwardIterator</span><span class="special">,</span> <span class="identifier">Distance</span><span class="special">)</span><span class="special">&gt;</span> <span class="special">{</span>
+  <span class="keyword">struct</span> <a class="link" href="next/result_This_F_idp305257552.html" title="Struct template result&lt;This(ForwardIterator, Distance)&gt;">result</a><span class="special">&lt;</span><span class="identifier">This</span><span class="special">(</span><span class="identifier">ForwardIterator</span><span class="special">,</span> <span class="identifier">Distance</span><span class="special">)</span><span class="special">&gt;</span> <span class="special">{</span>
     <span class="comment">// types</span>
     <span class="keyword">typedef</span> <span class="keyword">typename</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">remove_const</span><span class="special">&lt;</span>
       <span class="keyword">typename</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">remove_reference</span><span class="special">&lt;</span><span class="identifier">ForwardIterator</span><span class="special">&gt;</span><span class="special">::</span><span class="identifier">type</span>
-    <span class="special">&gt;</span><span class="special">::</span><span class="identifier">type</span> <a class="link" href="next/result_This_F_idp305384480.html#boost.proto.functional.next.result_This(F_idp305384480.type"><span class="identifier">type</span></a><span class="special">;</span>
+    <span class="special">&gt;</span><span class="special">::</span><span class="identifier">type</span> <a class="link" href="next/result_This_F_idp305257552.html#boost.proto.functional.next.result_This(F_idp305257552.type"><span class="identifier">type</span></a><span class="special">;</span>
   <span class="special">}</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="next.html#idp305389488-bb">public member functions</a></span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ForwardIterator<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="next.html#idp305390048-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">ForwardIterator</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="next.html#idp305262560-bb">public member functions</a></span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ForwardIterator<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="next.html#idp305263120-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">ForwardIterator</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ForwardIterator<span class="special">&gt;</span> 
-    <span class="keyword">void</span> <a class="link" href="next.html#idp305394688-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">ForwardIterator</span><span class="special">,</span> 
+    <span class="keyword">void</span> <a class="link" href="next.html#idp305267760-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">ForwardIterator</span><span class="special">,</span> 
                     <span class="keyword">typename</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">iterator_traits</span><span class="special">&lt;</span><span class="identifier">ForwardIterator</span><span class="special">&gt;</span><span class="special">::</span><span class="identifier">difference_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp338467504"></a><h2>Description</h2>
+<a name="idp338437248"></a><h2>Description</h2>
 <p>
               A <a class="link" href="../../../PolymorphicFunctionObject.html" title="Concept PolymorphicFunctionObject">PolymorphicFunctionObject</a> type that invokes the
               <code class="computeroutput">std::next()</code> function on its arguments.</p>
 <div class="refsect2">
-<a name="idp338470096"></a><h3>
-<a name="idp305389488-bb"></a><code class="computeroutput">next</code> public member functions</h3>
+<a name="idp338439840"></a><h3>
+<a name="idp305262560-bb"></a><code class="computeroutput">next</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ForwardIterator<span class="special">&gt;</span> <span class="keyword">void</span> <a name="idp305390048-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">ForwardIterator</span> x<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ForwardIterator<span class="special">&gt;</span> <span class="keyword">void</span> <a name="idp305263120-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">ForwardIterator</span> x<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -78,7 +78,7 @@
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ForwardIterator<span class="special">&gt;</span> 
-  <span class="keyword">void</span> <a name="idp305394688-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">ForwardIterator</span> x<span class="special">,</span> 
+  <span class="keyword">void</span> <a name="idp305267760-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">ForwardIterator</span> x<span class="special">,</span> 
                   <span class="keyword">typename</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">iterator_traits</span><span class="special">&lt;</span><span class="identifier">ForwardIterator</span><span class="special">&gt;</span><span class="special">::</span><span class="identifier">difference_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -102,7 +102,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="distance/result_This_I_idp305363680.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../../proto/reference.html#header.boost.proto.functional.std.iterator_hpp"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="next/result_This_F_idp305380048.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="distance/result_This_I_idp305236752.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../../proto/reference.html#header.boost.proto.functional.std.iterator_hpp"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="next/result_This_F_idp305253120.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

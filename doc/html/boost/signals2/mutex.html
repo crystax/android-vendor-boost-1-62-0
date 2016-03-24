@@ -35,12 +35,12 @@
 </span>
 <span class="keyword">class</span> <a class="link" href="mutex.html" title="Class mutex">mutex</a> <span class="special">{</span>
 <span class="keyword">public</span><span class="special">:</span>
-  <span class="keyword">void</span> <a class="link" href="mutex.html#idp83022496-bb"><span class="identifier">lock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="mutex.html#idp126691088-bb"><span class="identifier">try_lock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="mutex.html#idp129217120-bb"><span class="identifier">unlock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="mutex.html#idp190128048-bb"><span class="identifier">lock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="mutex.html#idp81549936-bb"><span class="identifier">try_lock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="mutex.html#idp197599328-bb"><span class="identifier">unlock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp395631408"></a><h2>Description</h2>
+<a name="idp395598240"></a><h2>Description</h2>
 <p>
             The <code class="computeroutput">mutex</code> class implements the <code class="computeroutput">Lockable</code>
             concept of Boost.Thread, and is the default <code class="computeroutput">Mutex</code> template parameter
@@ -64,10 +64,10 @@
             use the <a class="link" href="dummy_mutex.html" title="Class dummy_mutex">signals2::dummy_mutex</a> class as the <code class="computeroutput">Mutex</code>
             template type for your signal.
           </p>
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp83022496-bb"></a><span class="identifier">lock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp190128048-bb"></a><span class="identifier">lock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Locks the mutex.
               </p>
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp126691088-bb"></a><span class="identifier">try_lock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp81549936-bb"></a><span class="identifier">try_lock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Makes a non-blocking attempt to lock the mutex.
               </p>
 <div class="variablelist"><table border="0">
@@ -77,7 +77,7 @@
 <td><p><code class="computeroutput">true</code> on success.</p></td>
 </tr></tbody>
 </table></div>
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp129217120-bb"></a><span class="identifier">unlock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp197599328-bb"></a><span class="identifier">unlock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Unlocks the mutex.
               </p>
 </div>

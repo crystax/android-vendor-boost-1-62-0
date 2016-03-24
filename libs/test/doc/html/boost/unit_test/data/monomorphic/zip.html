@@ -42,45 +42,45 @@
 
   <span class="keyword">struct</span> <a class="link" href="zip/iterator.html" title="Struct iterator">iterator</a> <span class="special">{</span>
     <span class="comment">// <a class="link" href="zip/iterator.html#boost.unit_test.data.monomorphic.zip.iteratorconstruct-copy-destruct">construct/copy/destruct</a></span>
-    <span class="keyword">explicit</span> <a class="link" href="zip/iterator.html#idp26711472-bb"><span class="identifier">iterator</span></a><span class="special">(</span><span class="identifier">dataset1_iter</span><span class="special">,</span> <span class="identifier">dataset2_iter</span><span class="special">)</span><span class="special">;</span>
+    <span class="keyword">explicit</span> <a class="link" href="zip/iterator.html#idp27013184-bb"><span class="identifier">iterator</span></a><span class="special">(</span><span class="identifier">dataset1_iter</span><span class="special">,</span> <span class="identifier">dataset2_iter</span><span class="special">)</span><span class="special">;</span>
 
-    <span class="comment">// <a class="link" href="zip/iterator.html#idp26708784-bb">public member functions</a></span>
-    <span class="identifier">sample_ref</span> <a class="link" href="zip/iterator.html#idp26709344-bb"><span class="keyword">operator</span><span class="special">*</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-    <span class="keyword">void</span> <a class="link" href="zip/iterator.html#idp26710464-bb"><span class="keyword">operator</span><span class="special">++</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+    <span class="comment">// <a class="link" href="zip/iterator.html#idp27010496-bb">public member functions</a></span>
+    <span class="identifier">sample_ref</span> <a class="link" href="zip/iterator.html#idp27011056-bb"><span class="keyword">operator</span><span class="special">*</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+    <span class="keyword">void</span> <a class="link" href="zip/iterator.html#idp27012176-bb"><span class="keyword">operator</span><span class="special">++</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
   <span class="special">}</span><span class="special">;</span>
 
   <span class="keyword">enum</span> <a name="boost.unit_test.data.monomorphic.zip.@10"></a>@10 <span class="special">{</span> arity =  dataset1_decay::arity + dataset2_decay::arity <span class="special">}</span><span class="special">;</span>
 
   <span class="comment">// <a class="link" href="zip.html#boost.unit_test.data.monomorphic.zipconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="zip.html#idp26719632-bb"><span class="identifier">zip</span></a><span class="special">(</span><span class="identifier">DataSet1</span> <span class="special">&amp;&amp;</span><span class="special">,</span> <span class="identifier">DataSet2</span> <span class="special">&amp;&amp;</span><span class="special">,</span> <a class="link" href="../size_t.html" title="Class size_t">data::size_t</a><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="zip.html#idp26722832-bb"><span class="identifier">zip</span></a><span class="special">(</span><a class="link" href="zip.html" title="Class template zip">zip</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="zip.html#idp27021344-bb"><span class="identifier">zip</span></a><span class="special">(</span><span class="identifier">DataSet1</span> <span class="special">&amp;&amp;</span><span class="special">,</span> <span class="identifier">DataSet2</span> <span class="special">&amp;&amp;</span><span class="special">,</span> <a class="link" href="../size_t.html" title="Class size_t">data::size_t</a><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="zip.html#idp27024544-bb"><span class="identifier">zip</span></a><span class="special">(</span><a class="link" href="zip.html" title="Class template zip">zip</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="zip.html#idp26716416-bb">public member functions</a></span>
-  <a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> <a class="link" href="zip.html#idp26716976-bb"><span class="identifier">size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <a class="link" href="zip/iterator.html" title="Struct iterator">iterator</a> <a class="link" href="zip.html#idp26718224-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="zip.html#idp27018128-bb">public member functions</a></span>
+  <a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> <a class="link" href="zip.html#idp27018688-bb"><span class="identifier">size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <a class="link" href="zip/iterator.html" title="Struct iterator">iterator</a> <a class="link" href="zip.html#idp27019936-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp85546112"></a><h2>Description</h2>
+<a name="idp85299056"></a><h2>Description</h2>
 <p>A zip of two datasets is a dataset whose arity is the sum of the operand datasets arity. The size is given by the function creating the instance (see <code class="computeroutput">operator^</code> on datasets). </p>
 <div class="refsect2">
-<a name="idp85547664"></a><h3>
+<a name="idp85300608"></a><h3>
 <a name="boost.unit_test.data.monomorphic.zipconstruct-copy-destruct"></a><code class="computeroutput">zip</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a name="idp26719632-bb"></a><span class="identifier">zip</span><span class="special">(</span><span class="identifier">DataSet1</span> <span class="special">&amp;&amp;</span> ds1<span class="special">,</span> <span class="identifier">DataSet2</span> <span class="special">&amp;&amp;</span> ds2<span class="special">,</span> <a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> size<span class="special">)</span><span class="special">;</span></pre>Constructor. <p>The datasets are moved and not copied. </p>
+<pre class="literallayout"><a name="idp27021344-bb"></a><span class="identifier">zip</span><span class="special">(</span><span class="identifier">DataSet1</span> <span class="special">&amp;&amp;</span> ds1<span class="special">,</span> <span class="identifier">DataSet2</span> <span class="special">&amp;&amp;</span> ds2<span class="special">,</span> <a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> size<span class="special">)</span><span class="special">;</span></pre>Constructor. <p>The datasets are moved and not copied. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp26722832-bb"></a><span class="identifier">zip</span><span class="special">(</span><a class="link" href="zip.html" title="Class template zip">zip</a> <span class="special">&amp;&amp;</span> j<span class="special">)</span><span class="special">;</span></pre>Move constructor. </li>
+<pre class="literallayout"><a name="idp27024544-bb"></a><span class="identifier">zip</span><span class="special">(</span><a class="link" href="zip.html" title="Class template zip">zip</a> <span class="special">&amp;&amp;</span> j<span class="special">)</span><span class="special">;</span></pre>Move constructor. </li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp85564256"></a><h3>
-<a name="idp26716416-bb"></a><code class="computeroutput">zip</code> public member functions</h3>
+<a name="idp85317136"></a><h3>
+<a name="idp27018128-bb"></a><code class="computeroutput">zip</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> <a name="idp26716976-bb"></a><span class="identifier">size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><a class="link" href="zip/iterator.html" title="Struct iterator">iterator</a> <a name="idp26718224-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> <a name="idp27018688-bb"></a><span class="identifier">size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a class="link" href="zip/iterator.html" title="Struct iterator">iterator</a> <a name="idp27019936-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 </div>

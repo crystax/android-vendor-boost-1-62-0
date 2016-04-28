@@ -34,13 +34,13 @@
 </span><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> 
 <span class="keyword">struct</span> <a class="link" href="reference.html" title="Struct template reference">reference</a> <span class="special">{</span>
   <span class="comment">// <a class="link" href="reference.html#boost.xpressive.referenceconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <span class="keyword">explicit</span> <a class="link" href="reference.html#idp12280224-bb"><span class="identifier">reference</span></a><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">explicit</span> <a class="link" href="reference.html#idp12587536-bb"><span class="identifier">reference</span></a><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="reference.html#idp12278080-bb">public member functions</a></span>
-  <span class="identifier">T</span> <span class="special">&amp;</span> <a class="link" href="reference.html#idp12278640-bb"><span class="identifier">get</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="reference.html#idp12585392-bb">public member functions</a></span>
+  <span class="identifier">T</span> <span class="special">&amp;</span> <a class="link" href="reference.html#idp12585952-bb"><span class="identifier">get</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp14083872"></a><h2>Description</h2>
+<a name="idp71675808"></a><h2>Description</h2>
 <p>
 Here is an example of how to use <code class="computeroutput">reference&lt;&gt;</code> to create a lazy reference to an existing object so it can be read and written in an xpressive semantic action. </p>
 <pre class="programlisting">        <span class="keyword">using</span> <span class="keyword">namespace</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">xpressive</span><span class="special">;</span>
@@ -54,19 +54,19 @@ Here is an example of how to use <code class="computeroutput">reference&lt;&gt;<
 </pre>
 <p> </p>
 <div class="refsect2">
-<a name="idp14123696"></a><h3>Template Parameters</h3>
+<a name="idp71715632"></a><h3>Template Parameters</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
 <pre class="literallayout"><span class="keyword">typename</span> T</pre>
 <p>The type of the referent.</p>
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp14126784"></a><h3>
+<a name="idp71718720"></a><h3>
 <a name="boost.xpressive.referenceconstruct-copy-destruct"></a><code class="computeroutput">reference</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp12280224-bb"></a><span class="identifier">reference</span><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span> t<span class="special">)</span><span class="special">;</span></pre>Store a reference to <code class="computeroutput">t</code>. <p>
+<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp12587536-bb"></a><span class="identifier">reference</span><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span> t<span class="special">)</span><span class="special">;</span></pre>Store a reference to <code class="computeroutput">t</code>. <p>
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -84,10 +84,10 @@ Here is an example of how to use <code class="computeroutput">reference&lt;&gt;<
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp14138736"></a><h3>
-<a name="idp12278080-bb"></a><code class="computeroutput">reference</code> public member functions</h3>
+<a name="idp71730672"></a><h3>
+<a name="idp12585392-bb"></a><code class="computeroutput">reference</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><span class="identifier">T</span> <span class="special">&amp;</span> <a name="idp12278640-bb"></a><span class="identifier">get</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Fetch the stored value. </li></ol></div>
+<pre class="literallayout"><span class="identifier">T</span> <span class="special">&amp;</span> <a name="idp12585952-bb"></a><span class="identifier">get</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Fetch the stored value. </li></ol></div>
 </div>
 </div>
 </div>

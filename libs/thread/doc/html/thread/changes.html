@@ -34,6 +34,14 @@
 <p>
       <span class="bold"><strong>Know Bugs:</strong></span>
     </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+          <a href="http://svn.boost.org/trac/boost/ticket/3926" target="_top">#3926</a>
+          thread_specific_ptr + dlopen library causes a SIGSEGV.
+        </li></ul></div>
+<p>
+      Please define BOOST_THREAD_PATCH to apply the patch that could unfortunately
+      results is a regression as described in <a href="http://svn.boost.org/trac/boost/ticket/12049" target="_top">#12049</a>.
+    </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
           <a href="http://svn.boost.org/trac/boost/ticket/4833" target="_top">#4833</a>
@@ -139,7 +147,7 @@
         </li>
 <li class="listitem">
           <a href="http://svn.boost.org/trac/boost/ticket/11734" target="_top">#11734</a>
-          future::then(Cont) should be able to execute the contination on undetermined
+          future::then(Cont) should be able to execute the continuation on undetermined
           thread
         </li>
 <li class="listitem">
@@ -156,10 +164,6 @@
       <span class="bold"><strong>Fixed Bugs:</strong></span>
     </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
-<li class="listitem">
-          <a href="http://svn.boost.org/trac/boost/ticket/3926" target="_top">#3926</a>
-          thread_specific_ptr + dlopen library causes a SIGSEGV.
-        </li>
 <li class="listitem">
           <a href="http://svn.boost.org/trac/boost/ticket/6377" target="_top">#6377</a>
           Condition variable blocks when changing time
@@ -291,6 +295,10 @@
 <li class="listitem">
           <a href="http://svn.boost.org/trac/boost/ticket/11818" target="_top">#11818</a>
           future.then will be blocked if promise is set after the invocation of then
+        </li>
+<li class="listitem">
+          <a href="http://svn.boost.org/trac/boost/ticket/12049" target="_top">#12049</a>
+          Assertion failure from detached threads during shutdown
         </li>
 </ul></div>
 <h4>

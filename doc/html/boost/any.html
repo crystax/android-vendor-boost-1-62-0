@@ -8,7 +8,7 @@
 <link rel="home" href="../index.html" title="The Boost C++ Libraries BoostBook Documentation Subset">
 <link rel="up" href="../any/reference.html#header.boost.any_hpp" title="Header &lt;boost/any.hpp&gt;">
 <link rel="prev" href="bad_any_cast.html" title="Class bad_any_cast">
-<link rel="next" href="swap_idp9504272.html" title="Function swap">
+<link rel="next" href="swap_idp16795344.html" title="Function swap">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -21,7 +21,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="bad_any_cast.html"><img src="../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../any/reference.html#header.boost.any_hpp"><img src="../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="swap_idp9504272.html"><img src="../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="bad_any_cast.html"><img src="../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../any/reference.html#header.boost.any_hpp"><img src="../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="swap_idp16795344.html"><img src="../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="refentry">
 <a name="boost.any"></a><div class="titlepage"></div>
@@ -38,44 +38,44 @@
 <span class="keyword">class</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">{</span>
 <span class="keyword">public</span><span class="special">:</span>
   <span class="comment">// <a class="link" href="any.html#boost.anyconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="any.html#idp12282064-bb"><span class="identifier">any</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="any.html#idp12283664-bb"><span class="identifier">any</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="any.html#idp12288976-bb"><span class="identifier">any</span></a><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html#idp12294528-bb"><span class="identifier">any</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">ValueType</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html#idp12299808-bb"><span class="identifier">any</span></a><span class="special">(</span><span class="identifier">ValueType</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp16552928-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp16559424-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp16566800-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">ValueType</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp16572896-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="identifier">ValueType</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="any.html#idp16551360-bb"><span class="special">~</span><span class="identifier">any</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="any.html#idp16586976-bb"><span class="identifier">any</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="any.html#idp16588576-bb"><span class="identifier">any</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="any.html#idp6508528-bb"><span class="identifier">any</span></a><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html#idp6514080-bb"><span class="identifier">any</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">ValueType</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html#idp6519360-bb"><span class="identifier">any</span></a><span class="special">(</span><span class="identifier">ValueType</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp6526672-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp6533168-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp16535040-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">ValueType</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp16541136-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="identifier">ValueType</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="any.html#idp6525104-bb"><span class="special">~</span><span class="identifier">any</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="any.html#idp9489600-bb">modifiers</a></span>
-  <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp9490160-bb"><span class="identifier">swap</span></a><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="any.html#idp16547696-bb">modifiers</a></span>
+  <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a class="link" href="any.html#idp16548256-bb"><span class="identifier">swap</span></a><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="any.html#idp9495952-bb">queries</a></span>
-  <span class="keyword">bool</span> <a class="link" href="any.html#idp9496512-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> std::type_info <span class="special">&amp;</span> <a class="link" href="any.html#idp9499824-bb"><span class="identifier">type</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="any.html#idp16554048-bb">queries</a></span>
+  <span class="keyword">bool</span> <a class="link" href="any.html#idp16554608-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> std::type_info <span class="special">&amp;</span> <a class="link" href="any.html#idp16557920-bb"><span class="identifier">type</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp39253664"></a><h2>Description</h2>
+<a name="idp96827408"></a><h2>Description</h2>
 <div class="refsect2">
-<a name="idp39254080"></a><h3>
+<a name="idp96827824"></a><h3>
 <a name="boost.anyconstruct-copy-destruct"></a><code class="computeroutput">any</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a name="idp12282064-bb"></a><span class="identifier">any</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp16586976-bb"></a><span class="identifier">any</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term">Postconditions:</span></p></td>
-<td><code class="computeroutput">this-&gt;<a class="link" href="any.html#idp9496512-bb">empty</a>()</code></td>
+<td><code class="computeroutput">this-&gt;<a class="link" href="any.html#idp16554608-bb">empty</a>()</code></td>
 </tr></tbody>
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp12283664-bb"></a><span class="identifier">any</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> other<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp16588576-bb"></a><span class="identifier">any</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> other<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -98,7 +98,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp12288976-bb"></a><span class="identifier">any</span><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;&amp;</span> other<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp6508528-bb"></a><span class="identifier">any</span><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;&amp;</span> other<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -110,7 +110,7 @@
 </tr>
 <tr>
 <td><p><span class="term">Postconditions:</span></p></td>
-<td><code class="computeroutput">other-&gt;<a class="link" href="any.html#idp9496512-bb">empty</a>()</code></td>
+<td><code class="computeroutput">other-&gt;<a class="link" href="any.html#idp16554608-bb">empty</a>()</code></td>
 </tr>
 <tr>
 <td><p><span class="term">Throws:</span></p></td>
@@ -120,7 +120,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a name="idp12294528-bb"></a><span class="identifier">any</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">ValueType</span> <span class="special">&amp;</span> value<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a name="idp6514080-bb"></a><span class="identifier">any</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">ValueType</span> <span class="special">&amp;</span> value<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -142,7 +142,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a name="idp12299808-bb"></a><span class="identifier">any</span><span class="special">(</span><span class="identifier">ValueType</span> <span class="special">&amp;&amp;</span> value<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a name="idp6519360-bb"></a><span class="identifier">any</span><span class="special">(</span><span class="identifier">ValueType</span> <span class="special">&amp;&amp;</span> value<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -164,7 +164,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp16552928-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp6526672-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -174,7 +174,7 @@
             current instance, discarding previous content, so that the
             new content is equivalent in both type and value to the
             content of <code class="computeroutput">rhs</code>, or empty if
-            <code class="computeroutput">rhs.<a class="link" href="any.html#idp9496512-bb">empty</a>()</code>.</td>
+            <code class="computeroutput">rhs.<a class="link" href="any.html#idp16554608-bb">empty</a>()</code>.</td>
 </tr>
 <tr>
 <td><p><span class="term">Throws:</span></p></td>
@@ -188,7 +188,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp16559424-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp6533168-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -198,11 +198,11 @@
             current instance, discarding previous content, so that the
             new content is equivalent in both type and value to the
             content of <code class="computeroutput">rhs</code> before move, or empty if
-            <code class="computeroutput">rhs.<a class="link" href="any.html#idp9496512-bb">empty</a>()</code>.</td>
+            <code class="computeroutput">rhs.<a class="link" href="any.html#idp16554608-bb">empty</a>()</code>.</td>
 </tr>
 <tr>
 <td><p><span class="term">Postconditions:</span></p></td>
-<td><code class="computeroutput">rhs-&gt;<a class="link" href="any.html#idp9496512-bb">empty</a>()</code></td>
+<td><code class="computeroutput">rhs-&gt;<a class="link" href="any.html#idp16554608-bb">empty</a>()</code></td>
 </tr>
 <tr>
 <td><p><span class="term">Throws:</span></p></td>
@@ -212,7 +212,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp16566800-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">ValueType</span> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp16535040-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">ValueType</span> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -235,7 +235,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp16572896-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="identifier">ValueType</span> <span class="special">&amp;&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> ValueType<span class="special">&gt;</span> <a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp16541136-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="identifier">ValueType</span> <span class="special">&amp;&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -258,7 +258,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp16551360-bb"></a><span class="special">~</span><span class="identifier">any</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp6525104-bb"></a><span class="special">~</span><span class="identifier">any</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -277,10 +277,10 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp39372256"></a><h3>
-<a name="idp9489600-bb"></a><code class="computeroutput">any</code> modifiers</h3>
+<a name="idp96946112"></a><h3>
+<a name="idp16547696-bb"></a><code class="computeroutput">any</code> modifiers</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp9490160-bb"></a><span class="identifier">swap</span><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> <a name="idp16548256-bb"></a><span class="identifier">swap</span><span class="special">(</span><a class="link" href="any.html" title="Class any">any</a> <span class="special">&amp;</span> rhs<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -303,11 +303,11 @@
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp39385712"></a><h3>
-<a name="idp9495952-bb"></a><code class="computeroutput">any</code> queries</h3>
+<a name="idp96959504"></a><h3>
+<a name="idp16554048-bb"></a><code class="computeroutput">any</code> queries</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp9496512-bb"></a><span class="identifier">empty</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp16554608-bb"></a><span class="identifier">empty</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -325,7 +325,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">const</span> std::type_info <span class="special">&amp;</span> <a name="idp9499824-bb"></a><span class="identifier">type</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">const</span> std::type_info <span class="special">&amp;</span> <a name="idp16557920-bb"></a><span class="identifier">type</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -358,7 +358,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="bad_any_cast.html"><img src="../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../any/reference.html#header.boost.any_hpp"><img src="../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="swap_idp9504272.html"><img src="../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="bad_any_cast.html"><img src="../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../any/reference.html#header.boost.any_hpp"><img src="../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="swap_idp16795344.html"><img src="../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

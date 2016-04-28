@@ -84,7 +84,7 @@
               <p>
 </p>
 <pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="keyword">namespace</span> <span class="identifier">some_namespace</span> <span class="special">{</span>
-    <span class="identifier">API</span> <span class="keyword">int</span> <span class="identifier">i_am_a_cpp11_function</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span><span class="special">&amp;&amp;</span> <span class="identifier">param</span><span class="special">);</span>
+    <span class="identifier">API</span> <span class="keyword">int</span> <span class="identifier">i_am_a_cpp11_function</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span><span class="special">&amp;&amp;</span> <span class="identifier">param</span><span class="special">)</span> <span class="keyword">noexcept</span><span class="special">;</span>
 <span class="comment">//          ^--------------------  function name to use in dll::import&lt;&gt;</span>
 <span class="special">}</span>
 </pre>
@@ -141,7 +141,7 @@
               <p>
 </p>
 <pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="keyword">namespace</span> <span class="identifier">some_namespace</span> <span class="special">{</span>
-    <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="identifier">i_am_function_with_ugly_name</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span><span class="special">&amp;</span> <span class="identifier">param</span><span class="special">);</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="identifier">i_am_function_with_ugly_name</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span><span class="special">&amp;</span> <span class="identifier">param</span><span class="special">)</span> <span class="keyword">noexcept</span><span class="special">;</span>
 <span class="special">}</span>
 
 <span class="comment">// When you have no control over function sources or wish to specify another name.</span>

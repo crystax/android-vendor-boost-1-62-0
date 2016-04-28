@@ -35,21 +35,21 @@
 </span>
 <span class="keyword">class</span> <a class="link" href="dummy_mutex.html" title="Class dummy_mutex">dummy_mutex</a> <span class="special">:</span> <span class="keyword">public</span> noncopyable <span class="special">{</span>
 <span class="keyword">public</span><span class="special">:</span>
-  <span class="keyword">void</span> <a class="link" href="dummy_mutex.html#idp177358784-bb"><span class="identifier">lock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="dummy_mutex.html#idp128764672-bb"><span class="identifier">try_lock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="dummy_mutex.html#idp199002112-bb"><span class="identifier">unlock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="dummy_mutex.html#idp64779264-bb"><span class="identifier">lock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="dummy_mutex.html#idp130275952-bb"><span class="identifier">try_lock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="dummy_mutex.html#idp186241472-bb"><span class="identifier">unlock</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp395412240"></a><h2>Description</h2>
+<a name="idp453199808"></a><h2>Description</h2>
 <p>You may wish to use the <code class="computeroutput">dummy_mutex</code> class for the <code class="computeroutput">Mutex</code>
           template type of your signals if you are not concerned about thread safety.
           This may give slightly faster
           performance, since <code class="computeroutput">dummy_mutex</code> performs no actual locking.
           </p>
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp177358784-bb"></a><span class="identifier">lock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp64779264-bb"></a><span class="identifier">lock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>No effect.
               </p>
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp128764672-bb"></a><span class="identifier">try_lock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp130275952-bb"></a><span class="identifier">try_lock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>No effect.
               </p>
 <div class="variablelist"><table border="0">
@@ -59,7 +59,7 @@
 <td><p><code class="computeroutput">true</code>.</p></td>
 </tr></tbody>
 </table></div>
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp199002112-bb"></a><span class="identifier">unlock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp186241472-bb"></a><span class="identifier">unlock</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>No effect.
               </p>
 </div>

@@ -37,7 +37,7 @@
   <span class="identifier">make_strided_iterator_end</span><span class="special">(</span><span class="identifier">Iterator</span> first<span class="special">,</span> <span class="identifier">Iterator</span> last<span class="special">,</span> 
                             <span class="keyword">typename</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">iterator_traits</span><span class="special">&lt;</span> <span class="identifier">Iterator</span> <span class="special">&gt;</span><span class="special">::</span><span class="identifier">difference_type</span> stride<span class="special">)</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp52677248"></a><h2>Description</h2>
+<a name="idp52996944"></a><h2>Description</h2>
 <p>Returns a <code class="computeroutput"><a class="link" href="strided_iterator.html" title="Class template strided_iterator">strided_iterator</a></code> which refers to element that would follow the last element accessible through <code class="computeroutput"><a class="link" href="strided_iterator.html" title="Class template strided_iterator">strided_iterator</a></code> for <code class="computeroutput">first</code> iterator with <code class="computeroutput">stride</code>.</p>
 <p>Parameter <code class="computeroutput">stride</code> must be greater than zero.</p>
 <p>
@@ -50,9 +50,7 @@ It can be helpful when iterating over <code class="computeroutput"><a class="lin
  <span class="comment">// copy every 3rd element to result</span>
  <span class="identifier">boost</span><span class="special">::</span><span class="identifier">compute</span><span class="special">::</span><span class="identifier">copy</span><span class="special">(</span>
          <span class="identifier">strided_iterator_begin</span><span class="special">,</span>
-         <span class="identifier">strided_iterator_end</span><span class="special">,</span><span class="identifier">ided_iterator</span> <span class="identifier">referring</span> <span class="identifier">to</span> <span class="identifier">element</span> <span class="identifier">that</span> <span class="identifier">would</span> <span class="identifier">follow</span>
-         <span class="identifier">the</span> <span class="identifier">last</span> <span class="identifier">element</span> <span class="identifier">accessible</span> <span class="identifier">through</span> <span class="identifier">strided_iterator</span> <span class="keyword">for</span> \<span class="identifier">p</span> <span class="identifier">first</span>
-         <span class="identifier">iterator</span> <span class="identifier">with</span> \<span class="identifier">p</span> <span class="identifier">stride</span><span class="special">.</span>
+         <span class="identifier">strided_iterator_end</span><span class="special">,</span>
          <span class="identifier">result</span><span class="special">.</span><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span><span class="special">,</span>
          <span class="identifier">queue</span>
  <span class="special">)</span><span class="special">;</span>

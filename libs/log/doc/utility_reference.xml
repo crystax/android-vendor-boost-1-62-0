@@ -3988,12 +3988,12 @@ The header contains definition of the library settings container. </para><namesp
 <constructor specifiers="explicit"><parameter name="tree"><paramtype>property_tree_type *</paramtype></parameter></constructor>
 </class><class name="basic_settings"><template>
       <template-type-parameter name="CharT"/>
-    </template><inherit access="public">boost::log::basic_settings_section&lt; CharT &gt;</inherit><purpose>The class represents settings container. </purpose><description><para>All settings are presented as a number of named parameters divided into named sections. The parameters values are stored as strings. Individual parameters may be queried via subscript operators, like this:</para><para><computeroutput><preformatted>
+    </template><inherit access="public">boost::log::basic_settings_section&lt; CharT &gt;</inherit><purpose>The class represents settings container. </purpose><description><para>All settings are presented as a number of named parameters divided into named sections. The parameters values are stored as strings. Individual parameters may be queried via subscript operators, like this:</para><para><computeroutput><programlisting>
  optional&lt; string &gt; param = settings["Section1"]["Param1"]; // reads parameter "Param1" in section "Section1"
                                                             // returns an empty value if no such parameter exists
  settings["Section2"]["Param2"] = 10; // sets the parameter "Param2" in section "Section2"
                                       // to value "10"
- </preformatted></computeroutput></para><para>There are also other methods to work with parameters. </para></description><typedef name="section"><purpose>Section type. </purpose><type><classname>basic_settings_section</classname>&lt; CharT &gt;</type></typedef>
+ </programlisting></computeroutput></para><para>There are also other methods to work with parameters. </para></description><typedef name="section"><purpose>Section type. </purpose><type><classname>basic_settings_section</classname>&lt; CharT &gt;</type></typedef>
 <typedef name="property_tree_type"><purpose>Property tree type. </purpose><type>section::property_tree_type</type></typedef>
 <method-group name="public member functions">
 </method-group>

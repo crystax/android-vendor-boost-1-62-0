@@ -1,6 +1,6 @@
 /*!
 @file
-Defines the macros for tracking the version of the library.
+Defines macros for tracking the version of the library.
 
 @copyright Louis Dionne 2013-2016
 Distributed under the Boost Software License, Version 1.0.
@@ -20,11 +20,11 @@ Distributed under the Boost Software License, Version 1.0.
 
 //! @ingroup group-config
 //! Macro expanding to the major version of the library, i.e. the `x` in `x.y.z`.
-#define BOOST_HANA_MAJOR_VERSION 0
+#define BOOST_HANA_MAJOR_VERSION 1
 
 //! @ingroup group-config
 //! Macro expanding to the minor version of the library, i.e. the `y` in `x.y.z`.
-#define BOOST_HANA_MINOR_VERSION 8
+#define BOOST_HANA_MINOR_VERSION 0
 
 //! @ingroup group-config
 //! Macro expanding to the patch level of the library, i.e. the `z` in `x.y.z`.

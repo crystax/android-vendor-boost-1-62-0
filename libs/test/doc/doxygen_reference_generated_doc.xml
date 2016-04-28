@@ -20,20 +20,20 @@
 <function name="invoke_action"><type>void</type><template>
           <template-type-parameter name="Action"/>
           <template-type-parameter name="T"/>
-        </template><parameter name="action"><paramtype>Action const &amp;</paramtype></parameter><parameter name="arg"><paramtype>T const &amp;</paramtype></parameter></function>
+        </template><parameter name="action"><paramtype>Action const &amp;</paramtype></parameter><parameter name="arg"><paramtype>T &amp;&amp;</paramtype></parameter><parameter name=""><paramtype>std::false_type</paramtype></parameter></function>
 <function name="invoke_action_impl"><type>void</type><template>
           <template-type-parameter name="Action"/>
-          <template-nontype-parameter name="T"><type>typename...</type></template-nontype-parameter>
+          <template-type-parameter name="T"/>
           <template-nontype-parameter name="I"><type>std::size_t...</type></template-nontype-parameter>
-        </template><parameter name="action"><paramtype>Action const &amp;</paramtype></parameter><parameter name="args"><paramtype>std::tuple&lt; T const &amp;...&gt; const &amp;</paramtype></parameter><parameter name=""><paramtype>index_sequence&lt; I...&gt; const &amp;</paramtype></parameter></function>
+        </template><parameter name="action"><paramtype>Action const &amp;</paramtype></parameter><parameter name="args"><paramtype>T &amp;&amp;</paramtype></parameter><parameter name=""><paramtype>index_sequence&lt; I...&gt; const &amp;</paramtype></parameter></function>
 <function name="invoke_action"><type>void</type><template>
           <template-type-parameter name="Action"/>
-          <template-nontype-parameter name="T"><type>typename...</type></template-nontype-parameter>
-        </template><parameter name="action"><paramtype>Action const &amp;</paramtype></parameter><parameter name="args"><paramtype>std::tuple&lt; T const &amp;...&gt; const &amp;</paramtype></parameter></function>
+          <template-type-parameter name="T"/>
+        </template><parameter name="action"><paramtype>Action const &amp;</paramtype></parameter><parameter name="args"><paramtype>T &amp;&amp;</paramtype></parameter><parameter name=""><paramtype>std::true_type</paramtype></parameter></function>
 <function name="for_each_sample"><type>std::enable_if&lt; <classname>monomorphic::is_dataset</classname>&lt; DataSet &gt;::value, void &gt;::type</type><template>
           <template-type-parameter name="DataSet"/>
           <template-type-parameter name="Action"/>
-        </template><parameter name="samples"><paramtype>DataSet const &amp;</paramtype></parameter><parameter name="act"><paramtype>Action const &amp;</paramtype></parameter><parameter name="number_of_samples"><paramtype><classname>data::size_t</classname></paramtype><default>BOOST_TEST_DS_INFINITE_SIZE</default></parameter></function>
+        </template><parameter name="samples"><paramtype>DataSet &amp;&amp;</paramtype></parameter><parameter name="act"><paramtype>Action const &amp;</paramtype></parameter><parameter name="number_of_samples"><paramtype><classname>data::size_t</classname></paramtype><default>BOOST_TEST_DS_INFINITE_SIZE</default></parameter></function>
 
 
 
@@ -676,13 +676,11 @@
       <template-type-parameter name="DataSet1"/>
       <template-type-parameter name="DataSet2"/>
     </template><purpose>Implements the dataset resulting from a cartesian product/grid operation on datasets. </purpose><description><para>The arity of the resulting dataset is the sum of the arity of its operands. </para></description><struct name="iterator"><method-group name="public member functions">
-<method name="operator*" cv="const"><type>sample_ref</type></method>
+<method name="operator*" cv="const"><type>auto</type></method>
 <method name="operator++"><type>void</type></method>
 </method-group>
 <constructor specifiers="explicit"><parameter name="iter1"><paramtype>dataset1_iter</paramtype></parameter><parameter name="ds2"><paramtype>DataSet2 const &amp;</paramtype></parameter></constructor>
 </struct><enum name="@7"><enumvalue name="arity"><default> boost::decay&lt;DataSet1&gt;::type::arity + boost::decay&lt;DataSet2&gt;::type::arity</default></enumvalue></enum>
-<typedef name="sample"><type>merged_sample&lt; sample1, sample2 &gt;::type</type></typedef>
-<typedef name="sample_ref"><type>merged_sample&lt; sample1, sample2 &gt;::ref</type></typedef>
 <method-group name="public member functions">
 <method name="size" cv="const"><type><classname>data::size_t</classname></type></method>
 <method name="begin" cv="const"><type><classname>iterator</classname></type></method>
@@ -1012,13 +1010,12 @@
       <template-type-parameter name="DataSet1"/>
       <template-type-parameter name="DataSet2"/>
     </template><purpose>Zip datasets. </purpose><description><para>A zip of two datasets is a dataset whose arity is the sum of the operand datasets arity. The size is given by the function creating the instance (see <computeroutput>operator^</computeroutput> on datasets). </para></description><struct name="iterator"><method-group name="public member functions">
-<method name="operator*" cv="const"><type>sample_ref</type></method>
+<method name="operator*" cv="const"><type>auto</type></method>
 <method name="operator++"><type>void</type></method>
 </method-group>
 <constructor specifiers="explicit"><parameter name="iter1"><paramtype>dataset1_iter</paramtype></parameter><parameter name="iter2"><paramtype>dataset2_iter</paramtype></parameter></constructor>
 </struct><enum name="@10"><enumvalue name="arity"><default> dataset1_decay::arity + dataset2_decay::arity</default></enumvalue></enum>
-<typedef name="sample"><type>merged_sample&lt; sample1, sample2 &gt;::type</type></typedef>
-<typedef name="sample_ref"><type>merged_sample&lt; sample1, sample2 &gt;::ref</type></typedef>
+<typedef name="sample"><type>iterator::iterator_sample</type></typedef>
 <method-group name="public member functions">
 <method name="size" cv="const"><type><classname>data::size_t</classname></type></method>
 <method name="begin" cv="const"><type><classname>iterator</classname></type></method>
@@ -1231,6 +1228,7 @@
 
 </namespace>
 </namespace>
+<macro name="BOOST_TEST_DATASET_VARIADIC"/>
 <macro name="BOOST_DATA_TEST_CASE_PARAM" kind="functionlike"><macro-parameter name="r"/><macro-parameter name="_"/><macro-parameter name="i"/><macro-parameter name="param"/></macro>
 <macro name="BOOST_DATA_TEST_CONTEXT" kind="functionlike"><macro-parameter name="r"/><macro-parameter name="_"/><macro-parameter name="param"/></macro>
 <macro name="BOOST_DATA_TEST_CASE_PARAMS" kind="functionlike"><macro-parameter name="params"/></macro>

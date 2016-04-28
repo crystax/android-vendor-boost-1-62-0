@@ -556,7 +556,7 @@
       <template-type-parameter name="T"/>
     </template><description><para>If this trait yields to true (<emphasis><classname alt="boost::has_trivial_destructor_after_move">has_trivial_destructor_after_move</classname> &lt;T&gt;::value == true</emphasis>) means that if T is used as argument of a move construction/assignment, there is no need to call T's destructor. This optimization tipically is used to improve containers' performance.</para><para>By default this trait is true if the type has trivial destructor, every class should specialize this trait if it wants to improve performance when inserted in containers. </para></description></struct><struct name="has_nothrow_move"><template>
       <template-type-parameter name="T"/>
-    </template><description><para>By default this traits returns <preformatted>boost::is_nothrow_move_constructible&lt;T&gt;::value &amp;&amp; boost::is_nothrow_move_assignable&lt;T&gt;::value </preformatted>. Classes with non-throwing move constructor and assignment can specialize this trait to obtain some performance improvements. </para></description><data-member name="value" specifiers="static"><type>const bool</type></data-member>
+    </template><description><programlisting>boost::is_nothrow_move_constructible&lt;T&gt;::value &amp;&amp; boost::is_nothrow_move_assignable&lt;T&gt;::value </programlisting></description><data-member name="value" specifiers="static"><type>const bool</type></data-member>
 </struct>
 
 

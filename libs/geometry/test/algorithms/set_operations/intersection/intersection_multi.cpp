@@ -228,6 +228,15 @@ void test_areal()
     test_one<Polygon, MultiPolygon, MultiPolygon>("case_recursive_boxes_34",
         case_recursive_boxes_34[0], case_recursive_boxes_34[1],
         2, 0, 17.25);
+    test_one<Polygon, MultiPolygon, MultiPolygon>("case_recursive_boxes_35",
+        case_recursive_boxes_35[0], case_recursive_boxes_35[1],
+        2, 0, 20.0);
+    test_one<Polygon, MultiPolygon, MultiPolygon>("case_recursive_boxes_36",
+        case_recursive_boxes_36[0], case_recursive_boxes_36[1],
+        1, 0, 0.5);
+    test_one<Polygon, MultiPolygon, MultiPolygon>("case_recursive_boxes_37",
+        case_recursive_boxes_37[0], case_recursive_boxes_37[1],
+        2, 0, 1.0);
 
     test_one<Polygon, MultiPolygon, MultiPolygon>("ggl_list_20120915_h2_a",
         ggl_list_20120915_h2[0], ggl_list_20120915_h2[1],
@@ -239,6 +248,14 @@ void test_areal()
     test_one<Polygon, MultiPolygon, MultiPolygon>("ticket_9081",
         ticket_9081[0], ticket_9081[1],
         2, 10, 0.0019812556);
+
+    test_one<Polygon, MultiPolygon, MultiPolygon>("ticket_11018",
+        ticket_11018[0], ticket_11018[1],
+        1, 4, 1.7791170511070893e-14);
+
+    test_one<Polygon, MultiPolygon, MultiPolygon>("mysql_1",
+        mysql_1[0], mysql_1[1],
+        2, 11, 9.80505786783);
 }
 
 template <typename Polygon, typename MultiPolygon, typename Box>
@@ -307,7 +324,6 @@ void test_areal_linear()
 template <typename P>
 void test_all()
 {
-    //typedef bg::model::box<P> box;
     typedef bg::model::ring<P> ring;
     typedef bg::model::polygon<P> polygon;
     typedef bg::model::multi_polygon<polygon> multi_polygon;
@@ -330,6 +346,7 @@ void test_all()
     typedef bg::model::multi_polygon<polygon_open_ccw> multi_polygon_open_ccw;
     test_areal<ring_open_ccw, polygon_open_ccw, multi_polygon_open_ccw>();
 
+    typedef bg::model::box<P> box;
     test_areal_clip<polygon, multi_polygon, box>();
     test_areal_clip<polygon_ccw, multi_polygon_ccw, box>();
 

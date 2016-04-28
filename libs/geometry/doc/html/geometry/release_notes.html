@@ -32,6 +32,13 @@
       1.61</a>
     </h4>
 <p>
+      <span class="bold"><strong>Additional functionality</strong></span>
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+          Support within and covered_by for Box/Box in spherical and geographic coordinate
+          systems.
+        </li></ul></div>
+<p>
       <span class="bold"><strong>Improvements</strong></span>
     </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
@@ -43,8 +50,29 @@
     </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
+          <a href="https://svn.boost.org/trac/boost/ticket/10866" target="_top">10866</a>
+          union_ doesn't work in 1.56 and 1.57.
+        </li>
+<li class="listitem">
+          <a href="https://svn.boost.org/trac/boost/ticket/11018" target="_top">11018</a>
+          Invalid geometry intersection
+        </li>
+<li class="listitem">
+          <a href="https://svn.boost.org/trac/boost/ticket/11576" target="_top">11576</a>
+          Intersection gives wrong results.
+        </li>
+<li class="listitem">
           <a href="https://svn.boost.org/trac/boost/ticket/11637" target="_top">11637</a>
           Unused parameter warning.
+        </li>
+<li class="listitem">
+          <a href="https://svn.boost.org/trac/boost/ticket/11725" target="_top">11725</a>
+          union_ fails to create holes
+        </li>
+<li class="listitem">
+          <a href="https://svn.boost.org/trac/boost/ticket/11789" target="_top">11789</a>
+          Assertion failure or invalid result of set operations for spherical_equatorial
+          coordinate system.
         </li>
 <li class="listitem">
           <a href="https://svn.boost.org/trac/boost/ticket/11917" target="_top">11917</a>
@@ -60,13 +88,20 @@
           Compilation error in svg() for box and non-int coordinate type.
         </li>
 <li class="listitem">
-          <a href="https://svn.boost.org/trac/boost/ticket/11789" target="_top">11789</a>
-          Assertion failure or invalid result of set operations for spherical_equatorial
-          coordinate system.
+          <a href="https://svn.boost.org/trac/boost/ticket/11984" target="_top">11984</a>
+          union_() generates self-intersecting polygon
+        </li>
+<li class="listitem">
+          <a href="https://svn.boost.org/trac/boost/ticket/11987" target="_top">11987</a>
+          rtree::remove() not compiling for geographic CS.
         </li>
 <li class="listitem">
           <a href="https://svn.boost.org/trac/boost/ticket/12000" target="_top">12000</a>
           Uninitialized reference in (unused) constructor of relate's mask_handler.
+        </li>
+<li class="listitem">
+          <a href="https://svn.boost.org/trac/boost/ticket/12106" target="_top">12106</a>
+          Invalid assertion failure in envelope() for non-cartesian very short segments.
         </li>
 </ul></div>
 <p>
@@ -74,12 +109,20 @@
     </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-          Fix wrong result of intersects/disjoints for Segment and Box when Segment
-          is parallel to Box's face.
+          Fix intersects and disjoints for Segment/Box in cartesian coordinate system
+          when Segment is parallel to Box's face.
         </li>
 <li class="listitem">
-          Fix relation operations of Point/Areal in edge cases for non-cartesian
-          coordinate systems.
+          Fix relation operations for Point/Areal in spherical and geographic coordinate
+          systems for edge cases.
+        </li>
+<li class="listitem">
+          Fix intersect and disjoint for Point/Box and Box/Box in spherical and geographic
+          coordinate systems for some cases.
+        </li>
+<li class="listitem">
+          Fix within and covered_by for Point/Box in spherical and geographic coordinate
+          systems for some cases.
         </li>
 </ul></div>
 <h4>

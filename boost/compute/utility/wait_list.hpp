@@ -40,6 +40,9 @@ template<class T> class future;
 class wait_list
 {
 public:
+    typedef std::vector<event>::iterator iterator;
+    typedef std::vector<event>::const_iterator const_iterator;
+
     /// Creates an empty wait-list.
     wait_list()
     {
@@ -97,7 +100,7 @@ public:
     /// Returns the number of events in the wait-list.
     uint_ size() const
     {
-        return m_events.size();
+        return static_cast<uint_>(m_events.size());
     }
 
     /// Removes all of the events from the wait-list.
@@ -118,6 +121,11 @@ public:
         }
 
         return reinterpret_cast<const cl_event *>(&m_events[0]);
+    }
+
+    /// Reserves a minimum length of storage for the wait list object.
+    void reserve(size_t new_capacity) {
+        m_events.reserve(new_capacity);
     }
 
     /// Inserts \p event into the wait-list.
@@ -143,6 +151,46 @@ public:
                 clWaitForEvents(size(), get_event_ptr())
             );
         }
+    }
+
+    /// Returns a reference to the event at specified location \p pos.
+    const event& operator[](size_t pos) const {
+        return m_events[pos];
+    }
+
+    /// Returns a reference to the event at specified location \p pos.
+    event& operator[](size_t pos) {
+        return m_events[pos];
+    }
+
+    /// Returns an iterator to the first element of the wait-list.
+    iterator begin() {
+        return m_events.begin();
+    }
+
+    /// Returns an iterator to the first element of the wait-list.
+    const_iterator begin() const {
+        return m_events.begin();
+    }
+
+    /// Returns an iterator to the first element of the wait-list.
+    const_iterator cbegin() const {
+        return m_events.begin();
+    }
+
+    /// Returns an iterator to the element following the last element of the wait-list.
+    iterator end() {
+        return m_events.end();
+    }
+
+    /// Returns an iterator to the element following the last element of the wait-list.
+    const_iterator end() const {
+        return m_events.end();
+    }
+
+    /// Returns an iterator to the element following the last element of the wait-list.
+    const_iterator cend() const {
+        return m_events.end();
     }
 
 private:

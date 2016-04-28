@@ -1355,15 +1355,15 @@ The header contains a formatter function wrapper that enables third-party functi
 
 <function name="wrap_formatter"><type><emphasis>unspecified</emphasis></type><template>
           <template-type-parameter name="FunT"/>
-        </template><parameter name="fun"><paramtype>FunT const &amp;</paramtype></parameter><description><para>The function wraps a function object in order it to be able to participate in formatting expressions. The wrapped function object must be compatible with the following signature:</para><para><preformatted>
+        </template><parameter name="fun"><paramtype>FunT const &amp;</paramtype></parameter><description><para>The function wraps a function object in order it to be able to participate in formatting expressions. The wrapped function object must be compatible with the following signature:</para><programlisting>
  void (record_view const&amp;, basic_formatting_ostream&lt; CharT &gt;&amp;)
- </preformatted></para><para>where <computeroutput>CharT</computeroutput> is the character type of the formatting expression. </para></description></function>
+ </programlisting><para>where <computeroutput>CharT</computeroutput> is the character type of the formatting expression. </para></description></function>
 <function name="wrap_formatter"><type><classname>wrapped_formatter_actor</classname>&lt; FunT, CharT &gt;</type><template>
           <template-type-parameter name="CharT"/>
           <template-type-parameter name="FunT"/>
-        </template><parameter name="fun"><paramtype>FunT const &amp;</paramtype></parameter><description><para>The function wraps a function object in order it to be able to participate in formatting expressions. The wrapped function object must be compatible with the following signature:</para><para><preformatted>
+        </template><parameter name="fun"><paramtype>FunT const &amp;</paramtype></parameter><description><para>The function wraps a function object in order it to be able to participate in formatting expressions. The wrapped function object must be compatible with the following signature:</para><programlisting>
  void (record_view const&amp;, basic_formatting_ostream&lt; CharT &gt;&amp;)
- </preformatted></para><para>where <computeroutput>CharT</computeroutput> is the character type of the formatting expression. </para></description></function>
+ </programlisting><para>where <computeroutput>CharT</computeroutput> is the character type of the formatting expression. </para></description></function>
 
 
 

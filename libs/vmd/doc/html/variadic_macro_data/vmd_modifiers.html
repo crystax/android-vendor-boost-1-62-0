@@ -31,11 +31,11 @@
       type modifiers</a></span></dt>
 <dt><span class="section"><a href="vmd_modifiers/vmd_modifiers_filter.html">Filtering
       modifiers</a></span></dt>
-<dt><span class="section"><a href="vmd_modifiers/vmd_modifiers_filter0.html">Identifier
+<dt><span class="section"><a href="vmd_modifiers/vmd_modifiers_identifier.html">Identifier
       modifiers</a></span></dt>
 <dt><span class="section"><a href="vmd_modifiers/vmd_modifiers_splitting.html">Splitting
       modifiers</a></span></dt>
-<dt><span class="section"><a href="vmd_modifiers/vmd_modifiers_filter1.html">Index
+<dt><span class="section"><a href="vmd_modifiers/vmd_modifiers_index.html">Index
       modifiers</a></span></dt>
 <dt><span class="section"><a href="vmd_modifiers/vmd_modifiers_single.html">Modifiers
       and the single-element sequence</a></span></dt>
@@ -52,16 +52,6 @@
       All modifiers are VMD identifiers.
     </p>
 <p>
-      Some modifiers are identifiers, both registered and pre-detected, starting
-      with BOOST_VMD_. These are termed VMD "specific modifiers" and change
-      the expansion of a macro in various ways.
-    </p>
-<p>
-      Modifiers may also be user-defined identifiers in some situations which will
-      be subsequently explained. These user-defined identifiers are termed "user-defined
-      modifiers".
-    </p>
-<p>
       In all situations modifiers are optional parameters which are parsed by VMD
       to provide enhanced functionality for some of its macros. They are never required
       as part of the basic functionality of a macro.
@@ -70,6 +60,15 @@
       When modifiers are used as optional arguments to a macro they can be input
       after the required parameters in any order and VMD will still handle the optional
       parameters correctly.
+    </p>
+<p>
+      There are two general types of modifiers, 'specific modifiers' and 'user-defined
+      modifiers'. Specific modifers start with BOOST_VMD_ and are both registered
+      and pre-detected identifiers known to VMD. The specific modifiers change the
+      expansion of particular macros in various ways which will be subsequently explained.
+      User-defined modifiers are user-defined identifiers which the end-user of specific
+      macros must register and pre-detect for himself. They also change the expansion
+      of particular macros in various ways which will be subsequently explained.
     </p>
 <p>
       For any particular macro if a specific modifier is not appropriate it is just
@@ -82,10 +81,10 @@
 <p>
       The situations where modifiers can be used to enhance the basic functionality
       of VMD macros can be divided by particular types of specific modifiers. Each
-      particular type of a specific modifier has a particular name given to it in
-      this documentation, functionality, set of identifiers, and may be used as optional
-      parameters in one or more designated macros depending on the specific modifier
-      type.
+      particular type of a specific modifier has a name given to it, functionality,
+      and set of identifiers associated with that particular type. Each particular
+      type of a specific modifier may be used as optional parameters in one or more
+      designated macros depending on the specific modifier type.
     </p>
 <p>
       When more than one mutually exclusive specific modifier from a particular type
@@ -168,7 +167,7 @@
       </p>
 <p>
         If more than one of the return type modifiers are specified as optional parameters
-        last one specified is in effect.
+        the last one specified is in effect.
       </p>
 <h5>
 <a name="variadic_macro_data.vmd_modifiers.vmd_modifiers_return_type.h0"></a>

@@ -43,15 +43,15 @@
   <span class="keyword">typedef</span> <span class="identifier">basic_expr</span>                  <a name="boost.proto.basic_expr.proto_derived_expr"></a><span class="identifier">proto_derived_expr</span><span class="special">;</span>
   <span class="keyword">typedef</span> <span class="keyword">typename</span> <span class="identifier">Args</span><span class="special">::</span><span class="identifier">child</span><em class="replaceable"><code><span class="identifier">N</span></code></em>       <a name="boost.proto.basic_expr.proto_childN"></a><span class="identifier">proto_childN</span><span class="special">;</span>        <span class="comment">// For each <em class="replaceable"><code>N</code></em> in <em class="replaceable"><code>[0,max(Arity,1))</code></em>.</span>
 
-  <span class="comment">// <a class="link" href="basic_expr.html#idp27879328-bb">public static functions</a></span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> A<span class="special">&gt;</span> <span class="keyword">static</span> <span class="identifier">basic_expr</span> <span class="keyword">const</span> <a class="link" href="basic_expr.html#idp27880208-bb"><span class="identifier">make</span></a><span class="special">(</span><span class="identifier">A</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="basic_expr.html#idp28184928-bb">public static functions</a></span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> A<span class="special">&gt;</span> <span class="keyword">static</span> <span class="identifier">basic_expr</span> <span class="keyword">const</span> <a class="link" href="basic_expr.html#idp28185808-bb"><span class="identifier">make</span></a><span class="special">(</span><span class="identifier">A</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="basic_expr.html#idp27887312-bb">public member functions</a></span>
-  <span class="identifier">basic_expr</span> <span class="special">&amp;</span> <a class="link" href="basic_expr.html#idp27887872-bb"><span class="identifier">proto_base</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">basic_expr</span> <span class="keyword">const</span> <span class="special">&amp;</span> <a class="link" href="basic_expr.html#idp27890384-bb"><span class="identifier">proto_base</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="basic_expr.html#idp28192912-bb">public member functions</a></span>
+  <span class="identifier">basic_expr</span> <span class="special">&amp;</span> <a class="link" href="basic_expr.html#idp28193472-bb"><span class="identifier">proto_base</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">basic_expr</span> <span class="keyword">const</span> <span class="special">&amp;</span> <a class="link" href="basic_expr.html#idp28195984-bb"><span class="identifier">proto_base</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp51751152"></a><h2>Description</h2>
+<a name="idp79802208"></a><h2>Description</h2>
 <p>
             <code class="computeroutput">proto::basic_expr&lt;&gt;</code> is a node in an expression
             template tree. It is a container for its child sub-trees. It also serves as the
@@ -86,10 +86,10 @@
             expressions.
           </p>
 <div class="refsect2">
-<a name="idp51768352"></a><h3>
-<a name="idp27879328-bb"></a><code class="computeroutput">basic_expr</code> public static functions</h3>
+<a name="idp79819504"></a><h3>
+<a name="idp28184928-bb"></a><code class="computeroutput">basic_expr</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> A<span class="special">&gt;</span> <span class="keyword">static</span> <span class="identifier">basic_expr</span> <span class="keyword">const</span> <a name="idp27880208-bb"></a><span class="identifier">make</span><span class="special">(</span><span class="identifier">A</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">...</span> a<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> A<span class="special">&gt;</span> <span class="keyword">static</span> <span class="identifier">basic_expr</span> <span class="keyword">const</span> <a name="idp28185808-bb"></a><span class="identifier">make</span><span class="special">(</span><span class="identifier">A</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">...</span> a<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -110,11 +110,11 @@
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp51785680"></a><h3>
-<a name="idp27887312-bb"></a><code class="computeroutput">basic_expr</code> public member functions</h3>
+<a name="idp79836704"></a><h3>
+<a name="idp28192912-bb"></a><code class="computeroutput">basic_expr</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">basic_expr</span> <span class="special">&amp;</span> <a name="idp27887872-bb"></a><span class="identifier">proto_base</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">basic_expr</span> <span class="special">&amp;</span> <a name="idp28193472-bb"></a><span class="identifier">proto_base</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -126,7 +126,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">basic_expr</span> <span class="keyword">const</span> <span class="special">&amp;</span> <a name="idp27890384-bb"></a><span class="identifier">proto_base</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">basic_expr</span> <span class="keyword">const</span> <span class="special">&amp;</span> <a name="idp28195984-bb"></a><span class="identifier">proto_base</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>
                 This is an overloaded member function, provided for convenience. It differs from
                 the above function only in what argument(s) it accepts.

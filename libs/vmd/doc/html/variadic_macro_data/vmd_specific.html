@@ -283,7 +283,8 @@
 <pre class="programlisting"><span class="preprocessor">#define</span> <span class="identifier">FMACRO</span><span class="special">(</span><span class="identifier">x</span><span class="special">)</span> <span class="identifier">BOOST_PP_CAT</span><span class="special">(+,</span><span class="identifier">x</span> <span class="identifier">C</span><span class="special">);</span>
 </pre>
 <p>
-        When nothing is passed to FMACRO undefined behavior will occur.
+        When nothing is passed to FMACRO undefined behavior will occur since attempting
+        to concatenate '+' to ' C' is UB in C++ preprocessor terms.
       </p>
 <p>
         So for a standard conforming compiler we have essentially a single corner
@@ -305,9 +306,10 @@
         macro name.
       </p>
 <p>
-        The first situation is that if a macro taking 'n' number of parameters is
-        invoked with 0 to 'n-1' parameters, the compiler does not give an error,
-        but only a warning.
+        The first situation, related to our discussion of emptiness, where the VC++
+        preprocessor is not a standard C++ conforming preprocessor is that if a macro
+        taking 'n' number of parameters is invoked with 0 to 'n-1' parameters, the
+        compiler does not give an error, but only a warning.
       </p>
 <pre class="programlisting"><span class="preprocessor">#define</span> <span class="identifier">FMACRO</span><span class="special">(</span><span class="identifier">x</span><span class="special">,</span><span class="identifier">y</span><span class="special">)</span> <span class="identifier">x</span> <span class="special">+</span> <span class="identifier">y</span>
 
@@ -324,11 +326,12 @@
         error should occur.
       </p>
 <p>
-        A second general situation with VC++ situation, which affects the use of
-        BOOST_VMD_IS_EMPTY, is that the expansion of a macro works incorrectly when
-        the expanded macro is a function-like macro name followed by a function-like
-        macro invocation, in which case the macro re-expansion is erroneously done
-        more than once. This latter case can be seen by this example:
+        A second general situation, related to our discussion of emptiness, where
+        the VC++ preprocessor is not a standard C++ conforming preprocessor is that
+        the expansion of a macro works incorrectly when the expanded macro is a function-like
+        macro name followed by a function-like macro invocation, in which case the
+        macro re-expansion is erroneously done more than once. This latter case can
+        be seen by this example:
       </p>
 <pre class="programlisting"><span class="preprocessor">#define</span> <span class="identifier">FMACRO1</span><span class="special">(</span><span class="identifier">parameter</span><span class="special">)</span> <span class="identifier">FMACRO3</span> <span class="identifier">parameter</span><span class="special">()</span>
 <span class="preprocessor">#define</span> <span class="identifier">FMACRO2</span><span class="special">()</span> <span class="special">()</span>
@@ -365,8 +368,9 @@
 <p>
         when the input to BOOST_VMD_IS_EMPTY resolves to only a function-like macro
         name, and the function-like macro, when passed a single empty argument, expands
-        to a tuple, BOOST_VMD_IS_EMPTY will erroneously return 1 when using the Visual
-        C++ compiler rather than either give a preprocessing error or return 0.
+        to a Boost PP tuple, BOOST_VMD_IS_EMPTY will erroneously return 1 when using
+        the Visual C++ compiler rather than either give a preprocessing error or
+        return 0.
       </p>
 <p>
         Here is an example of the failure:
@@ -405,7 +409,7 @@
       </p>
 <p>
         The case where it will not work, with both a C++ standard conforming preprocessor
-        or with Visual C++, occurs when he name of a function-like macro is part
+        or with Visual C++, occurs when the name of a function-like macro is part
         of the input to BOOST_VMD_IS_EMPTY. Obviously the macro should be used by
         the preprocessor metaprogrammer when the possible input to it is constrained
         to eliminate the erroneous case.

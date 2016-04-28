@@ -212,10 +212,10 @@ namespace boost
     struct c_str<boost::metaparse::v1::string<Cs...>>
     {
       typedef c_str type;
-      #if defined BOOST_USE_CONSTEXPR && !defined BOOST_NO_CONSTEXPR_C_STR
-        static constexpr char value[sizeof...(Cs) + 1] = {Cs..., 0};
-      #else
+      #ifdef BOOST_NO_CONSTEXPR_C_STR
         static const char value[sizeof...(Cs) + 1];
+      #else
+        static constexpr char value[sizeof...(Cs) + 1] = {Cs..., 0};
       #endif
     };
 
@@ -224,13 +224,13 @@ namespace boost
       boost::metaparse::v1::impl::empty_string<>
     {};
 
-    #if defined BOOST_USE_CONSTEXPR && !defined BOOST_NO_CONSTEXPR_C_STR
-      template <char... Cs>
-      constexpr char c_str<boost::metaparse::v1::string<Cs...>>::value[];
-    #else
+    #ifdef BOOST_NO_CONSTEXPR_C_STR
       template <char... Cs>
       const char c_str<boost::metaparse::v1::string<Cs...>>::value[]
         = {Cs..., 0};
+    #else
+      template <char... Cs>
+      constexpr char c_str<boost::metaparse::v1::string<Cs...>>::value[];
     #endif
 
 #else
@@ -244,7 +244,7 @@ namespace boost
       typedef c_str type;
       static BOOST_CONSTEXPR const char
         value[BOOST_METAPARSE_LIMIT_STRING_SIZE + 1]
-      #ifdef BOOST_USE_CONSTEXPR
+      #if !defined BOOST_NO_CONSTEXPR && !defined BOOST_NO_CXX11_CONSTEXPR
         = {BOOST_PP_ENUM_PARAMS(BOOST_METAPARSE_LIMIT_STRING_SIZE, C), 0}
       #endif
         ;
@@ -257,7 +257,7 @@ namespace boost
           BOOST_PP_ENUM_PARAMS(BOOST_METAPARSE_LIMIT_STRING_SIZE, C)
         >
       >::value[BOOST_METAPARSE_LIMIT_STRING_SIZE + 1]
-      #ifndef BOOST_USE_CONSTEXPR
+      #if defined BOOST_NO_CONSTEXPR || defined BOOST_NO_CXX11_CONSTEXPR
         = {BOOST_PP_ENUM_PARAMS(BOOST_METAPARSE_LIMIT_STRING_SIZE, C), 0}
       #endif
         ;
@@ -281,7 +281,7 @@ namespace boost
     #ifdef BOOST_METAPARSE_STRING_DEFINE
     #  error BOOST_METAPARSE_STRING_DECLARE already defined
     #endif
-    #ifdef BOOST_USE_CONSTEXPR
+    #if !defined BOOST_NO_CONSTEXPR && !defined BOOST_NO_CXX11_CONSTEXPR
     #  define BOOST_METAPARSE_STRING_DECLARE(n) BOOST_METAPARSE_DEF(n)
     #  define BOOST_METAPARSE_STRING_DEFINE(n)
     #else
@@ -342,7 +342,9 @@ namespace boost
  * The BOOST_METAPARSE_STRING macro
  */
 
-#if defined BOOST_USE_CONSTEXPR && !defined BOOST_CONFIG_NO_BOOST_METAPARSE_STRING
+#if \
+  !defined BOOST_NO_CONSTEXPR && !defined BOOST_NO_CXX11_CONSTEXPR \
+  && !defined BOOST_CONFIG_NO_BOOST_METAPARSE_STRING
 
 #include <boost/metaparse/v1/impl/remove_trailing_no_chars.hpp>
 

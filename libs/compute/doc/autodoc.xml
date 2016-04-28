@@ -62,6 +62,8 @@
 
 
 
+
+
 <overloaded-function name="accumulate"><signature><type>T</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="T"/>
@@ -177,6 +179,8 @@ In specific situations the call to <computeroutput>accumulate()</computeroutput>
 
 <para><emphasis role="bold">See Also:</emphasis><para>adjacent_find() </para></para>
 </para></description><returns><para><computeroutput>OutputIterator</computeroutput> to the end of the result range</para></returns></overloaded-function>
+
+
 
 
 
@@ -442,12 +446,16 @@ In specific situations the call to <computeroutput>accumulate()</computeroutput>
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/all_of.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -684,6 +692,8 @@ In specific situations the call to <computeroutput>accumulate()</computeroutput>
 
 
 
+
+
 <function name="any_of"><type>bool</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="UnaryPredicate"/>
@@ -747,6 +757,8 @@ In specific situations the call to <computeroutput>accumulate()</computeroutput>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="T"/>
         </template><parameter name="first"><paramtype>InputIterator</paramtype></parameter><parameter name="last"><paramtype>InputIterator</paramtype></parameter><parameter name="value"><paramtype>const T &amp;</paramtype></parameter><parameter name="queue"><paramtype>command_queue &amp;</paramtype><default>system::default_queue()</default></parameter><description><para>Returns <computeroutput>true</computeroutput> if <computeroutput>value</computeroutput> is in the sorted range [<computeroutput>first</computeroutput>, <computeroutput>last</computeroutput>). </para></description></function>
+
+
 
 
 
@@ -1036,12 +1048,16 @@ For example, to copy an array of <computeroutput>int</computeroutput> values on 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/copy_if.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -1325,12 +1341,16 @@ For example, to copy an array of <computeroutput>int</computeroutput> values on 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/count.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -1504,6 +1524,8 @@ For example, to copy an array of <computeroutput>int</computeroutput> values on 
 
 
 
+
+
 <function name="count_if"><type>size_t</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="Predicate"/>
@@ -1612,6 +1634,8 @@ For example, to copy an array of <computeroutput>int</computeroutput> values on 
 <header name="boost/compute/algorithm/equal.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -1826,6 +1850,8 @@ For example, to copy an array of <computeroutput>int</computeroutput> values on 
 
 
 
+
+
 <function name="equal_range"><type>std::pair&lt; InputIterator, InputIterator &gt;</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="T"/>
@@ -1895,6 +1921,8 @@ For example, to copy an array of <computeroutput>int</computeroutput> values on 
 <header name="boost/compute/algorithm/exclusive_scan.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -2047,6 +2075,8 @@ The default operation is to add the elements up.</para><para><programlisting lan
 <header name="boost/compute/algorithm/fill.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -2291,6 +2321,8 @@ For example, to fill a vector on the device with sevens: <programlisting languag
 
 
 
+
+
 <function name="fill_n"><type>void</type><template>
           <template-type-parameter name="BufferIterator"/>
           <template-type-parameter name="Size"/>
@@ -2339,6 +2371,8 @@ For example, to fill a vector on the device with sevens: <programlisting languag
 <header name="boost/compute/algorithm/find.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -2615,12 +2649,16 @@ For example, to fill a vector on the device with sevens: <programlisting languag
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/find_if.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -2761,6 +2799,8 @@ For example, to fill a vector on the device with sevens: <programlisting languag
 <header name="boost/compute/algorithm/find_if_not.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -3037,6 +3077,8 @@ For example, to fill a vector on the device with sevens: <programlisting languag
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -3179,12 +3221,16 @@ For example, to fill a vector on the device with sevens: <programlisting languag
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/gather.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -3461,12 +3507,16 @@ For example, to fill a vector on the device with sevens: <programlisting languag
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/generate_n.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -3608,6 +3658,8 @@ For example, to fill a vector on the device with sevens: <programlisting languag
 <header name="boost/compute/algorithm/includes.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -3891,12 +3943,16 @@ The default operation is to add the elements up.</para><para><programlisting lan
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/inner_product.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -4177,12 +4233,16 @@ The default operation is to add the elements up.</para><para><programlisting lan
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/iota.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -4457,12 +4517,16 @@ The default operation is to add the elements up.</para><para><programlisting lan
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/is_permutation.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -4689,6 +4753,8 @@ The default operation is to add the elements up.</para><para><programlisting lan
 
 
 
+
+
 <overloaded-function name="is_sorted"><signature><type>bool</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="Compare"/>
@@ -4750,6 +4816,8 @@ The default operation is to add the elements up.</para><para><programlisting lan
 <header name="boost/compute/algorithm/lexicographical_compare.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -4932,6 +5000,8 @@ The default operation is to add the elements up.</para><para><programlisting lan
 
 
 
+
+
 <function name="lower_bound"><type>InputIterator</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="T"/>
@@ -5031,6 +5101,8 @@ The default operation is to add the elements up.</para><para><programlisting lan
 <header name="boost/compute/algorithm/max_element.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -5290,6 +5362,8 @@ For example, to find <computeroutput>int2</computeroutput> value with maximum fi
 
 
 
+
+
 <overloaded-function name="merge"><signature><type>OutputIterator</type><template>
           <template-type-parameter name="InputIterator1"/>
           <template-type-parameter name="InputIterator2"/>
@@ -5335,6 +5409,8 @@ For example, to find <computeroutput>int2</computeroutput> value with maximum fi
 <header name="boost/compute/algorithm/min_element.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -5629,12 +5705,16 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/mismatch.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -5778,6 +5858,8 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 <header name="boost/compute/algorithm/next_permutation.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -5996,6 +6078,8 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 
 
 
+
+
 <function name="none_of"><type>bool</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="UnaryPredicate"/>
@@ -6060,6 +6144,8 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 <header name="boost/compute/algorithm/nth_element.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -6278,6 +6364,8 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 
 
 
+
+
 <function name="partial_sum"><type>OutputIterator</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="OutputIterator"/>
@@ -6420,6 +6508,8 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 
 
 
+
+
 <function name="partition"><type>Iterator</type><template>
           <template-type-parameter name="Iterator"/>
           <template-type-parameter name="UnaryPredicate"/>
@@ -6483,6 +6573,8 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 <header name="boost/compute/algorithm/partition_copy.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -6763,12 +6855,16 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/prev_permutation.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -6958,6 +7054,8 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 
 
 
+
+
 <function name="random_shuffle"><type>void</type><template>
           <template-type-parameter name="Iterator"/>
         </template><parameter name="first"><paramtype>Iterator</paramtype></parameter><parameter name="last"><paramtype>Iterator</paramtype></parameter><parameter name="queue"><paramtype>command_queue &amp;</paramtype><default>system::default_queue()</default></parameter><description><para>Randomly shuffles the elements in the range [<computeroutput>first</computeroutput>, <computeroutput>last</computeroutput>).</para><para><para><emphasis role="bold">See Also:</emphasis><para>scatter() </para></para>
@@ -7050,6 +7148,8 @@ For example, to find <computeroutput>int2</computeroutput> value with minimum fi
 <header name="boost/compute/algorithm/reduce.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -7347,12 +7447,16 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/remove.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -7547,6 +7651,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 <function name="remove_if"><type>Iterator</type><template>
           <template-type-parameter name="Iterator"/>
           <template-type-parameter name="Predicate"/>
@@ -7635,6 +7741,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 <header name="boost/compute/algorithm/replace.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -7911,12 +8019,16 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/reverse.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -8149,6 +8261,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 <function name="reverse_copy"><type>OutputIterator</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="OutputIterator"/>
@@ -8198,6 +8312,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 <header name="boost/compute/algorithm/rotate.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -8473,12 +8589,16 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/scatter.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -8621,6 +8741,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 <header name="boost/compute/algorithm/scatter_if.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -8905,6 +9027,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -8943,6 +9067,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
         </template><parameter name="t_first"><paramtype>TextIterator</paramtype><description><para>Iterator pointing to start of text </para></description></parameter><parameter name="t_last"><paramtype>TextIterator</paramtype><description><para>Iterator pointing to end of text </para></description></parameter><parameter name="n"><paramtype>size_t</paramtype><description><para>Number of times value repeats </para></description></parameter><parameter name="value"><paramtype>ValueType</paramtype><description><para>Value which repeats </para></description></parameter><parameter name="queue"><paramtype>command_queue &amp;</paramtype><default>system::default_queue()</default><description><para>Queue on which to execute </para></description></parameter><purpose>Substring matching algorithm. </purpose><description><para>Searches for the first occurrence of n consecutive occurrences of value in text [t_first, t_last). 
 
 </para></description><returns><para>Iterator pointing to beginning of first occurrence</para></returns></function>
+
+
 
 
 
@@ -9190,12 +9316,16 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/set_intersection.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -9432,6 +9562,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 <function name="set_symmetric_difference"><type>OutputIterator</type><template>
           <template-type-parameter name="InputIterator1"/>
           <template-type-parameter name="InputIterator2"/>
@@ -9482,6 +9614,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 <header name="boost/compute/algorithm/set_union.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -9699,6 +9833,8 @@ The <computeroutput>reduce_by_key()</computeroutput> algorithm assumes that the 
 
 
 
+
+
 <overloaded-function name="sort"><signature><type>void</type><template>
           <template-type-parameter name="Iterator"/>
           <template-type-parameter name="Compare"/>
@@ -9778,6 +9914,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <header name="boost/compute/algorithm/sort_by_key.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -10014,6 +10152,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 <function name="stable_partition"><type>Iterator</type><template>
           <template-type-parameter name="Iterator"/>
           <template-type-parameter name="UnaryPredicate"/>
@@ -10066,6 +10206,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <header name="boost/compute/algorithm/stable_sort.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -10206,9 +10348,158 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 </namespace>
 </namespace>
 </header>
+<header name="boost/compute/algorithm/stable_sort_by_key.hpp">
+<namespace name="boost">
+<namespace name="compute">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<overloaded-function name="stable_sort_by_key"><signature><type>void</type><template>
+          <template-type-parameter name="KeyIterator"/>
+          <template-type-parameter name="ValueIterator"/>
+          <template-type-parameter name="Compare"/>
+        </template><parameter name="keys_first"><paramtype>KeyIterator</paramtype></parameter><parameter name="keys_last"><paramtype>KeyIterator</paramtype></parameter><parameter name="values_first"><paramtype>ValueIterator</paramtype></parameter><parameter name="compare"><paramtype>Compare</paramtype></parameter><parameter name="queue"><paramtype>command_queue &amp;</paramtype><default>system::default_queue()</default></parameter></signature><signature><type>void</type><template>
+          <template-type-parameter name="KeyIterator"/>
+          <template-type-parameter name="ValueIterator"/>
+        </template><parameter name="keys_first"><paramtype>KeyIterator</paramtype></parameter><parameter name="keys_last"><paramtype>KeyIterator</paramtype></parameter><parameter name="values_first"><paramtype>ValueIterator</paramtype></parameter><parameter name="queue"><paramtype>command_queue &amp;</paramtype><default>system::default_queue()</default></parameter></signature><description><para>Performs a key-value stable sort using the keys in the range [<computeroutput>keys_first</computeroutput>, <computeroutput>keys_last</computeroutput>) on the values in the range [<computeroutput>values_first</computeroutput>, <computeroutput>values_first</computeroutput> <computeroutput>+</computeroutput> (<computeroutput>keys_last</computeroutput> <computeroutput>-</computeroutput> <computeroutput>keys_first</computeroutput>)) using <computeroutput>compare</computeroutput>.</para><para>If no compare function is specified, <computeroutput>less</computeroutput> is used.</para><para><para><emphasis role="bold">See Also:</emphasis><para>sort() </para></para>
+</para></description></overloaded-function>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</namespace>
+</namespace>
+</header>
 <header name="boost/compute/algorithm/swap_ranges.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -10490,12 +10781,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/transform_if.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -10706,6 +11001,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 <overloaded-function name="transform_reduce"><signature><type>void</type><template>
           <template-type-parameter name="InputIterator"/>
           <template-type-parameter name="OutputIterator"/>
@@ -10787,6 +11084,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <header name="boost/compute/algorithm/unique.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -11073,12 +11372,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/algorithm/upper_bound.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -11373,6 +11676,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -11388,6 +11693,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <copy-assignment><type>pinned_allocator&lt; T &gt; &amp;</type><parameter name="other"><paramtype>const pinned_allocator&lt; T &gt; &amp;</paramtype></parameter></copy-assignment>
 <destructor/>
 </class>
+
+
 
 
 
@@ -11669,12 +11976,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/async/wait.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -11827,6 +12138,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <constructor><parameter name="waitable"><paramtype>const Waitable &amp;</paramtype></parameter><purpose>Creates a new <classname alt="boost::compute::wait_guard">wait_guard</classname> object for <computeroutput>waitable</computeroutput>. </purpose></constructor>
 <destructor><description><para>Destroys the <classname alt="boost::compute::wait_guard">wait_guard</classname> object. The default implementation will call <computeroutput>wait()</computeroutput> on the stored waitable object. </para></description></destructor>
 </class>
+
+
 
 
 
@@ -12145,6 +12458,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -12319,6 +12634,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 <function name="operator&lt;&lt;"><type>std::ostream &amp;</type><template>
           <template-type-parameter name="CharT"/>
           <template-type-parameter name="Traits"/>
@@ -12386,6 +12703,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <copy-assignment><type><classname>dynamic_bitset</classname> &amp;</type><parameter name="other"><paramtype>const <classname>dynamic_bitset</classname> &amp;</paramtype></parameter><purpose>Copies the data from <computeroutput>other</computeroutput> to <computeroutput>*this</computeroutput>. </purpose></copy-assignment>
 <destructor><purpose>Destroys the dynamic bitset. </purpose></destructor>
 </class>
+
+
 
 
 
@@ -12719,6 +13038,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -12788,6 +13109,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <copy-assignment><type>flat_set&lt; T &gt; &amp;</type><parameter name="other"><paramtype>const flat_set&lt; T &gt; &amp;</paramtype></parameter></copy-assignment>
 <destructor/>
 </class>
+
+
 
 
 
@@ -13089,6 +13412,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -13112,6 +13437,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <copy-assignment><type>stack&lt; T &gt; &amp;</type><parameter name="other"><paramtype>const stack&lt; T &gt; &amp;</paramtype></parameter></copy-assignment>
 <destructor/>
 </class>
+
+
 
 
 
@@ -13380,6 +13707,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -13439,6 +13768,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <method name="end" cv="const"><type><classname>buffer_iterator</classname>&lt; T &gt;</type></method>
 </method-group>
 </class>
+
+
 
 
 
@@ -13847,6 +14178,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -13993,6 +14326,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -14006,6 +14341,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <constructor><purpose>Creates a new <classname alt="boost::compute::no_device_found">no_device_found</classname> exception object. </purpose></constructor>
 <destructor><purpose>Destroys the <classname alt="boost::compute::no_device_found">no_device_found</classname> exception object. </purpose></destructor>
 </class>
+
+
 
 
 
@@ -14285,6 +14622,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -14429,6 +14768,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -14442,6 +14783,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <method-group name="public member functions">
 </method-group>
 </struct>
+
+
 
 
 
@@ -14764,6 +15107,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -14776,6 +15121,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <data-member name="_1"><type><classname>placeholder</classname>&lt; 0 &gt; const</type></data-member>
 <data-member name="_2"><type><classname>placeholder</classname>&lt; 1 &gt; const</type></data-member>
 </namespace>
+
+
 
 
 
@@ -15051,6 +15398,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -15064,6 +15413,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <method-group name="public member functions">
 </method-group>
 </struct>
+
+
 
 
 
@@ -15340,12 +15691,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/functional/geometry.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -15622,12 +15977,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/functional/hash.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -15904,12 +16263,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/functional/integer.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -16065,6 +16428,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 </para></description><method-group name="public member functions">
 </method-group>
 </struct>
+
+
 
 
 
@@ -16340,12 +16705,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/functional/operator.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -16619,12 +16988,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/functional/relational.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -16917,6 +17290,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -16947,6 +17322,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <method name="is_supported_format" specifiers="static"><type>bool</type><parameter name="format"><paramtype>const <classname>image_format</classname> &amp;</paramtype></parameter><parameter name="context"><paramtype>const context &amp;</paramtype></parameter><parameter name="flags"><paramtype>cl_mem_flags</paramtype><default>read_write</default></parameter><description><para>Returns <computeroutput>true</computeroutput> if <computeroutput>format</computeroutput> is a supported 2D image format for <computeroutput>context</computeroutput>. </para></description></method>
 </method-group>
 </class>
+
+
 
 
 
@@ -17237,6 +17614,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -17259,6 +17638,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <copy-assignment><type><classname>image_format</classname> &amp;</type><parameter name="other"><paramtype>const <classname>image_format</classname> &amp;</paramtype></parameter><purpose>Copies the format from <computeroutput>other</computeroutput> to <computeroutput>*this</computeroutput>. </purpose></copy-assignment>
 <destructor><purpose>Destroys the image format object. </purpose></destructor>
 </class>
+
+
 
 
 
@@ -17416,6 +17797,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <method name="is_supported_format" specifiers="static"><type>bool</type><parameter name="format"><paramtype>const <classname>image_format</classname> &amp;</paramtype></parameter><parameter name="context"><paramtype>const context &amp;</paramtype></parameter><parameter name="type"><paramtype>cl_mem_object_type</paramtype></parameter><parameter name="flags"><paramtype>cl_mem_flags</paramtype><default>read_write</default></parameter><description><para>Returns <computeroutput>true</computeroutput> if <computeroutput>format</computeroutput> is a supported image format for <computeroutput>type</computeroutput> in <computeroutput>context</computeroutput> with <computeroutput>flags</computeroutput>. </para></description></method>
 </method-group>
 </class>
+
+
 
 
 
@@ -17707,12 +18090,16 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/interop/opengl/acquire.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -17854,6 +18241,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <header name="boost/compute/interop/opengl/context.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -18135,6 +18524,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -18154,6 +18545,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <copy-assignment><type><classname>opengl_renderbuffer</classname> &amp;</type><parameter name="other"><paramtype>const <classname>opengl_renderbuffer</classname> &amp;</paramtype></parameter><purpose>Copies the OpenGL renderbuffer object from <computeroutput>other</computeroutput>. </purpose></copy-assignment>
 <destructor><purpose>Destroys the OpenGL buffer object. </purpose></destructor>
 </class>
+
+
 
 
 
@@ -18434,6 +18827,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -18460,6 +18855,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <method-group name="private member functions">
 </method-group>
 </class>
+
+
 
 
 
@@ -18750,6 +19147,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 <function name="make_constant_buffer_iterator"><type><classname>constant_buffer_iterator</classname>&lt; T &gt;</type><template>
           <template-type-parameter name="T"/>
         </template><parameter name="buffer"><paramtype>const buffer &amp;</paramtype><description><para>the buffer object </para></description></parameter><parameter name="index"><paramtype>size_t</paramtype><default>0</default><description><para>the index in the buffer</para></description></parameter><description><para>Creates a new <classname alt="boost::compute::constant_buffer_iterator">constant_buffer_iterator</classname> for <computeroutput>buffer</computeroutput> at <computeroutput>index</computeroutput>.</para><para>
@@ -18785,6 +19184,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 <method-group name="private member functions">
 </method-group>
 </class>
+
+
 
 
 
@@ -19067,6 +19468,8 @@ For example, to sort a vector on the device: <programlisting language="c++"> // 
 
 
 
+
+
 <function name="make_counting_iterator"><type><classname>counting_iterator</classname>&lt; T &gt;</type><template>
           <template-type-parameter name="T"/>
         </template><parameter name="init"><paramtype>const T &amp;</paramtype><description><para>the initial value</para></description></parameter><description><para>Returns a new <classname alt="boost::compute::counting_iterator">counting_iterator</classname> starting at <computeroutput>init</computeroutput>.</para><para>
@@ -19105,6 +19508,8 @@ For example, to create a counting iterator which returns unsigned integers and i
 </method-group>
 </class><struct-specialization name="is_device_iterator"><template>
     </template><specialization><template-arg>discard_iterator</template-arg></specialization><purpose>internal_ (<classname alt="boost::compute::is_device_iterator">is_device_iterator</classname> specialization for <classname alt="boost::compute::discard_iterator">discard_iterator</classname>) </purpose></struct-specialization>
+
+
 
 
 
@@ -19269,6 +19674,8 @@ For example, to create a counting iterator which returns unsigned integers and i
 <method name="distance_to" cv="const"><type>difference_type</type><parameter name="other"><paramtype>const <classname>function_input_iterator</classname>&lt; Function &gt; &amp;</paramtype></parameter></method>
 </method-group>
 </class>
+
+
 
 
 
@@ -19553,6 +19960,8 @@ For example, to create a counting iterator which returns unsigned integers and i
 
 
 
+
+
 <function name="make_permutation_iterator"><type><classname>permutation_iterator</classname>&lt; ElementIterator, IndexIterator &gt;</type><template>
           <template-type-parameter name="ElementIterator"/>
           <template-type-parameter name="IndexIterator"/>
@@ -19718,6 +20127,8 @@ For example, to create a counting iterator which returns unsigned integers and i
 
 
 
+
+
 <function name="make_strided_iterator"><type><classname>strided_iterator</classname>&lt; Iterator &gt;</type><template>
           <template-type-parameter name="Iterator"/>
         </template><parameter name="iterator"><paramtype>Iterator</paramtype><description><para>the underlying iterator </para></description></parameter><parameter name="stride"><paramtype>typename std::iterator_traits&lt; Iterator &gt;::difference_type</paramtype><description><para>the iteration step for <classname alt="boost::compute::strided_iterator">strided_iterator</classname></para></description></parameter><description><para>Returns a <classname alt="boost::compute::strided_iterator">strided_iterator</classname> for <computeroutput>iterator</computeroutput> with <computeroutput>stride</computeroutput>.</para><para>
@@ -19735,9 +20146,7 @@ It can be helpful when iterating over <classname alt="boost::compute::strided_it
  // copy every 3rd element to result
  boost::compute::copy(
          strided_iterator_begin,
-         strided_iterator_end,ided_iterator referring to element that would follow
-         the last element accessible through strided_iterator for \p first
-         iterator with \p stride.
+         strided_iterator_end,
          result.begin(),
          queue
  );
@@ -19786,6 +20195,8 @@ It can be helpful when iterating over <classname alt="boost::compute::strided_it
 <method name="dereference" cv="const"><type>reference</type></method>
 </method-group>
 </class>
+
+
 
 
 
@@ -20077,6 +20488,8 @@ For example, to create an iterator which returns the square-root of each value i
 
 
 
+
+
 <function name="make_zip_iterator"><type><classname>zip_iterator</classname>&lt; IteratorTuple &gt;</type><template>
           <template-type-parameter name="IteratorTuple"/>
         </template><parameter name="iterators"><paramtype>IteratorTuple</paramtype><description><para>a tuple of input iterators to zip together</para></description></parameter><description><para>Creates a <classname alt="boost::compute::zip_iterator">zip_iterator</classname> for <computeroutput>iterators</computeroutput>.</para><para>
@@ -20111,6 +20524,8 @@ For example, to zip together iterators from three vectors (<computeroutput>a</co
 <copy-assignment><type><classname>local_buffer</classname> &amp;</type><parameter name="other"><paramtype>const <classname>local_buffer</classname> &amp;</paramtype></parameter><purpose>Copies <computeroutput>other</computeroutput> to <computeroutput>*this</computeroutput>. </purpose></copy-assignment>
 <destructor><purpose>Destroys the local memory object. </purpose></destructor>
 </class>
+
+
 
 
 
@@ -20395,6 +20810,8 @@ For example, to zip together iterators from three vectors (<computeroutput>a</co
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -20543,6 +20960,8 @@ For example, to zip together iterators from three vectors (<computeroutput>a</co
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -20550,6 +20969,8 @@ For example, to zip together iterators from three vectors (<computeroutput>a</co
 <namespace name="boost">
 <namespace name="compute">
 <typedef name="default_random_engine"><type><classname>mt19937</classname></type></typedef>
+
+
 
 
 
@@ -20833,6 +21254,8 @@ For example, to zip together iterators from three vectors (<computeroutput>a</co
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -20865,6 +21288,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 <method-group name="private member functions">
 </method-group>
 </class>
+
+
 
 
 
@@ -21158,6 +21583,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -21181,6 +21608,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 <constructor><parameter name="mean"><paramtype>RealType</paramtype><default>0.f</default></parameter><parameter name="stddev"><paramtype>RealType</paramtype><default>1.f</default></parameter><description><para>Creates a new normal distribution producing numbers with the given <computeroutput>mean</computeroutput> and <computeroutput>stddev</computeroutput>. </para></description></constructor>
 <destructor><purpose>Destroys the normal distribution object. </purpose></destructor>
 </class>
+
+
 
 
 
@@ -21466,6 +21895,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -21486,6 +21917,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 <constructor specifiers="explicit"><parameter name="a"><paramtype>IntType</paramtype><default>0</default></parameter><parameter name="b"><paramtype>IntType</paramtype><default>(std::numeric_limits&lt; IntType &gt;::max)()</default></parameter><description><para>Creates a new uniform distribution producing numbers in the range [<computeroutput>a</computeroutput>, <computeroutput>b</computeroutput>]. </para></description></constructor>
 <destructor><purpose>Destroys the <classname alt="boost::compute::uniform_int_distribution">uniform_int_distribution</classname> object. </purpose></destructor>
 </class>
+
+
 
 
 
@@ -21767,6 +22200,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -21782,6 +22217,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
     </template><description><para>Meta-function returning <computeroutput>true</computeroutput> if <computeroutput>Iterator</computeroutput> is a device-iterator.</para><para>By default, this function returns false. Device iterator types (such as <classname alt="boost::compute::buffer_iterator">buffer_iterator</classname>) should specialize this trait and return <computeroutput>true</computeroutput>.</para><para>For example: <programlisting language="c++"> is_device_iterator&lt;buffer_iterator&lt;int&gt;&gt;::value == true
  is_device_iterator&lt;std::vector&lt;int&gt;::iterator&gt;::value == false
 </programlisting> </para></description></struct>
+
+
 
 
 
@@ -22053,6 +22490,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -22065,6 +22504,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
  is_vector_type&lt;float4_&gt;::value == true
 </programlisting></para><para><para><emphasis role="bold">See Also:</emphasis><para><classname alt="boost::compute::make_vector_type">make_vector_type</classname>, <classname alt="boost::compute::vector_size">vector_size</classname> </para></para>
 </para></description></struct>
+
+
 
 
 
@@ -22338,6 +22779,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -22350,6 +22793,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
  result_of&lt;plus(int, int)&gt;::type == int
 </programlisting> </para></description><typedef name="type"><type>::boost::tr1_result_of&lt; Signature &gt;::type</type></typedef>
 </struct>
+
+
 
 
 
@@ -22620,12 +23065,16 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/type_traits/type_definition.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -22767,6 +23216,8 @@ If no seed value is provided, <computeroutput>default_seed</computeroutput> is u
 <header name="boost/compute/type_traits/type_name.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -23050,12 +23501,16 @@ For example: <programlisting language="c++"> type_name&lt;float&gt;() == "float"
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/utility/dim.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -23357,12 +23812,16 @@ For example: <programlisting language="c++"> type_name&lt;float&gt;() == "float"
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
 <header name="boost/compute/utility/invoke.hpp">
 <namespace name="boost">
 <namespace name="compute">
+
+
 
 
 
@@ -23666,6 +24125,8 @@ For example: <programlisting language="c++"> type_name&lt;float&gt;() == "float"
 
 
 
+
+
 </namespace>
 </namespace>
 </header>
@@ -23693,16 +24154,27 @@ For example: <programlisting language="c++"> type_name&lt;float&gt;() == "float"
 
  clEnqueueNDRangeKernel(..., events.get_event_ptr(), events.size(), ...);
 </programlisting></para><para><para><emphasis role="bold">See Also:</emphasis><para>event, <classname alt="boost::compute::future">future&lt;T&gt;</classname> </para></para>
-</para></description><method-group name="public member functions">
+</para></description><typedef name="iterator"><type>std::vector&lt; event &gt;::iterator</type></typedef>
+<typedef name="const_iterator"><type>std::vector&lt; event &gt;::const_iterator</type></typedef>
+<method-group name="public member functions">
 <method name="empty" cv="const"><type>bool</type><purpose>Returns <computeroutput>true</computeroutput> if the wait-list is empty. </purpose></method>
 <method name="size" cv="const"><type>uint_</type><purpose>Returns the number of events in the wait-list. </purpose></method>
 <method name="clear"><type>void</type><purpose>Removes all of the events from the wait-list. </purpose></method>
 <method name="get_event_ptr" cv="const"><type>const cl_event *</type><description><para>Returns a cl_event pointer to the first event in the wait-list. Returns <computeroutput>0</computeroutput> if the wait-list is empty.</para><para>This can be used to pass the wait-list to OpenCL functions which expect a <computeroutput>cl_event</computeroutput> pointer to refer to a list of events. </para></description></method>
+<method name="reserve"><type>void</type><parameter name="new_capacity"><paramtype>size_t</paramtype></parameter><purpose>Reserves a minimum length of storage for the wait list object. </purpose></method>
 <method name="insert"><type>void</type><parameter name="event"><paramtype>const event &amp;</paramtype></parameter><purpose>Inserts <computeroutput>event</computeroutput> into the wait-list. </purpose></method>
 <method name="insert"><type>void</type><template>
           <template-type-parameter name="T"/>
         </template><parameter name="future"><paramtype>const <classname>future</classname>&lt; T &gt; &amp;</paramtype></parameter><purpose>Inserts the event from <computeroutput>future</computeroutput> into the wait-list. </purpose></method>
 <method name="wait" cv="const"><type>void</type><description><para>Blocks until all of the events in the wait-list have completed.</para><para>Does nothing if the wait-list is empty. </para></description></method>
+<method name="operator[]" cv="const"><type>const event &amp;</type><parameter name="pos"><paramtype>size_t</paramtype></parameter><purpose>Returns a reference to the event at specified location <computeroutput>pos</computeroutput>. </purpose></method>
+<method name="operator[]"><type>event &amp;</type><parameter name="pos"><paramtype>size_t</paramtype></parameter><purpose>Returns a reference to the event at specified location <computeroutput>pos</computeroutput>. </purpose></method>
+<method name="begin"><type>iterator</type><purpose>Returns an iterator to the first element of the wait-list. </purpose></method>
+<method name="begin" cv="const"><type>const_iterator</type><purpose>Returns an iterator to the first element of the wait-list. </purpose></method>
+<method name="cbegin" cv="const"><type>const_iterator</type><purpose>Returns an iterator to the first element of the wait-list. </purpose></method>
+<method name="end"><type>iterator</type><purpose>Returns an iterator to the element following the last element of the wait-list. </purpose></method>
+<method name="end" cv="const"><type>const_iterator</type><purpose>Returns an iterator to the element following the last element of the wait-list. </purpose></method>
+<method name="cend" cv="const"><type>const_iterator</type><purpose>Returns an iterator to the element following the last element of the wait-list. </purpose></method>
 </method-group>
 <constructor><purpose>Creates an empty wait-list. </purpose></constructor>
 <constructor><parameter name="event"><paramtype>const event &amp;</paramtype></parameter><purpose>Creates a wait-list containing <computeroutput>event</computeroutput>. </purpose></constructor>
@@ -23712,6 +24184,8 @@ For example: <programlisting language="c++"> type_name&lt;float&gt;() == "float"
 <copy-assignment><type><classname>wait_list</classname> &amp;</type><parameter name="other"><paramtype><classname>wait_list</classname> &amp;&amp;</paramtype></parameter><purpose>Move-assigns the wait list from <computeroutput>other</computeroutput> to <computeroutput>*this</computeroutput>. </purpose></copy-assignment>
 <destructor><purpose>Destroys the wait-list. </purpose></destructor>
 </class>
+
+
 
 
 

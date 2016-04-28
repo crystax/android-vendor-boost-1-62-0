@@ -75,11 +75,11 @@
 <span class="special">}</span>
 </pre>
 <p>
-            Given an expression and an evaluation context, using <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp27833264.html" title="Function eval">proto::eval()</a></code>
-            is quite simple. Simply pass the expression and the context to <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp27833264.html" title="Function eval">proto::eval()</a></code> and it does the rest
+            Given an expression and an evaluation context, using <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp28138864.html" title="Function eval">proto::eval()</a></code>
+            is quite simple. Simply pass the expression and the context to <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp28138864.html" title="Function eval">proto::eval()</a></code> and it does the rest
             and returns the result. You can use the <code class="computeroutput"><span class="identifier">eval</span><span class="special">&lt;&gt;</span></code> metafunction in the <code class="computeroutput"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">result_of</span></code> namespace to compute the
-            return type of <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp27833264.html" title="Function eval">proto::eval()</a></code>. The following demonstrates
-            a use of <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp27833264.html" title="Function eval">proto::eval()</a></code>:
+            return type of <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp28138864.html" title="Function eval">proto::eval()</a></code>. The following demonstrates
+            a use of <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp28138864.html" title="Function eval">proto::eval()</a></code>:
           </p>
 <pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> <span class="identifier">Expr</span><span class="special">&gt;</span>
 <span class="keyword">typename</span> <span class="identifier">proto</span><span class="special">::</span><span class="identifier">result_of</span><span class="special">::</span><span class="identifier">eval</span><span class="special">&lt;</span><span class="identifier">Expr</span> <span class="keyword">const</span><span class="special">,</span> <span class="identifier">MyContext</span><span class="special">&gt;::</span><span class="identifier">type</span>
@@ -93,9 +93,9 @@
 <span class="special">}</span>
 </pre>
 <p>
-            What <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp27833264.html" title="Function eval">proto::eval()</a></code> does is also very simple.
+            What <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp28138864.html" title="Function eval">proto::eval()</a></code> does is also very simple.
             It defers most of the work to the context itself. Here essentially is
-            the implementation of <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp27833264.html" title="Function eval">proto::eval()</a></code>:
+            the implementation of <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp28138864.html" title="Function eval">proto::eval()</a></code>:
           </p>
 <pre class="programlisting"><span class="comment">// eval() dispatches to a nested "eval&lt;&gt;" function</span>
 <span class="comment">// object within the Context:</span>
@@ -108,7 +108,7 @@
 <span class="special">}</span>
 </pre>
 <p>
-            Really, <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp27833264.html" title="Function eval">proto::eval()</a></code> is nothing more than
+            Really, <code class="computeroutput"><a class="link" href="../../../../boost/proto/eval_idp28138864.html" title="Function eval">proto::eval()</a></code> is nothing more than
             a thin wrapper that dispatches to the appropriate handler within the
             context class. In the next section, we'll see how to implement a context
             class from scratch.

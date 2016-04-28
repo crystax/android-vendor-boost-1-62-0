@@ -127,7 +127,7 @@
 <p>
         These algorithms are encoded in a generic fashion and accept functors, enabling
         them to sort any object that can be processed like these basic data types.
-        In the case of <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>,
+        In the case of <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>,
         this includes anything with a defined strict-weak-ordering that <a href="http://en.cppreference.com/w/cpp/algorithm/sort" target="_top">std::sort</a>
         can sort, but writing efficient functors for some complex key types may not
         be worth the additional effort relative to just using <a href="http://en.cppreference.com/w/cpp/algorithm/sort" target="_top">std::sort</a>,
@@ -141,7 +141,7 @@
         that on real data it can perform substantially better than on random data.
         Conceptually, <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/spreadsort.html" title="Function template spreadsort">spreadsort</a></code></code>
         can sort any data for which an absolute ordering can be determined, and
-        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>
+        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>
         is sufficiently flexible that this should be possible.
       </p>
 <p>
@@ -203,9 +203,9 @@
         </p></td></tr>
 </table></div>
 <p>
-        Each of <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6520224.html" title="Function template integer_sort">integer_sort</a></code></code>,
+        Each of <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6280928.html" title="Function template integer_sort">integer_sort</a></code></code>,
         <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/float_sort_idm28336.html" title="Function template float_sort">float_sort</a></code></code>,
-        and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>
+        and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>
         have 3 main versions: The base version, which takes a first iterator and
         a last iterator, just like <a href="http://en.cppreference.com/w/cpp/algorithm/sort" target="_top">std::sort</a>:
       </p>
@@ -221,7 +221,7 @@
         right.
       </p>
 <p>
-        For <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>
+        For <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>
         this variant is slightly different; it needs a bracket functor equivalent
         to <code class="computeroutput"><span class="keyword">operator</span></code>[], taking a number
         corresponding to the character offset, along with a second <code class="computeroutput"><span class="identifier">getlength</span></code> functor to get the length of
@@ -230,9 +230,10 @@
         can be negated to reverse their order).
       </p>
 <p>
-        In other words:
+        In other words (aside from negative floats, which are inverted as ints):
       </p>
 <pre class="programlisting"><span class="identifier">rightshift</span><span class="special">(</span><span class="identifier">A</span><span class="special">,</span> <span class="identifier">n</span><span class="special">)</span> <span class="special">&lt;</span> <span class="identifier">rightshift</span><span class="special">(</span><span class="identifier">B</span><span class="special">,</span> <span class="identifier">n</span><span class="special">)</span> <span class="special">-&gt;</span> <span class="identifier">A</span> <span class="special">&lt;</span> <span class="identifier">B</span>
+<span class="identifier">A</span> <span class="special">&lt;</span> <span class="identifier">B</span> <span class="special">-&gt;</span> <span class="identifier">rightshift</span><span class="special">(</span><span class="identifier">A</span><span class="special">,</span> <span class="number">0</span><span class="special">)</span> <span class="special">&lt;</span> <span class="identifier">rightshift</span><span class="special">(</span><span class="identifier">B</span><span class="special">,</span> <span class="number">0</span><span class="special">)</span>
 </pre>
 <pre class="programlisting"><span class="identifier">integer_sort</span><span class="special">(</span><span class="identifier">array</span><span class="special">.</span><span class="identifier">begin</span><span class="special">(),</span> <span class="identifier">array</span><span class="special">.</span><span class="identifier">end</span><span class="special">(),</span> <span class="identifier">rightshift</span><span class="special">());</span>
 </pre>
@@ -244,9 +245,11 @@
       </p>
 <p>
         And a version with a comparison functor for maximum flexibility. This functor
-        must provide the same sorting order as the integers returned by the rightshift:
+        must provide the same sorting order as the integers returned by the rightshift
+        (aside from negative floats):
       </p>
 <pre class="programlisting"><span class="identifier">rightshift</span><span class="special">(</span><span class="identifier">A</span><span class="special">,</span> <span class="identifier">n</span><span class="special">)</span> <span class="special">&lt;</span> <span class="identifier">rightshift</span><span class="special">(</span><span class="identifier">B</span><span class="special">,</span> <span class="identifier">n</span><span class="special">)</span> <span class="special">-&gt;</span> <span class="identifier">compare</span><span class="special">(</span><span class="identifier">A</span><span class="special">,</span> <span class="identifier">B</span><span class="special">)</span>
+<span class="identifier">compare</span><span class="special">(</span><span class="identifier">A</span><span class="special">,</span> <span class="identifier">B</span><span class="special">)</span> <span class="special">-&gt;</span> <span class="identifier">rightshift</span><span class="special">(</span><span class="identifier">A</span><span class="special">,</span> <span class="number">0</span><span class="special">)</span> <span class="special">&lt;</span> <span class="identifier">rightshift</span><span class="special">(</span><span class="identifier">B</span><span class="special">,</span> <span class="number">0</span><span class="special">)</span>
 </pre>
 <pre class="programlisting"><span class="identifier">integer_sort</span><span class="special">(</span><span class="identifier">array</span><span class="special">.</span><span class="identifier">begin</span><span class="special">(),</span> <span class="identifier">array</span><span class="special">.</span><span class="identifier">end</span><span class="special">(),</span> <span class="identifier">negrightshift</span><span class="special">(),</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">greater</span><span class="special">&lt;</span><span class="identifier">DATA_TYPE</span><span class="special">&gt;());</span>
 </pre>
@@ -311,15 +314,15 @@
 </ul></div>
 <p>
         This results in substantially improved performance for large <span class="emphasis"><em>N</em></span>;
-        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6520224.html" title="Function template integer_sort">integer_sort</a></code></code>
+        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6280928.html" title="Function template integer_sort">integer_sort</a></code></code>
         tends to be 50% to 2X faster than <a href="http://en.cppreference.com/w/cpp/algorithm/sort" target="_top">std::sort</a>,
         while <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/float_sort_idm28336.html" title="Function template float_sort">float_sort</a></code></code>
         and _string_sort are roughly 2X faster than <a href="http://en.cppreference.com/w/cpp/algorithm/sort" target="_top">std::sort</a>.
       </p>
 <p>
-        Performance graphs are provided for <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6520224.html" title="Function template integer_sort">integer_sort</a></code></code>,
+        Performance graphs are provided for <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6280928.html" title="Function template integer_sort">integer_sort</a></code></code>,
         <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/float_sort_idm28336.html" title="Function template float_sort">float_sort</a></code></code>,
-        and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>
+        and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>
         in their description.
       </p>
 <p>
@@ -345,9 +348,9 @@
         </p></td></tr>
 </table></div>
 <p>
-        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6520224.html" title="Function template integer_sort">integer_sort</a></code></code>
+        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6280928.html" title="Function template integer_sort">integer_sort</a></code></code>
         starts to become faster than <a href="http://en.cppreference.com/w/cpp/algorithm/sort" target="_top">std::sort</a>
-        at about 1000 integers (4000 bytes), and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>
+        at about 1000 integers (4000 bytes), and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>
         becomes faster than <a href="http://en.cppreference.com/w/cpp/algorithm/sort" target="_top">std::sort</a>
         at slightly fewer bytes (as few as 30 strings).
       </p>
@@ -364,7 +367,7 @@
 </table></div>
 <p>
         <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/float_sort_idm28336.html" title="Function template float_sort">float_sort</a></code></code>
-        times are very similar to <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6520224.html" title="Function template integer_sort">integer_sort</a></code></code>
+        times are very similar to <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6280928.html" title="Function template integer_sort">integer_sort</a></code></code>
         times.
       </p>
 <p>
@@ -392,7 +395,7 @@
       </p>
 <p>
         <span class="emphasis"><em>&#119926;(N)</em></span> integer-type comparisons (even for _float_sort and
-        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>)
+        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>)
       </p>
 <p>
         <span class="emphasis"><em>&#119926;(N)</em></span> swaps
@@ -555,12 +558,12 @@
         either evenly distributed or highly clustered.
       </p>
 <p>
-        This analysis was for <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6520224.html" title="Function template integer_sort">integer_sort</a></code></code>
+        This analysis was for <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6280928.html" title="Function template integer_sort">integer_sort</a></code></code>
         and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/float_sort_idm28336.html" title="Function template float_sort">float_sort</a></code></code>.
-        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>
+        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>
         differs in that <span class="emphasis"><em>S<sub>min</sub> = S<sub>max</sub> = sizeof(Char_type) * 8</em></span>,
         <span class="emphasis"><em>lbs</em></span> is 0, and that <a href="http://en.cppreference.com/w/cpp/algorithm/sort" target="_top">std::sort</a>'s
-        comparison is not a constant-time operation, so strictly speaking <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6641472.html" title="Function template string_sort">string_sort</a></code></code>
+        comparison is not a constant-time operation, so strictly speaking <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/string_sort_idp6402256.html" title="Function template string_sort">string_sort</a></code></code>
         runtime is
       </p>
 <p>
@@ -583,10 +586,10 @@
 <a name="sort.overview.tuning"></a><a class="link" href="index.html#sort.overview.tuning" title="Tuning">Tuning</a>
 </h3></div></div></div>
 <p>
-        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6520224.html" title="Function template integer_sort">integer_sort</a></code></code>
+        <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6280928.html" title="Function template integer_sort">integer_sort</a></code></code>
         and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/float_sort_idm28336.html" title="Function template float_sort">float_sort</a></code></code>
         have tuning constants that control how the radix-sorting portion of those
-        algorithms work. The ideal constant values for <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6520224.html" title="Function template integer_sort">integer_sort</a></code></code>
+        algorithms work. The ideal constant values for <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/integer_sort_idp6280928.html" title="Function template integer_sort">integer_sort</a></code></code>
         and <code class="literal"><code class="computeroutput"><a class="link" href="boost/sort/spreadsort/float_sort_idm28336.html" title="Function template float_sort">float_sort</a></code></code>
         vary depending on the platform, compiler, and data being sorted. By far the
         most important constant is <span class="emphasis"><em>max_splits</em></span>, which defines
@@ -659,7 +662,7 @@
 </div>
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
-<td align="left"><p><small>Last revised: March 21, 2016 at 05:07:52 GMT</small></p></td>
+<td align="left"><p><small>Last revised: April 27, 2016 at 14:06:11 GMT</small></p></td>
 <td align="right"><div class="copyright-footer"></div></td>
 </tr></table>
 <hr>

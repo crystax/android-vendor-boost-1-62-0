@@ -77,7 +77,7 @@
         </h6>
 <p>
           There is no simpler expression than a terminal, and no more basic operation
-          than extracting its value. As we've already seen, that is what <code class="computeroutput"><a class="link" href="../../../boost/proto/value_idp31837232.html" title="Function value">proto::value()</a></code> is for.
+          than extracting its value. As we've already seen, that is what <code class="computeroutput"><a class="link" href="../../../boost/proto/value_idp32142832.html" title="Function value">proto::value()</a></code> is for.
         </p>
 <pre class="programlisting"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">terminal</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">ostream</span> <span class="special">&amp;</span> <span class="special">&gt;::</span><span class="identifier">type</span> <span class="identifier">cout_</span> <span class="special">=</span> <span class="special">{</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span><span class="special">};</span>
 
@@ -88,7 +88,7 @@
 <span class="identifier">assert</span><span class="special">(</span> <span class="special">&amp;</span><span class="identifier">sout</span> <span class="special">==</span> <span class="special">&amp;</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">);</span>
 </pre>
 <p>
-          To compute the return type of the <code class="computeroutput"><a class="link" href="../../../boost/proto/value_idp31837232.html" title="Function value">proto::value()</a></code>
+          To compute the return type of the <code class="computeroutput"><a class="link" href="../../../boost/proto/value_idp32142832.html" title="Function value">proto::value()</a></code>
           function, you can use <code class="computeroutput"><a class="link" href="../../../boost/proto/result_of/value.html" title="Struct template value">proto::result_of::value&lt;&gt;</a></code>.
           When the parameter to <code class="computeroutput"><a class="link" href="../../../boost/proto/result_of/value.html" title="Struct template value">proto::result_of::value&lt;&gt;</a></code>
           is a non-reference type, the result type of the metafunction is the type
@@ -220,7 +220,7 @@
 <p>
           Each non-terminal node in an expression tree corresponds to an operator
           in an expression, and the children correspond to the operands, or arguments
-          of the operator. To access them, you can use the <code class="computeroutput"><a class="link" href="../../../boost/proto/child_c_idp31818176.html" title="Function child_c">proto::child_c()</a></code>
+          of the operator. To access them, you can use the <code class="computeroutput"><a class="link" href="../../../boost/proto/child_c_idp32123776.html" title="Function child_c">proto::child_c()</a></code>
           function template, as demonstrated below:
         </p>
 <pre class="programlisting"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">terminal</span><span class="special">&lt;</span><span class="keyword">int</span><span class="special">&gt;::</span><span class="identifier">type</span> <span class="identifier">i</span> <span class="special">=</span> <span class="special">{</span><span class="number">42</span><span class="special">};</span>
@@ -386,11 +386,11 @@
 <p>
           Most operators in C++ are unary or binary, so accessing the only operand,
           or the left and right operands, are very common operations. For this reason,
-          Proto provides the <code class="computeroutput"><a class="link" href="../../../boost/proto/child_idp31789680.html" title="Function child">proto::child()</a></code>,
-          <code class="computeroutput"><a class="link" href="../../../boost/proto/left_idp31849696.html" title="Function left">proto::left()</a></code>, and <code class="computeroutput"><a class="link" href="../../../boost/proto/right_idp31864176.html" title="Function right">proto::right()</a></code>
-          functions. <code class="computeroutput"><a class="link" href="../../../boost/proto/child_idp31789680.html" title="Function child">proto::child()</a></code> and <code class="computeroutput"><a class="link" href="../../../boost/proto/left_idp31849696.html" title="Function left">proto::left()</a></code>
+          Proto provides the <code class="computeroutput"><a class="link" href="../../../boost/proto/child_idp32095280.html" title="Function child">proto::child()</a></code>,
+          <code class="computeroutput"><a class="link" href="../../../boost/proto/left_idp32155296.html" title="Function left">proto::left()</a></code>, and <code class="computeroutput"><a class="link" href="../../../boost/proto/right_idp32169776.html" title="Function right">proto::right()</a></code>
+          functions. <code class="computeroutput"><a class="link" href="../../../boost/proto/child_idp32095280.html" title="Function child">proto::child()</a></code> and <code class="computeroutput"><a class="link" href="../../../boost/proto/left_idp32155296.html" title="Function left">proto::left()</a></code>
           are synonymous with <code class="computeroutput"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">child_c</span><span class="special">&lt;</span><span class="number">0</span><span class="special">&gt;()</span></code>,
-          and <code class="computeroutput"><a class="link" href="../../../boost/proto/right_idp31864176.html" title="Function right">proto::right()</a></code> is synonymous with <code class="computeroutput"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">child_c</span><span class="special">&lt;</span><span class="number">1</span><span class="special">&gt;()</span></code>.
+          and <code class="computeroutput"><a class="link" href="../../../boost/proto/right_idp32169776.html" title="Function right">proto::right()</a></code> is synonymous with <code class="computeroutput"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">child_c</span><span class="special">&lt;</span><span class="number">1</span><span class="special">&gt;()</span></code>.
         </p>
 <p>
           There are also <code class="computeroutput"><a class="link" href="../../../boost/proto/result_of/child.html" title="Struct template child">proto::result_of::child&lt;&gt;</a></code>,

@@ -166,8 +166,8 @@ lamhalt
         </p>
 <p>
           In particular, the <code class="computeroutput"><a class="link" href="../BOOST_MPI_HOMOGENEOUS.html" title="Macro BOOST_MPI_HOMOGENEOUS">BOOST_MPI_HOMOGENEOUS</a></code>
-          macro, that you will need to comment out if you plan tu run on an heterogeneous
-          set of macines. See the <a class="link" href="tutorial.html#mpi.homogeneous_machines" title="Homogeneous Machines">optimization</a>
+          macro, that you will need to comment out if you plan to run on an heterogeneous
+          set of machines. See the <a class="link" href="tutorial.html#mpi.homogeneous_machines" title="Homogeneous Machines">optimization</a>
           notes below.
         </p>
 <p>
@@ -213,11 +213,11 @@ lamhalt
 <pre class="programlisting">using mpi : /opt/mpi/bullxmpi/1.2.8.3/bin/mpicc ;
 </pre>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-              <span class="bold"><strong>If your wrapper is really excentric</strong></span>
+              <span class="bold"><strong>If your wrapper is really eccentric</strong></span>
             </li></ul></div>
 <p>
           or does not exist at all (it happens), you need to provide the compilation
-          and build options to the build environement using <code class="computeroutput"><span class="identifier">jam</span></code>
+          and build options to the build environment using <code class="computeroutput"><span class="identifier">jam</span></code>
           directives. For example, the following could be used for a specific Intel
           MPI implementation:
         </p>
@@ -233,8 +233,8 @@ lamhalt
 </pre>
 <p>
           To do that, you need to guess the libraries and include directories associated
-          with your environement. You can refer to the your specific MPI environement
-          documentation. Most of the time thoug, your wrapper have an option that
+          with your environment. You can refer to the your specific MPI environment
+          documentation. Most of the time though, your wrapper have an option that
           provide that information, it usually starts with <code class="computeroutput"><span class="special">--</span><span class="identifier">show</span></code>:
         </p>
 <pre class="programlisting">$ mpiicc -show
@@ -269,7 +269,7 @@ $
 </pre>
 <p>
           Some implementations provides alternative launcher that can be more convenient.
-          For exemple, Intel's MPI provides the <code class="computeroutput"><span class="identifier">mpiexec</span><span class="special">.</span><span class="identifier">hydra</span></code>:
+          For example, Intel's MPI provides the <code class="computeroutput"><span class="identifier">mpiexec</span><span class="special">.</span><span class="identifier">hydra</span></code>:
         </p>
 <pre class="programlisting">$mpiexec.hydra -np 4 all_gather_test
 </pre>
@@ -287,7 +287,7 @@ $
 <div class="titlepage"><div><div><h4 class="title">
 <a name="mpi.installation"></a>Build and Install</h4></div></div></div>
 <p>
-          To build the whole Boost ditribution:
+          To build the whole Boost distribution:
         </p>
 <pre class="programlisting">$cd &lt;boost distribution&gt;
 $./b2 install

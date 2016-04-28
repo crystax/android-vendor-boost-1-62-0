@@ -28,10 +28,9 @@
 </h2></div></div></div>
 <h5>
 <a name="boost_test.change_log.h0"></a>
-      <span><a name="boost_test.change_log.boost_test_v3_2_boost_xxxx"></a></span><a class="link" href="change_log.html#boost_test.change_log.boost_test_v3_2_boost_xxxx">Boost.Test
-      v3.2 / boost XXXX</a>
+      <span><a name="boost_test.change_log.boost_test_v3_2_boost_1_61"></a></span><a class="link" href="change_log.html#boost_test.change_log.boost_test_v3_2_boost_1_61">Boost.Test
+      v3.2 / boost 1.61</a>
     </h5>
-<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"></ul></div>
 <h6>
 <a name="boost_test.change_log.h1"></a>
       <span><a name="boost_test.change_log.new_features"></a></span><a class="link" href="change_log.html#boost_test.change_log.new_features">New
@@ -47,6 +46,9 @@
           see <a class="link" href="tests_organization/test_cases/test_case_generation/datasets.html" title="Datasets">here</a>
           for more details
         </li>
+<li class="listitem">
+          now datasets honors move semantics of the types used for samples
+        </li>
 </ul></div>
 <h6>
 <a name="boost_test.change_log.h2"></a>
@@ -59,10 +61,10 @@
           breaks if they are macros
         </li>
 <li class="listitem">
-          <a href="https://svn.boost.org/trac/boost/ticket/8905" target="_top">#8905</a> boost/test/impl/debug.ipp: Ignores return value from WaitForSingleObject
+          <a href="https://svn.boost.org/trac/boost/ticket/8905" target="_top">#8905</a> <code class="computeroutput"><span class="identifier">boost</span><span class="special">/</span><span class="identifier">test</span><span class="special">/</span><span class="identifier">impl</span><span class="special">/</span><span class="identifier">debug</span><span class="special">.</span><span class="identifier">ipp</span></code>: Ignores return value from <code class="computeroutput"><span class="identifier">WaitForSingleObject</span></code>
         </li>
 <li class="listitem">
-          <a href="https://svn.boost.org/trac/boost/ticket/9943" target="_top">#9943</a> Runtime parameter Random seed for random order of test cases not
+          <a href="https://svn.boost.org/trac/boost/ticket/9443" target="_top">#9443</a> Runtime parameter Random seed for random order of test cases not
           respected correctly
         </li>
 <li class="listitem">
@@ -72,8 +74,8 @@
           <a href="https://svn.boost.org/trac/boost/ticket/11887" target="_top">#11887</a> <code class="computeroutput"><span class="identifier">BOOST_TEST</span><span class="special">(</span><span class="number">3u</span> <span class="special">==</span> <span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">max</span><span class="special">)(</span><span class="number">0u</span><span class="special">,</span> <span class="number">3u</span><span class="special">))</span></code> fails
         </li>
 <li class="listitem">
-          <a href="https://svn.boost.org/trac/boost/ticket/11889" target="_top">#11889</a> BOOST_DATA_TEST_CASE fails to compile for 4D and higher dimensional
-          grids
+          <a href="https://svn.boost.org/trac/boost/ticket/11889" target="_top">#11889</a> <code class="computeroutput"><span class="identifier">BOOST_DATA_TEST_CASE</span></code>
+          fails to compile for 4D and higher dimensional grids
         </li>
 <li class="listitem">
           <a href="https://svn.boost.org/trac/boost/ticket/11983" target="_top">#11983</a> Boost Test XML Report contains unescaped XML characters

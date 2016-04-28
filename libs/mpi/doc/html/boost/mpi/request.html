@@ -6,7 +6,7 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="../../index.html" title="Chapter&#160;1.&#160;Boost.MPI">
 <link rel="up" href="../../mpi/reference.html#header.boost.mpi.request_hpp" title="Header &lt;boost/mpi/request.hpp&gt;">
-<link rel="prev" href="python/register_skele_idp10459040.html" title="Function template register_skeleton_and_content">
+<link rel="prev" href="python/register_skele_idp10410384.html" title="Function template register_skeleton_and_content">
 <link rel="next" href="skeleton_proxy.html" title="Struct template skeleton_proxy">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -20,7 +20,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="python/register_skele_idp10459040.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../mpi/reference.html#header.boost.mpi.request_hpp"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="skeleton_proxy.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="python/register_skele_idp10410384.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../mpi/reference.html#header.boost.mpi.request_hpp"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="skeleton_proxy.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="refentry">
 <a name="boost.mpi.request"></a><div class="titlepage"></div>
@@ -35,40 +35,40 @@
 <span class="keyword">class</span> <a class="link" href="request.html" title="Class request">request</a> <span class="special">{</span>
 <span class="keyword">public</span><span class="special">:</span>
   <span class="comment">// <a class="link" href="request.html#boost.mpi.requestconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="request.html#idp10480736-bb"><span class="identifier">request</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="request.html#idp10432080-bb"><span class="identifier">request</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="request.html#idp10472592-bb">public member functions</a></span>
-  <a class="link" href="status.html" title="Class status">status</a> <a class="link" href="request.html#idp10473152-bb"><span class="identifier">wait</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">optional</span><span class="special">&lt;</span> <a class="link" href="status.html" title="Class status">status</a> <span class="special">&gt;</span> <a class="link" href="request.html#idp10475072-bb"><span class="identifier">test</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="request.html#idp10479248-bb"><span class="identifier">cancel</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="request.html#idp10423936-bb">public member functions</a></span>
+  <a class="link" href="status.html" title="Class status">status</a> <a class="link" href="request.html#idp10424496-bb"><span class="identifier">wait</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">optional</span><span class="special">&lt;</span> <a class="link" href="status.html" title="Class status">status</a> <span class="special">&gt;</span> <a class="link" href="request.html#idp10426416-bb"><span class="identifier">test</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="request.html#idp10430592-bb"><span class="identifier">cancel</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp13709248"></a><h2>Description</h2>
+<a name="idp43529728"></a><h2>Description</h2>
 <p>This structure contains information about a non-blocking send or receive and will be returned from <code class="computeroutput">isend</code> or <code class="computeroutput">irecv</code>, respectively. </p>
 <div class="refsect2">
-<a name="idp13711472"></a><h3>
+<a name="idp43531952"></a><h3>
 <a name="boost.mpi.requestconstruct-copy-destruct"></a><code class="computeroutput">request</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><a name="idp10480736-bb"></a><span class="identifier">request</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp10432080-bb"></a><span class="identifier">request</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Constructs a NULL request. </p>
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp13717712"></a><h3>
-<a name="idp10472592-bb"></a><code class="computeroutput">request</code> public member functions</h3>
+<a name="idp43538128"></a><h3>
+<a name="idp10423936-bb"></a><code class="computeroutput">request</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a class="link" href="status.html" title="Class status">status</a> <a name="idp10473152-bb"></a><span class="identifier">wait</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a class="link" href="status.html" title="Class status">status</a> <a name="idp10424496-bb"></a><span class="identifier">wait</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Wait until the communication associated with this request has completed, then return a <code class="computeroutput">status</code> object describing the communication. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">optional</span><span class="special">&lt;</span> <a class="link" href="status.html" title="Class status">status</a> <span class="special">&gt;</span> <a name="idp10475072-bb"></a><span class="identifier">test</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">optional</span><span class="special">&lt;</span> <a class="link" href="status.html" title="Class status">status</a> <span class="special">&gt;</span> <a name="idp10426416-bb"></a><span class="identifier">test</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Determine whether the communication associated with this request has completed successfully. If so, returns the <code class="computeroutput">status</code> object describing the communication. Otherwise, returns an empty <code class="computeroutput">optional&lt;&gt;</code> to indicate that the communication has not completed yet. Note that once <code class="computeroutput">test()</code> returns a <code class="computeroutput">status</code> object, the request has completed and <code class="computeroutput">wait()</code> should not be called. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp10479248-bb"></a><span class="identifier">cancel</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp10430592-bb"></a><span class="identifier">cancel</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Cancel a pending communication, assuming it has not already been completed. </p>
 </li>
 </ol></div>
@@ -87,7 +87,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="python/register_skele_idp10459040.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../mpi/reference.html#header.boost.mpi.request_hpp"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="skeleton_proxy.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="python/register_skele_idp10410384.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../mpi/reference.html#header.boost.mpi.request_hpp"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="skeleton_proxy.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

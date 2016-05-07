@@ -42,39 +42,39 @@
   <span class="keyword">typedef</span> <span class="identifier">EngineType</span>       <a name="boost.unit_test.data.monomorphic.random_t.engine_type"></a><span class="identifier">engine_type</span><span class="special">;</span>
 
   <span class="comment">// <a class="link" href="random_t.html#boost.unit_test.data.monomorphic.random_tconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="random_t.html#idp26594944-bb"><span class="identifier">random_t</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">explicit</span> <a class="link" href="random_t.html#idp26595232-bb"><span class="identifier">random_t</span></a><span class="special">(</span><span class="identifier">distr_type</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="random_t.html#idp26596480-bb"><span class="identifier">random_t</span></a><span class="special">(</span><span class="identifier">engine_type</span> <span class="special">&amp;&amp;</span><span class="special">,</span> <span class="identifier">distr_type</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="random_t.html#idp26546432-bb"><span class="identifier">random_t</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">explicit</span> <a class="link" href="random_t.html#idp26546720-bb"><span class="identifier">random_t</span></a><span class="special">(</span><span class="identifier">distr_type</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="random_t.html#idp26547968-bb"><span class="identifier">random_t</span></a><span class="special">(</span><span class="identifier">engine_type</span> <span class="special">&amp;&amp;</span><span class="special">,</span> <span class="identifier">distr_type</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="random_t.html#idp26588576-bb">public member functions</a></span>
-  <a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> <a class="link" href="random_t.html#idp26589136-bb"><span class="identifier">capacity</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">SampleType</span> <a class="link" href="random_t.html#idp26590384-bb"><span class="identifier">next</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="random_t.html#idp26591232-bb"><span class="identifier">reset</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> SeedType<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="random_t.html#idp26592080-bb"><span class="identifier">seed</span></a><span class="special">(</span><span class="identifier">SeedType</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="random_t.html#idp26540064-bb">public member functions</a></span>
+  <a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> <a class="link" href="random_t.html#idp26540624-bb"><span class="identifier">capacity</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">SampleType</span> <a class="link" href="random_t.html#idp26541872-bb"><span class="identifier">next</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="random_t.html#idp26542720-bb"><span class="identifier">reset</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> SeedType<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="random_t.html#idp26543568-bb"><span class="identifier">seed</span></a><span class="special">(</span><span class="identifier">SeedType</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp26668976"></a><h2>Description</h2>
+<a name="idp26611408"></a><h2>Description</h2>
 <p>This class implements the generator concept (see <a class="link" href="generated_by.html" title="Class template generated_by">boost::unit_test::data::monomorphic::generated_by</a>) for implementing a random number generator. </p>
 <div class="refsect2">
-<a name="idp26670672"></a><h3>
+<a name="idp26613104"></a><h3>
 <a name="boost.unit_test.data.monomorphic.random_tconstruct-copy-destruct"></a><code class="computeroutput">random_t</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><a name="idp26594944-bb"></a><span class="identifier">random_t</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">explicit</span> <a name="idp26595232-bb"></a><span class="identifier">random_t</span><span class="special">(</span><span class="identifier">distr_type</span> <span class="special">&amp;&amp;</span> d<span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><a name="idp26596480-bb"></a><span class="identifier">random_t</span><span class="special">(</span><span class="identifier">engine_type</span> <span class="special">&amp;&amp;</span> e<span class="special">,</span> <span class="identifier">distr_type</span> <span class="special">&amp;&amp;</span> d<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a name="idp26546432-bb"></a><span class="identifier">random_t</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">explicit</span> <a name="idp26546720-bb"></a><span class="identifier">random_t</span><span class="special">(</span><span class="identifier">distr_type</span> <span class="special">&amp;&amp;</span> d<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a name="idp26547968-bb"></a><span class="identifier">random_t</span><span class="special">(</span><span class="identifier">engine_type</span> <span class="special">&amp;&amp;</span> e<span class="special">,</span> <span class="identifier">distr_type</span> <span class="special">&amp;&amp;</span> d<span class="special">)</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp26689344"></a><h3>
-<a name="idp26588576-bb"></a><code class="computeroutput">random_t</code> public member functions</h3>
+<a name="idp26631888"></a><h3>
+<a name="idp26540064-bb"></a><code class="computeroutput">random_t</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> <a name="idp26589136-bb"></a><span class="identifier">capacity</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">SampleType</span> <a name="idp26590384-bb"></a><span class="identifier">next</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">void</span> <a name="idp26591232-bb"></a><span class="identifier">reset</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a class="link" href="../size_t.html" title="Class size_t">data::size_t</a> <a name="idp26540624-bb"></a><span class="identifier">capacity</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">SampleType</span> <a name="idp26541872-bb"></a><span class="identifier">next</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">void</span> <a name="idp26542720-bb"></a><span class="identifier">reset</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> SeedType<span class="special">&gt;</span> <span class="keyword">void</span> <a name="idp26592080-bb"></a><span class="identifier">seed</span><span class="special">(</span><span class="identifier">SeedType</span> <span class="special">&amp;&amp;</span> seed<span class="special">)</span><span class="special">;</span></pre>Sets the seed of the pseudo-random number engine. </li>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> SeedType<span class="special">&gt;</span> <span class="keyword">void</span> <a name="idp26543568-bb"></a><span class="identifier">seed</span><span class="special">(</span><span class="identifier">SeedType</span> <span class="special">&amp;&amp;</span> seed<span class="special">)</span><span class="special">;</span></pre>Sets the seed of the pseudo-random number engine. </li>
 </ol></div>
 </div>
 </div>

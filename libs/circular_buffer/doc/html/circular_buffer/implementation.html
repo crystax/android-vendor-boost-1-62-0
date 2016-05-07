@@ -146,13 +146,13 @@
 </ul></div>
 <p>
       It is considered to be a bug to read or remove an element (e.g. by calling
-      <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html#idp8468000-bb">front()</a></code> or
-      <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html#idp8942432-bb">pop_back()</a></code>)
+      <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html#idp8525872-bb">front()</a></code> or
+      <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html#idp9000304-bb">pop_back()</a></code>)
       from an empty std container and from an empty <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html" title="Class template circular_buffer">circular_buffer</a></code>
       as well. The data consumer has to test if the container is not empty before
-      reading/removing from it by testing <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html#idp8640208-bb">empty()</a></code>.
+      reading/removing from it by testing <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html#idp8698080-bb">empty()</a></code>.
       However, when reading from the <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html" title="Class template circular_buffer">circular_buffer</a></code>,
-      there is an option to rely on the <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html#idp8446688-bb">at()</a></code>
+      there is an option to rely on the <code class="computeroutput"><a class="link" href="../boost/circular_buffer.html#idp8504560-bb">at()</a></code>
       method which throws an exception when the index is out of range.
     </p>
 <h4>

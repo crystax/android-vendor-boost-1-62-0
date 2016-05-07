@@ -56,108 +56,108 @@
   <span class="keyword">typedef</span> <span class="emphasis"><em><span class="identifier">implementation</span><span class="special">-</span><span class="identifier">defined</span></em></span>                 <a class="link" href="unordered_multiset.html#boost.unordered_multiset.const_local_iterator"><span class="identifier">const_local_iterator</span></a><span class="special">;</span>
 
   <span class="comment">// <a class="link" href="unordered_multiset.html#boost.unordered_multisetconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <span class="keyword">explicit</span> <a class="link" href="unordered_multiset.html#idp7863568-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">size_type</span> <span class="special">=</span> <span class="emphasis"><em><span class="identifier">implementation</span><span class="special">-</span><span class="identifier">defined</span></em></span><span class="special">,</span> 
+  <span class="keyword">explicit</span> <a class="link" href="unordered_multiset.html#idp8165552-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">size_type</span> <span class="special">=</span> <span class="emphasis"><em><span class="identifier">implementation</span><span class="special">-</span><span class="identifier">defined</span></em></span><span class="special">,</span> 
                               <span class="identifier">hasher</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">hasher</span><span class="special">(</span><span class="special">)</span><span class="special">,</span> 
                               <span class="identifier">key_equal</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">key_equal</span><span class="special">(</span><span class="special">)</span><span class="special">,</span> 
                               <span class="identifier">allocator_type</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">allocator_type</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> InputIterator<span class="special">&gt;</span> 
-    <a class="link" href="unordered_multiset.html#idp7875824-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">InputIterator</span><span class="special">,</span> <span class="identifier">InputIterator</span><span class="special">,</span> 
+    <a class="link" href="unordered_multiset.html#idp8177808-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">InputIterator</span><span class="special">,</span> <span class="identifier">InputIterator</span><span class="special">,</span> 
                        <span class="identifier">size_type</span> <span class="special">=</span> <span class="emphasis"><em><span class="identifier">implementation</span><span class="special">-</span><span class="identifier">defined</span></em></span><span class="special">,</span> 
                        <span class="identifier">hasher</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">hasher</span><span class="special">(</span><span class="special">)</span><span class="special">,</span> 
                        <span class="identifier">key_equal</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">key_equal</span><span class="special">(</span><span class="special">)</span><span class="special">,</span> 
                        <span class="identifier">allocator_type</span> <span class="keyword">const</span><span class="special">&amp;</span> <span class="special">=</span> <span class="identifier">allocator_type</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="unordered_multiset.html#idp7890176-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="unordered_multiset.html#idp7894736-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">explicit</span> <a class="link" href="unordered_multiset.html#idp7900832-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">Allocator</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="unordered_multiset.html#idp7904096-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> <span class="identifier">Allocator</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="unordered_multiset.html#idp7908784-bb"><span class="special">~</span><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">unordered_multiset</span><span class="special">&amp;</span> <a class="link" href="unordered_multiset.html#idp7910192-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">unordered_multiset</span><span class="special">&amp;</span> <a class="link" href="unordered_multiset.html#idp7916032-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">allocator_type</span> <a class="link" href="unordered_multiset.html#idp7923024-bb"><span class="identifier">get_allocator</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <a class="link" href="unordered_multiset.html#idp8192160-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="unordered_multiset.html#idp8196720-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">explicit</span> <a class="link" href="unordered_multiset.html#idp8202816-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">Allocator</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="unordered_multiset.html#idp8206080-bb"><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> <span class="identifier">Allocator</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="unordered_multiset.html#idp8210768-bb"><span class="special">~</span><span class="identifier">unordered_multiset</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">unordered_multiset</span><span class="special">&amp;</span> <a class="link" href="unordered_multiset.html#idp8212176-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">unordered_multiset</span><span class="special">&amp;</span> <a class="link" href="unordered_multiset.html#idp8218016-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">allocator_type</span> <a class="link" href="unordered_multiset.html#idp8225008-bb"><span class="identifier">get_allocator</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="unordered_multiset.html#idp7924464-bb">size and capacity</a></span>
-  <span class="keyword">bool</span> <a class="link" href="unordered_multiset.html#idp7925024-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp7927648-bb"><span class="identifier">size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp7930880-bb"><span class="identifier">max_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8226448-bb">size and capacity</a></span>
+  <span class="keyword">bool</span> <a class="link" href="unordered_multiset.html#idp8227008-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8229632-bb"><span class="identifier">size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8232864-bb"><span class="identifier">max_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="unordered_multiset.html#idp7933536-bb">iterators</a></span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp7934656-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp7935232-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp7937376-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp7938272-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp7940112-bb"><span class="identifier">cbegin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp7942144-bb"><span class="identifier">cend</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8235520-bb">iterators</a></span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8236640-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp8237216-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8239360-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp8240256-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp8242096-bb"><span class="identifier">cbegin</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp8244128-bb"><span class="identifier">cend</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="unordered_multiset.html#idp7944272-bb">modifiers</a></span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp7944832-bb"><span class="identifier">emplace</span></a><span class="special">(</span><span class="identifier">Args</span><span class="special">&amp;&amp;</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp7959184-bb"><span class="identifier">emplace_hint</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">Args</span><span class="special">&amp;&amp;</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp7976112-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">value_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp7985264-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">value_type</span><span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp7994416-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">value_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8005856-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">value_type</span><span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> InputIterator<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8017296-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">InputIterator</span><span class="special">,</span> <span class="identifier">InputIterator</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8028480-bb"><span class="identifier">erase</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8036576-bb"><span class="identifier">erase</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8043024-bb"><span class="identifier">erase</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">const_iterator</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8052128-bb"><span class="identifier">quick_erase</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8059856-bb"><span class="identifier">erase_return_void</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8067584-bb"><span class="identifier">clear</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8071888-bb"><span class="identifier">swap</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8246256-bb">modifiers</a></span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8246816-bb"><span class="identifier">emplace</span></a><span class="special">(</span><span class="identifier">Args</span><span class="special">&amp;&amp;</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8261168-bb"><span class="identifier">emplace_hint</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">Args</span><span class="special">&amp;&amp;</span><span class="special">...</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8278096-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">value_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8287248-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">value_type</span><span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8296400-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">value_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8307840-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">value_type</span><span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> InputIterator<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8319280-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">InputIterator</span><span class="special">,</span> <span class="identifier">InputIterator</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8330464-bb"><span class="identifier">erase</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8338560-bb"><span class="identifier">erase</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8345008-bb"><span class="identifier">erase</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">const_iterator</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8354112-bb"><span class="identifier">quick_erase</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8361840-bb"><span class="identifier">erase_return_void</span></a><span class="special">(</span><span class="identifier">const_iterator</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8369568-bb"><span class="identifier">clear</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8373872-bb"><span class="identifier">swap</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8079520-bb">observers</a></span>
-  <span class="identifier">hasher</span> <a class="link" href="unordered_multiset.html#idp8080080-bb"><span class="identifier">hash_function</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">key_equal</span> <a class="link" href="unordered_multiset.html#idp8082000-bb"><span class="identifier">key_eq</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8381504-bb">observers</a></span>
+  <span class="identifier">hasher</span> <a class="link" href="unordered_multiset.html#idp8382064-bb"><span class="identifier">hash_function</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">key_equal</span> <a class="link" href="unordered_multiset.html#idp8383984-bb"><span class="identifier">key_eq</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8084080-bb">lookup</a></span>
-  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8085200-bb"><span class="identifier">find</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp8087264-bb"><span class="identifier">find</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8386064-bb">lookup</a></span>
+  <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8387184-bb"><span class="identifier">find</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">const_iterator</span> <a class="link" href="unordered_multiset.html#idp8389248-bb"><span class="identifier">find</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> CompatibleKey<span class="special">,</span> <span class="keyword">typename</span> CompatibleHash<span class="special">,</span> 
            <span class="keyword">typename</span> CompatiblePredicate<span class="special">&gt;</span> 
-    <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8089600-bb"><span class="identifier">find</span></a><span class="special">(</span><span class="identifier">CompatibleKey</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> <span class="identifier">CompatibleHash</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> 
+    <span class="identifier">iterator</span> <a class="link" href="unordered_multiset.html#idp8391584-bb"><span class="identifier">find</span></a><span class="special">(</span><span class="identifier">CompatibleKey</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> <span class="identifier">CompatibleHash</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> 
                   <span class="identifier">CompatiblePredicate</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> CompatibleKey<span class="special">,</span> <span class="keyword">typename</span> CompatibleHash<span class="special">,</span> 
            <span class="keyword">typename</span> CompatiblePredicate<span class="special">&gt;</span> 
     <span class="identifier">const_iterator</span> 
-    <a class="link" href="unordered_multiset.html#idp8096144-bb"><span class="identifier">find</span></a><span class="special">(</span><span class="identifier">CompatibleKey</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> <span class="identifier">CompatibleHash</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> 
+    <a class="link" href="unordered_multiset.html#idp8398128-bb"><span class="identifier">find</span></a><span class="special">(</span><span class="identifier">CompatibleKey</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> <span class="identifier">CompatibleHash</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> 
          <span class="identifier">CompatiblePredicate</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8105856-bb"><span class="identifier">count</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">iterator</span><span class="special">,</span> <span class="identifier">iterator</span><span class="special">&gt;</span> <a class="link" href="unordered_multiset.html#idp8110400-bb"><span class="identifier">equal_range</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">const_iterator</span><span class="special">&gt;</span> <a class="link" href="unordered_multiset.html#idp8112480-bb"><span class="identifier">equal_range</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8407840-bb"><span class="identifier">count</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">iterator</span><span class="special">,</span> <span class="identifier">iterator</span><span class="special">&gt;</span> <a class="link" href="unordered_multiset.html#idp8412384-bb"><span class="identifier">equal_range</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">const_iterator</span><span class="special">&gt;</span> <a class="link" href="unordered_multiset.html#idp8414464-bb"><span class="identifier">equal_range</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8118256-bb">bucket interface</a></span>
-  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8118816-bb"><span class="identifier">bucket_count</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8121152-bb"><span class="identifier">max_bucket_count</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8123520-bb"><span class="identifier">bucket_size</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8128960-bb"><span class="identifier">bucket</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">local_iterator</span> <a class="link" href="unordered_multiset.html#idp8134720-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">const_local_iterator</span> <a class="link" href="unordered_multiset.html#idp8136784-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">local_iterator</span> <a class="link" href="unordered_multiset.html#idp8142864-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">const_local_iterator</span> <a class="link" href="unordered_multiset.html#idp8144928-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">const_local_iterator</span> <a class="link" href="unordered_multiset.html#idp8150464-bb"><span class="identifier">cbegin</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">const_local_iterator</span> <a class="link" href="unordered_multiset.html#idp8156112-bb"><span class="identifier">cend</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8420240-bb">bucket interface</a></span>
+  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8420800-bb"><span class="identifier">bucket_count</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8423136-bb"><span class="identifier">max_bucket_count</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8425504-bb"><span class="identifier">bucket_size</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">size_type</span> <a class="link" href="unordered_multiset.html#idp8430944-bb"><span class="identifier">bucket</span></a><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">local_iterator</span> <a class="link" href="unordered_multiset.html#idp8436704-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">const_local_iterator</span> <a class="link" href="unordered_multiset.html#idp8438768-bb"><span class="identifier">begin</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">local_iterator</span> <a class="link" href="unordered_multiset.html#idp8444848-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">const_local_iterator</span> <a class="link" href="unordered_multiset.html#idp8446912-bb"><span class="identifier">end</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">const_local_iterator</span> <a class="link" href="unordered_multiset.html#idp8452448-bb"><span class="identifier">cbegin</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">const_local_iterator</span> <a class="link" href="unordered_multiset.html#idp8458096-bb"><span class="identifier">cend</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8161664-bb">hash policy</a></span>
-  <span class="keyword">float</span> <a class="link" href="unordered_multiset.html#idp8162224-bb"><span class="identifier">load_factor</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">float</span> <a class="link" href="unordered_multiset.html#idp8164592-bb"><span class="identifier">max_load_factor</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8166960-bb"><span class="identifier">max_load_factor</span></a><span class="special">(</span><span class="keyword">float</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8170672-bb"><span class="identifier">rehash</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8176000-bb"><span class="identifier">reserve</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="unordered_multiset.html#idp8463648-bb">hash policy</a></span>
+  <span class="keyword">float</span> <a class="link" href="unordered_multiset.html#idp8464208-bb"><span class="identifier">load_factor</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">float</span> <a class="link" href="unordered_multiset.html#idp8466576-bb"><span class="identifier">max_load_factor</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8468944-bb"><span class="identifier">max_load_factor</span></a><span class="special">(</span><span class="keyword">float</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8472656-bb"><span class="identifier">rehash</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#idp8477984-bb"><span class="identifier">reserve</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span>
 
-<span class="comment">// <a class="link" href="unordered_multiset.html#idp8180496-bb">Equality Comparisons</a></span>
+<span class="comment">// <a class="link" href="unordered_multiset.html#idp8482480-bb">Equality Comparisons</a></span>
 <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Value<span class="special">,</span> <span class="keyword">typename</span> Hash<span class="special">,</span> <span class="keyword">typename</span> Pred<span class="special">,</span> <span class="keyword">typename</span> Alloc<span class="special">&gt;</span> 
-  <span class="keyword">bool</span> <a class="link" href="unordered_multiset.html#boost.unordered_multiset.operator==_idp8181056"><span class="keyword">operator</span><span class="special">==</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> 
+  <span class="keyword">bool</span> <a class="link" href="unordered_multiset.html#boost.unordered_multiset.operator==_idp8483040"><span class="keyword">operator</span><span class="special">==</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> 
                   <span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Value<span class="special">,</span> <span class="keyword">typename</span> Hash<span class="special">,</span> <span class="keyword">typename</span> Pred<span class="special">,</span> <span class="keyword">typename</span> Alloc<span class="special">&gt;</span> 
-  <span class="keyword">bool</span> <a class="link" href="unordered_multiset.html#boost.unordered_multiset.operator!=_idp8192752"><span class="keyword">operator</span><span class="special">!=</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> 
+  <span class="keyword">bool</span> <a class="link" href="unordered_multiset.html#boost.unordered_multiset.operator!=_idp8494736"><span class="keyword">operator</span><span class="special">!=</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">,</span> 
                   <span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 
-<span class="comment">// <a class="link" href="unordered_multiset.html#idp8204608-bb">swap</a></span>
+<span class="comment">// <a class="link" href="unordered_multiset.html#idp8506592-bb">swap</a></span>
 <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Value<span class="special">,</span> <span class="keyword">typename</span> Hash<span class="special">,</span> <span class="keyword">typename</span> Pred<span class="special">,</span> <span class="keyword">typename</span> Alloc<span class="special">&gt;</span> 
-  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#boost.unordered_multiset.swap_idp8205168"><span class="identifier">swap</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span><span class="special">&amp;</span><span class="special">,</span> 
+  <span class="keyword">void</span> <a class="link" href="unordered_multiset.html#boost.unordered_multiset.swap_idp8507152"><span class="identifier">swap</span></a><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span><span class="special">&amp;</span><span class="special">,</span> 
             <span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp7883648"></a><h2>Description</h2>
+<a name="idp7931616"></a><h2>Description</h2>
 <p><span class="bold"><strong>Template Parameters</strong></span>
               </p>
 <div class="informaltable"><table class="table">
@@ -192,7 +192,7 @@
 <p>The elements are organized into buckets. Keys with the same hash code are stored in the same bucket and elements with equivalent keys are stored next to each other.</p>
 <p>The number of buckets can be automatically increased by a call to insert, or as the result of calling rehash.</p>
 <div class="refsect2">
-<a name="idp7898672"></a><h3>
+<a name="idp7946608"></a><h3>
 <a name="boost.unordered_multisettypes"></a><code class="computeroutput">unordered_multiset</code> 
         public
        types</h3>
@@ -267,13 +267,13 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp7975648"></a><h3>
+<a name="idp8023648"></a><h3>
 <a name="boost.unordered_multisetconstruct-copy-destruct"></a><code class="computeroutput">unordered_multiset</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp7863568-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">size_type</span> n <span class="special">=</span> <span class="emphasis"><em><span class="identifier">implementation</span><span class="special">-</span><span class="identifier">defined</span></em></span><span class="special">,</span> 
+<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp8165552-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">size_type</span> n <span class="special">=</span> <span class="emphasis"><em><span class="identifier">implementation</span><span class="special">-</span><span class="identifier">defined</span></em></span><span class="special">,</span> 
                             <span class="identifier">hasher</span> <span class="keyword">const</span><span class="special">&amp;</span> hf <span class="special">=</span> <span class="identifier">hasher</span><span class="special">(</span><span class="special">)</span><span class="special">,</span> 
                             <span class="identifier">key_equal</span> <span class="keyword">const</span><span class="special">&amp;</span> eq <span class="special">=</span> <span class="identifier">key_equal</span><span class="special">(</span><span class="special">)</span><span class="special">,</span> 
                             <span class="identifier">allocator_type</span> <span class="keyword">const</span><span class="special">&amp;</span> a <span class="special">=</span> <span class="identifier">allocator_type</span><span class="special">(</span><span class="special">)</span><span class="special">)</span><span class="special">;</span></pre>
@@ -283,7 +283,7 @@
 <tbody>
 <tr>
 <td><p><span class="term">Postconditions:</span></p></td>
-<td><code class="computeroutput"><a class="link" href="unordered_multiset.html#idp7927648-bb">size</a>() == 0</code></td>
+<td><code class="computeroutput"><a class="link" href="unordered_multiset.html#idp8229632-bb">size</a>() == 0</code></td>
 </tr>
 <tr>
 <td><p><span class="term">Requires:</span></p></td>
@@ -296,7 +296,7 @@
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> InputIterator<span class="special">&gt;</span> 
-  <a name="idp7875824-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">InputIterator</span> f<span class="special">,</span> <span class="identifier">InputIterator</span> l<span class="special">,</span> 
+  <a name="idp8177808-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">InputIterator</span> f<span class="special">,</span> <span class="identifier">InputIterator</span> l<span class="special">,</span> 
                      <span class="identifier">size_type</span> n <span class="special">=</span> <span class="emphasis"><em><span class="identifier">implementation</span><span class="special">-</span><span class="identifier">defined</span></em></span><span class="special">,</span> 
                      <span class="identifier">hasher</span> <span class="keyword">const</span><span class="special">&amp;</span> hf <span class="special">=</span> <span class="identifier">hasher</span><span class="special">(</span><span class="special">)</span><span class="special">,</span> 
                      <span class="identifier">key_equal</span> <span class="keyword">const</span><span class="special">&amp;</span> eq <span class="special">=</span> <span class="identifier">key_equal</span><span class="special">(</span><span class="special">)</span><span class="special">,</span> 
@@ -313,7 +313,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp7890176-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8192160-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre>
 <p>The copy constructor. Copies the contained elements, hash function, predicate, maximum load factor and allocator.</p>
 <p>If <code class="computeroutput">Allocator::select_on_container_copy_construction</code>
               exists and has the right signature, the allocator will be
@@ -327,7 +327,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp7894736-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8196720-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span></pre>
 <p>The move constructor.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -355,15 +355,15 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp7900832-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">Allocator</span> <span class="keyword">const</span><span class="special">&amp;</span> a<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">explicit</span> <a name="idp8202816-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">Allocator</span> <span class="keyword">const</span><span class="special">&amp;</span> a<span class="special">)</span><span class="special">;</span></pre>
 <p>Constructs an empty container, using allocator <code class="computeroutput">a</code>.</p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp7904096-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span> x<span class="special">,</span> <span class="identifier">Allocator</span> <span class="keyword">const</span><span class="special">&amp;</span> a<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8206080-bb"></a><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span> x<span class="special">,</span> <span class="identifier">Allocator</span> <span class="keyword">const</span><span class="special">&amp;</span> a<span class="special">)</span><span class="special">;</span></pre>
 <p>Constructs an container, copying <code class="computeroutput">x</code>'s contained elements, hash function, predicate, maximum load factor, but using allocator <code class="computeroutput">a</code>.</p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp7908784-bb"></a><span class="special">~</span><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8210768-bb"></a><span class="special">~</span><span class="identifier">unordered_multiset</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -374,7 +374,7 @@
 </li>
 </ol></div>
 </div>
-<pre class="literallayout"><span class="identifier">unordered_multiset</span><span class="special">&amp;</span> <a name="idp7910192-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">unordered_multiset</span><span class="special">&amp;</span> <a name="idp8212176-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="keyword">const</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre>
 <p>The assignment operator. Copies the contained elements, hash function, predicate and maximum load factor but not the allocator.</p>
 <p>If <code class="computeroutput">Alloc::propagate_on_container_copy_assignment</code>
               exists and <code class="computeroutput">Alloc::propagate_on_container_copy_assignment::value
@@ -388,7 +388,7 @@
 <td><p><code class="computeroutput">value_type</code> is copy constructible</p></td>
 </tr></tbody>
 </table></div>
-<pre class="literallayout"><span class="identifier">unordered_multiset</span><span class="special">&amp;</span> <a name="idp7916032-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">unordered_multiset</span><span class="special">&amp;</span> <a name="idp8218016-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="identifier">unordered_multiset</span> <span class="special">&amp;&amp;</span><span class="special">)</span><span class="special">;</span></pre>
 <p>The move assignment operator.</p>
 <p>If <code class="computeroutput">Alloc::propagate_on_container_move_assignment</code>
               exists and <code class="computeroutput">Alloc::propagate_on_container_move_assignment::value
@@ -414,39 +414,39 @@
 </tr>
 </tbody>
 </table></div>
-<pre class="literallayout"><span class="identifier">allocator_type</span> <a name="idp7923024-bb"></a><span class="identifier">get_allocator</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">allocator_type</span> <a name="idp8225008-bb"></a><span class="identifier">get_allocator</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="refsect2">
-<a name="idp8107440"></a><h3>
-<a name="idp7924464-bb"></a><code class="computeroutput">unordered_multiset</code> size and capacity</h3>
+<a name="idp8155424"></a><h3>
+<a name="idp8226448-bb"></a><code class="computeroutput">unordered_multiset</code> size and capacity</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp7925024-bb"></a><span class="identifier">empty</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp8227008-bb"></a><span class="identifier">empty</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term">Returns:</span></p></td>
-<td><code class="computeroutput"><a class="link" href="unordered_multiset.html#idp7927648-bb">size</a>() == 0</code></td>
+<td><code class="computeroutput"><a class="link" href="unordered_multiset.html#idp8229632-bb">size</a>() == 0</code></td>
 </tr></tbody>
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp7927648-bb"></a><span class="identifier">size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8229632-bb"></a><span class="identifier">size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term">Returns:</span></p></td>
-<td><code class="computeroutput">std::distance(<a class="link" href="unordered_multiset.html#idp7934096-bb">begin</a>(), <a class="link" href="unordered_multiset.html#idp7936816-bb">end</a>())</code></td>
+<td><code class="computeroutput">std::distance(<a class="link" href="unordered_multiset.html#idp8236080-bb">begin</a>(), <a class="link" href="unordered_multiset.html#idp8238800-bb">end</a>())</code></td>
 </tr></tbody>
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp7930880-bb"></a><span class="identifier">max_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8232864-bb"></a><span class="identifier">max_size</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term">Returns:</span></p></td>
 <td>
-<code class="computeroutput"><a class="link" href="unordered_multiset.html#idp7927648-bb">size</a>()</code> of the largest possible container.
+<code class="computeroutput"><a class="link" href="unordered_multiset.html#idp8229632-bb">size</a>()</code> of the largest possible container.
               </td>
 </tr></tbody>
 </table></div>
@@ -454,12 +454,12 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp8133040"></a><h3>
-<a name="idp7933536-bb"></a><code class="computeroutput">unordered_multiset</code> iterators</h3>
+<a name="idp8180800"></a><h3>
+<a name="idp8235520-bb"></a><code class="computeroutput">unordered_multiset</code> iterators</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a name="idp7934096-bb"></a><span class="identifier">iterator</span> <a name="idp7934656-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-<span class="identifier">const_iterator</span> <a name="idp7935232-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8236080-bb"></a><span class="identifier">iterator</span> <a name="idp8236640-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+<span class="identifier">const_iterator</span> <a name="idp8237216-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -470,8 +470,8 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp7936816-bb"></a><span class="identifier">iterator</span> <a name="idp7937376-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-<span class="identifier">const_iterator</span> <a name="idp7938272-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8238800-bb"></a><span class="identifier">iterator</span> <a name="idp8239360-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+<span class="identifier">const_iterator</span> <a name="idp8240256-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -482,7 +482,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp7940112-bb"></a><span class="identifier">cbegin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp8242096-bb"></a><span class="identifier">cbegin</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -493,7 +493,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp7942144-bb"></a><span class="identifier">cend</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">const_iterator</span> <a name="idp8244128-bb"></a><span class="identifier">cend</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -506,11 +506,11 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp8168528"></a><h3>
-<a name="idp7944272-bb"></a><code class="computeroutput">unordered_multiset</code> modifiers</h3>
+<a name="idp8216352"></a><h3>
+<a name="idp8246256-bb"></a><code class="computeroutput">unordered_multiset</code> modifiers</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">iterator</span> <a name="idp7944832-bb"></a><span class="identifier">emplace</span><span class="special">(</span><span class="identifier">Args</span><span class="special">&amp;&amp;</span><span class="special">...</span> args<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> Args<span class="special">&gt;</span> <span class="identifier">iterator</span> <a name="idp8246816-bb"></a><span class="identifier">emplace</span><span class="special">(</span><span class="identifier">Args</span><span class="special">&amp;&amp;</span><span class="special">...</span> args<span class="special">)</span><span class="special">;</span></pre>
 <p>Inserts an object, constructed with the arguments <code class="computeroutput">args</code>, in the container.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -547,7 +547,7 @@
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span><span class="special">...</span> Args<span class="special">&gt;</span> 
-  <span class="identifier">iterator</span> <a name="idp7959184-bb"></a><span class="identifier">emplace_hint</span><span class="special">(</span><span class="identifier">const_iterator</span> hint<span class="special">,</span> <span class="identifier">Args</span><span class="special">&amp;&amp;</span><span class="special">...</span> args<span class="special">)</span><span class="special">;</span></pre>
+  <span class="identifier">iterator</span> <a name="idp8261168-bb"></a><span class="identifier">emplace_hint</span><span class="special">(</span><span class="identifier">const_iterator</span> hint<span class="special">,</span> <span class="identifier">Args</span><span class="special">&amp;&amp;</span><span class="special">...</span> args<span class="special">)</span><span class="special">;</span></pre>
 <p>Inserts an object, constructed with the arguments <code class="computeroutput">args</code>, in the container.</p>
 <p><code class="computeroutput">hint</code> is a suggestion to where the element should be inserted.</p>
 <div class="variablelist"><table border="0">
@@ -585,7 +585,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp7976112-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">value_type</span> <span class="keyword">const</span><span class="special">&amp;</span> obj<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8278096-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">value_type</span> <span class="keyword">const</span><span class="special">&amp;</span> obj<span class="special">)</span><span class="special">;</span></pre>
 <p>Inserts <code class="computeroutput">obj</code> in the container.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -613,7 +613,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp7985264-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">value_type</span><span class="special">&amp;&amp;</span> obj<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8287248-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">value_type</span><span class="special">&amp;&amp;</span> obj<span class="special">)</span><span class="special">;</span></pre>
 <p>Inserts <code class="computeroutput">obj</code> in the container.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -641,7 +641,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp7994416-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">const_iterator</span> hint<span class="special">,</span> <span class="identifier">value_type</span> <span class="keyword">const</span><span class="special">&amp;</span> obj<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8296400-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">const_iterator</span> hint<span class="special">,</span> <span class="identifier">value_type</span> <span class="keyword">const</span><span class="special">&amp;</span> obj<span class="special">)</span><span class="special">;</span></pre>
 <p>Inserts <code class="computeroutput">obj</code> in the container.</p>
 <p>hint is a suggestion to where the element should be inserted.</p>
 <div class="variablelist"><table border="0">
@@ -671,7 +671,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8005856-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">const_iterator</span> hint<span class="special">,</span> <span class="identifier">value_type</span><span class="special">&amp;&amp;</span> obj<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8307840-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">const_iterator</span> hint<span class="special">,</span> <span class="identifier">value_type</span><span class="special">&amp;&amp;</span> obj<span class="special">)</span><span class="special">;</span></pre>
 <p>Inserts <code class="computeroutput">obj</code> in the container.</p>
 <p>hint is a suggestion to where the element should be inserted.</p>
 <div class="variablelist"><table border="0">
@@ -702,7 +702,7 @@
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> InputIterator<span class="special">&gt;</span> 
-  <span class="keyword">void</span> <a name="idp8017296-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">InputIterator</span> first<span class="special">,</span> <span class="identifier">InputIterator</span> last<span class="special">)</span><span class="special">;</span></pre>
+  <span class="keyword">void</span> <a name="idp8319280-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">InputIterator</span> first<span class="special">,</span> <span class="identifier">InputIterator</span> last<span class="special">)</span><span class="special">;</span></pre>
 <p>Inserts a range of elements into the container. Elements are inserted if and only if there is no element in the container with an equivalent value.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -727,7 +727,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8028480-bb"></a><span class="identifier">erase</span><span class="special">(</span><span class="identifier">const_iterator</span> position<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8330464-bb"></a><span class="identifier">erase</span><span class="special">(</span><span class="identifier">const_iterator</span> position<span class="special">)</span><span class="special">;</span></pre>
 <p>Erase the element pointed to by <code class="computeroutput">position</code>.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -753,7 +753,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8036576-bb"></a><span class="identifier">erase</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8338560-bb"></a><span class="identifier">erase</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span><span class="special">;</span></pre>
 <p>Erase all elements with key equivalent to <code class="computeroutput">k</code>.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -770,7 +770,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8043024-bb"></a><span class="identifier">erase</span><span class="special">(</span><span class="identifier">const_iterator</span> first<span class="special">,</span> <span class="identifier">const_iterator</span> last<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">iterator</span> <a name="idp8345008-bb"></a><span class="identifier">erase</span><span class="special">(</span><span class="identifier">const_iterator</span> first<span class="special">,</span> <span class="identifier">const_iterator</span> last<span class="special">)</span><span class="special">;</span></pre>
 <p>Erases the elements in the range from <code class="computeroutput">first</code> to <code class="computeroutput">last</code>.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -790,7 +790,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp8052128-bb"></a><span class="identifier">quick_erase</span><span class="special">(</span><span class="identifier">const_iterator</span> position<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp8354112-bb"></a><span class="identifier">quick_erase</span><span class="special">(</span><span class="identifier">const_iterator</span> position<span class="special">)</span><span class="special">;</span></pre>
 <p>Erase the element pointed to by <code class="computeroutput">position</code>.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -815,7 +815,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp8059856-bb"></a><span class="identifier">erase_return_void</span><span class="special">(</span><span class="identifier">const_iterator</span> position<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp8361840-bb"></a><span class="identifier">erase_return_void</span><span class="special">(</span><span class="identifier">const_iterator</span> position<span class="special">)</span><span class="special">;</span></pre>
 <p>Erase the element pointed to by <code class="computeroutput">position</code>.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -840,14 +840,14 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp8067584-bb"></a><span class="identifier">clear</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp8369568-bb"></a><span class="identifier">clear</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Erases all elements in the container.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
 <td><p><span class="term">Postconditions:</span></p></td>
-<td><p><code class="computeroutput"><a class="link" href="unordered_multiset.html#idp7927648-bb">size</a>() == 0</code></p></td>
+<td><p><code class="computeroutput"><a class="link" href="unordered_multiset.html#idp8229632-bb">size</a>() == 0</code></p></td>
 </tr>
 <tr>
 <td><p><span class="term">Throws:</span></p></td>
@@ -857,7 +857,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp8071888-bb"></a><span class="identifier">swap</span><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp8373872-bb"></a><span class="identifier">swap</span><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Swaps the contents of the container with the parameter.</p>
 <p>If <code class="computeroutput">Allocator::propagate_on_container_swap</code> is declared and
                   <code class="computeroutput">Allocator::propagate_on_container_swap::value</code> is true then the
@@ -881,11 +881,11 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp8366432"></a><h3>
-<a name="idp8079520-bb"></a><code class="computeroutput">unordered_multiset</code> observers</h3>
+<a name="idp8414320"></a><h3>
+<a name="idp8381504-bb"></a><code class="computeroutput">unordered_multiset</code> observers</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">hasher</span> <a name="idp8080080-bb"></a><span class="identifier">hash_function</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">hasher</span> <a name="idp8382064-bb"></a><span class="identifier">hash_function</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -896,7 +896,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">key_equal</span> <a name="idp8082000-bb"></a><span class="identifier">key_eq</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">key_equal</span> <a name="idp8383984-bb"></a><span class="identifier">key_eq</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -909,20 +909,20 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp8381328"></a><h3>
-<a name="idp8084080-bb"></a><code class="computeroutput">unordered_multiset</code> lookup</h3>
+<a name="idp8429152"></a><h3>
+<a name="idp8386064-bb"></a><code class="computeroutput">unordered_multiset</code> lookup</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a name="idp8084640-bb"></a><span class="identifier">iterator</span> <a name="idp8085200-bb"></a><span class="identifier">find</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span><span class="special">;</span>
-<span class="identifier">const_iterator</span> <a name="idp8087264-bb"></a><span class="identifier">find</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+<pre class="literallayout"><a name="idp8386624-bb"></a><span class="identifier">iterator</span> <a name="idp8387184-bb"></a><span class="identifier">find</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span><span class="special">;</span>
+<span class="identifier">const_iterator</span> <a name="idp8389248-bb"></a><span class="identifier">find</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> CompatibleKey<span class="special">,</span> <span class="keyword">typename</span> CompatibleHash<span class="special">,</span> 
          <span class="keyword">typename</span> CompatiblePredicate<span class="special">&gt;</span> 
-  <span class="identifier">iterator</span> <a name="idp8089600-bb"></a><span class="identifier">find</span><span class="special">(</span><span class="identifier">CompatibleKey</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">,</span> <span class="identifier">CompatibleHash</span> <span class="keyword">const</span><span class="special">&amp;</span> hash<span class="special">,</span> 
+  <span class="identifier">iterator</span> <a name="idp8391584-bb"></a><span class="identifier">find</span><span class="special">(</span><span class="identifier">CompatibleKey</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">,</span> <span class="identifier">CompatibleHash</span> <span class="keyword">const</span><span class="special">&amp;</span> hash<span class="special">,</span> 
                 <span class="identifier">CompatiblePredicate</span> <span class="keyword">const</span><span class="special">&amp;</span> eq<span class="special">)</span><span class="special">;</span>
 <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> CompatibleKey<span class="special">,</span> <span class="keyword">typename</span> CompatibleHash<span class="special">,</span> 
          <span class="keyword">typename</span> CompatiblePredicate<span class="special">&gt;</span> 
   <span class="identifier">const_iterator</span> 
-  <a name="idp8096144-bb"></a><span class="identifier">find</span><span class="special">(</span><span class="identifier">CompatibleKey</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">,</span> <span class="identifier">CompatibleHash</span> <span class="keyword">const</span><span class="special">&amp;</span> hash<span class="special">,</span> 
+  <a name="idp8398128-bb"></a><span class="identifier">find</span><span class="special">(</span><span class="identifier">CompatibleKey</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">,</span> <span class="identifier">CompatibleHash</span> <span class="keyword">const</span><span class="special">&amp;</span> hash<span class="special">,</span> 
        <span class="identifier">CompatiblePredicate</span> <span class="keyword">const</span><span class="special">&amp;</span> eq<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -944,7 +944,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8105856-bb"></a><span class="identifier">count</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8407840-bb"></a><span class="identifier">count</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -954,8 +954,8 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp8109840-bb"></a><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">iterator</span><span class="special">,</span> <span class="identifier">iterator</span><span class="special">&gt;</span> <a name="idp8110400-bb"></a><span class="identifier">equal_range</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span><span class="special">;</span>
-<span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">const_iterator</span><span class="special">&gt;</span> <a name="idp8112480-bb"></a><span class="identifier">equal_range</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8411824-bb"></a><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">iterator</span><span class="special">,</span> <span class="identifier">iterator</span><span class="special">&gt;</span> <a name="idp8412384-bb"></a><span class="identifier">equal_range</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span><span class="special">;</span>
+<span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">const_iterator</span><span class="special">,</span> <span class="identifier">const_iterator</span><span class="special">&gt;</span> <a name="idp8414464-bb"></a><span class="identifier">equal_range</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -970,11 +970,11 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp8465680"></a><h3>
-<a name="idp8118256-bb"></a><code class="computeroutput">unordered_multiset</code> bucket interface</h3>
+<a name="idp8513328"></a><h3>
+<a name="idp8420240-bb"></a><code class="computeroutput">unordered_multiset</code> bucket interface</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8118816-bb"></a><span class="identifier">bucket_count</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8420800-bb"></a><span class="identifier">bucket_count</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -984,7 +984,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8121152-bb"></a><span class="identifier">max_bucket_count</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8423136-bb"></a><span class="identifier">max_bucket_count</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -994,13 +994,13 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8123520-bb"></a><span class="identifier">bucket_size</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8425504-bb"></a><span class="identifier">bucket_size</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
 <td><p><span class="term">Requires:</span></p></td>
-<td><p><code class="computeroutput">n &lt; <a class="link" href="unordered_multiset.html#idp8118816-bb">bucket_count</a>()</code></p></td>
+<td><p><code class="computeroutput">n &lt; <a class="link" href="unordered_multiset.html#idp8420800-bb">bucket_count</a>()</code></p></td>
 </tr>
 <tr>
 <td><p><span class="term">Returns:</span></p></td>
@@ -1010,7 +1010,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8128960-bb"></a><span class="identifier">bucket</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">size_type</span> <a name="idp8430944-bb"></a><span class="identifier">bucket</span><span class="special">(</span><span class="identifier">key_type</span> <span class="keyword">const</span><span class="special">&amp;</span> k<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -1026,8 +1026,8 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp8134160-bb"></a><span class="identifier">local_iterator</span> <a name="idp8134720-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span>
-<span class="identifier">const_local_iterator</span> <a name="idp8136784-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8436144-bb"></a><span class="identifier">local_iterator</span> <a name="idp8436704-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span>
+<span class="identifier">const_local_iterator</span> <a name="idp8438768-bb"></a><span class="identifier">begin</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -1043,8 +1043,8 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp8142304-bb"></a><span class="identifier">local_iterator</span> <a name="idp8142864-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span>
-<span class="identifier">const_local_iterator</span> <a name="idp8144928-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp8444288-bb"></a><span class="identifier">local_iterator</span> <a name="idp8444848-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span>
+<span class="identifier">const_local_iterator</span> <a name="idp8446912-bb"></a><span class="identifier">end</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -1060,7 +1060,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">const_local_iterator</span> <a name="idp8150464-bb"></a><span class="identifier">cbegin</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">const_local_iterator</span> <a name="idp8452448-bb"></a><span class="identifier">cbegin</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -1076,7 +1076,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">const_local_iterator</span> <a name="idp8156112-bb"></a><span class="identifier">cend</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">const_local_iterator</span> <a name="idp8458096-bb"></a><span class="identifier">cend</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -1094,11 +1094,11 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp8548784"></a><h3>
-<a name="idp8161664-bb"></a><code class="computeroutput">unordered_multiset</code> hash policy</h3>
+<a name="idp8596656"></a><h3>
+<a name="idp8463648-bb"></a><code class="computeroutput">unordered_multiset</code> hash policy</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">float</span> <a name="idp8162224-bb"></a><span class="identifier">load_factor</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">float</span> <a name="idp8464208-bb"></a><span class="identifier">load_factor</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -1108,7 +1108,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">float</span> <a name="idp8164592-bb"></a><span class="identifier">max_load_factor</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">float</span> <a name="idp8466576-bb"></a><span class="identifier">max_load_factor</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -1118,7 +1118,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp8166960-bb"></a><span class="identifier">max_load_factor</span><span class="special">(</span><span class="keyword">float</span> z<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp8468944-bb"></a><span class="identifier">max_load_factor</span><span class="special">(</span><span class="keyword">float</span> z<span class="special">)</span><span class="special">;</span></pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
@@ -1128,7 +1128,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp8170672-bb"></a><span class="identifier">rehash</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp8472656-bb"></a><span class="identifier">rehash</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
 <p>Changes the number of buckets so that there at least <code class="computeroutput">n</code> buckets, and so that the load factor is less than the maximum load factor.</p>
 <p>Invalidates iterators, and changes the order of elements. Pointers and references to elements are not invalidated.</p>
 <div class="variablelist"><table border="0">
@@ -1140,7 +1140,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp8176000-bb"></a><span class="identifier">reserve</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp8477984-bb"></a><span class="identifier">reserve</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
 <p>Invalidates iterators, and changes the order of elements. Pointers and references to elements are not invalidated.</p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -1153,12 +1153,12 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp8585904"></a><h3>
-<a name="idp8180496-bb"></a><code class="computeroutput">unordered_multiset</code> Equality Comparisons</h3>
+<a name="idp8633712"></a><h3>
+<a name="idp8482480-bb"></a><code class="computeroutput">unordered_multiset</code> Equality Comparisons</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Value<span class="special">,</span> <span class="keyword">typename</span> Hash<span class="special">,</span> <span class="keyword">typename</span> Pred<span class="special">,</span> <span class="keyword">typename</span> Alloc<span class="special">&gt;</span> 
-  <span class="keyword">bool</span> <a name="boost.unordered_multiset.operator==_idp8181056"></a><span class="keyword">operator</span><span class="special">==</span><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> x<span class="special">,</span> 
+  <span class="keyword">bool</span> <a name="boost.unordered_multiset.operator==_idp8483040"></a><span class="keyword">operator</span><span class="special">==</span><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> x<span class="special">,</span> 
                   <span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> y<span class="special">)</span><span class="special">;</span></pre>
 <p>Return <code class="computeroutput">true</code> if <code class="computeroutput">x.size() ==
                 y.size</code> and for every equivalent key group in
@@ -1181,7 +1181,7 @@
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Value<span class="special">,</span> <span class="keyword">typename</span> Hash<span class="special">,</span> <span class="keyword">typename</span> Pred<span class="special">,</span> <span class="keyword">typename</span> Alloc<span class="special">&gt;</span> 
-  <span class="keyword">bool</span> <a name="boost.unordered_multiset.operator!=_idp8192752"></a><span class="keyword">operator</span><span class="special">!=</span><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> x<span class="special">,</span> 
+  <span class="keyword">bool</span> <a name="boost.unordered_multiset.operator!=_idp8494736"></a><span class="keyword">operator</span><span class="special">!=</span><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> x<span class="special">,</span> 
                   <span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span> <span class="keyword">const</span><span class="special">&amp;</span> y<span class="special">)</span><span class="special">;</span></pre>
 <p>Return <code class="computeroutput">false</code> if <code class="computeroutput">x.size() ==
                 y.size</code> and for every equivalent key group in
@@ -1205,11 +1205,11 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp8653120"></a><h3>
-<a name="idp8204608-bb"></a><code class="computeroutput">unordered_multiset</code> swap</h3>
+<a name="idp8700992"></a><h3>
+<a name="idp8506592-bb"></a><code class="computeroutput">unordered_multiset</code> swap</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Value<span class="special">,</span> <span class="keyword">typename</span> Hash<span class="special">,</span> <span class="keyword">typename</span> Pred<span class="special">,</span> <span class="keyword">typename</span> Alloc<span class="special">&gt;</span> 
-  <span class="keyword">void</span> <a name="boost.unordered_multiset.swap_idp8205168"></a><span class="identifier">swap</span><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span><span class="special">&amp;</span> x<span class="special">,</span> 
+  <span class="keyword">void</span> <a name="boost.unordered_multiset.swap_idp8507152"></a><span class="identifier">swap</span><span class="special">(</span><span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span><span class="special">&amp;</span> x<span class="special">,</span> 
             <span class="identifier">unordered_multiset</span><span class="special">&lt;</span><span class="identifier">Value</span><span class="special">,</span> <span class="identifier">Hash</span><span class="special">,</span> <span class="identifier">Pred</span><span class="special">,</span> <span class="identifier">Alloc</span><span class="special">&gt;</span><span class="special">&amp;</span> y<span class="special">)</span><span class="special">;</span></pre>
 <p>Swaps the contents of <code class="computeroutput">x</code> and <code class="computeroutput">y</code>.</p>
 <p>If <code class="computeroutput">Allocator::propagate_on_container_swap</code> is declared and

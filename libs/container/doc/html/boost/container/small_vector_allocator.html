@@ -89,7 +89,7 @@
                          <span class="keyword">const</span> <a class="link" href="small_vector_allocator.html" title="Class template small_vector_allocator">small_vector_allocator</a> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">noexcept</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp30546576"></a><h2>Description</h2>
+<a name="idp30552368"></a><h2>Description</h2>
 <p>A non-standard allocator used to implement `small_vector`. Users should never use it directly. It is described here for documentation purposes.</p>
 <p>This allocator inherits from a standard-conforming allocator and forwards member functions to the standard allocator except when internal storage is being used as memory source.</p>
 <p>This allocator is a "partially_propagable" allocator and defines `is_partially_propagable` as true_type.</p>
@@ -97,7 +97,7 @@
 <p>`boost::container::vector` supports partially propagable allocators fallbacking to deep copy/swap/move operations when internal storage is being used to store vector elements.</p>
 <p>`small_vector_allocator` assumes that will be instantiated as `boost::container::vector&lt; T, small_vector_allocator&lt;Allocator&gt; &gt;` and internal storage can be obtained downcasting that vector to `small_vector_base&lt;T&gt;`. </p>
 <div class="refsect2">
-<a name="idp30550144"></a><h3>
+<a name="idp30555936"></a><h3>
 <a name="boost.container.small_vector_allocatorconstruct-copy-destruct"></a><code class="computeroutput">small_vector_allocator</code> 
         public
        construct/copy/destruct</h3>
@@ -146,7 +146,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp30650080"></a><h3>
+<a name="idp30655648"></a><h3>
 <a name="idp19890688-bb"></a><code class="computeroutput">small_vector_allocator</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
@@ -165,7 +165,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp30685264"></a><h3>
+<a name="idp30690832"></a><h3>
 <a name="idp19932608-bb"></a><code class="computeroutput">small_vector_allocator</code> friend functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">

@@ -36,67 +36,67 @@
 <span class="keyword">class</span> <a class="link" href="variable_value.html" title="Class variable_value">variable_value</a> <span class="special">{</span>
 <span class="keyword">public</span><span class="special">:</span>
   <span class="comment">// <a class="link" href="variable_value.html#boost.program_options.variable_valueconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="variable_value.html#idp69148288-bb"><span class="identifier">variable_value</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="variable_value.html#idp69148576-bb"><span class="identifier">variable_value</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span><span class="special">,</span> <span class="keyword">bool</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="variable_value.html#idp76020656-bb"><span class="identifier">variable_value</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="variable_value.html#idp76020944-bb"><span class="identifier">variable_value</span></a><span class="special">(</span><span class="keyword">const</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span><span class="special">,</span> <span class="keyword">bool</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="variable_value.html#idp72099328-bb">friend functions</a></span>
+  <span class="comment">// <a class="link" href="variable_value.html#idp15786512-bb">friend functions</a></span>
   <span class="keyword">friend</span> <span class="identifier">BOOST_PROGRAM_OPTIONS_DECL</span> <span class="keyword">void</span> 
-  <a class="link" href="variable_value.html#idp86046608-bb"><span class="identifier">store</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="basic_parsed_options.html" title="Class template basic_parsed_options">basic_parsed_options</a><span class="special">&lt;</span> <span class="keyword">char</span> <span class="special">&gt;</span> <span class="special">&amp;</span><span class="special">,</span> <a class="link" href="variables_map.html" title="Class variables_map">variables_map</a> <span class="special">&amp;</span><span class="special">,</span> <span class="keyword">bool</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="variable_value.html#idp68035520-bb"><span class="identifier">store</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="basic_parsed_options.html" title="Class template basic_parsed_options">basic_parsed_options</a><span class="special">&lt;</span> <span class="keyword">char</span> <span class="special">&gt;</span> <span class="special">&amp;</span><span class="special">,</span> <a class="link" href="variables_map.html" title="Class variables_map">variables_map</a> <span class="special">&amp;</span><span class="special">,</span> <span class="keyword">bool</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="variable_value.html#idp127584784-bb">public member functions</a></span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> <span class="keyword">const</span> <span class="identifier">T</span> <span class="special">&amp;</span> <a class="link" href="variable_value.html#idp127585232-bb"><span class="identifier">as</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> <span class="identifier">T</span> <span class="special">&amp;</span> <a class="link" href="variable_value.html#idp132028560-bb"><span class="identifier">as</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="variable_value.html#idp139246640-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="variable_value.html#idp182777904-bb"><span class="identifier">defaulted</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">const</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> <a class="link" href="variable_value.html#idp178732464-bb"><span class="identifier">value</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> <a class="link" href="variable_value.html#idp123706864-bb"><span class="identifier">value</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="variable_value.html#idp207089120-bb">public member functions</a></span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> <span class="keyword">const</span> <span class="identifier">T</span> <span class="special">&amp;</span> <a class="link" href="variable_value.html#idp207089680-bb"><span class="identifier">as</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> <span class="identifier">T</span> <span class="special">&amp;</span> <a class="link" href="variable_value.html#idp16441200-bb"><span class="identifier">as</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="variable_value.html#idp186795840-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="variable_value.html#idp8587376-bb"><span class="identifier">defaulted</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">const</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> <a class="link" href="variable_value.html#idp81025760-bb"><span class="identifier">value</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> <a class="link" href="variable_value.html#idp81027312-bb"><span class="identifier">value</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp370781248"></a><h2>Description</h2>
+<a name="idp313212112"></a><h2>Description</h2>
 <p>Class holding value of option. Contains details about how the value is set and allows to conveniently obtain the value. </p>
 <div class="refsect2">
-<a name="idp370782064"></a><h3>
+<a name="idp313212928"></a><h3>
 <a name="boost.program_options.variable_valueconstruct-copy-destruct"></a><code class="computeroutput">variable_value</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><a name="idp69148288-bb"></a><span class="identifier">variable_value</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><a name="idp69148576-bb"></a><span class="identifier">variable_value</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> xv<span class="special">,</span> <span class="keyword">bool</span> xdefaulted<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a name="idp76020656-bb"></a><span class="identifier">variable_value</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a name="idp76020944-bb"></a><span class="identifier">variable_value</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> xv<span class="special">,</span> <span class="keyword">bool</span> xdefaulted<span class="special">)</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp370796144"></a><h3>
-<a name="idp72099328-bb"></a><code class="computeroutput">variable_value</code> friend functions</h3>
+<a name="idp313226880"></a><h3>
+<a name="idp15786512-bb"></a><code class="computeroutput">variable_value</code> friend functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
 <pre class="literallayout"><span class="keyword">friend</span> <span class="identifier">BOOST_PROGRAM_OPTIONS_DECL</span> <span class="keyword">void</span> 
-<a name="idp86046608-bb"></a><span class="identifier">store</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="basic_parsed_options.html" title="Class template basic_parsed_options">basic_parsed_options</a><span class="special">&lt;</span> <span class="keyword">char</span> <span class="special">&gt;</span> <span class="special">&amp;</span> options<span class="special">,</span> <a class="link" href="variables_map.html" title="Class variables_map">variables_map</a> <span class="special">&amp;</span> m<span class="special">,</span> <span class="keyword">bool</span><span class="special">)</span><span class="special">;</span></pre>
+<a name="idp68035520-bb"></a><span class="identifier">store</span><span class="special">(</span><span class="keyword">const</span> <a class="link" href="basic_parsed_options.html" title="Class template basic_parsed_options">basic_parsed_options</a><span class="special">&lt;</span> <span class="keyword">char</span> <span class="special">&gt;</span> <span class="special">&amp;</span> options<span class="special">,</span> <a class="link" href="variables_map.html" title="Class variables_map">variables_map</a> <span class="special">&amp;</span> m<span class="special">,</span> <span class="keyword">bool</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Stores in 'm' all options that are defined in 'options'. If 'm' already has a non-defaulted value of an option, that value is not changed, even if 'options' specify some value. </p>
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp370811968"></a><h3>
-<a name="idp127584784-bb"></a><code class="computeroutput">variable_value</code> public member functions</h3>
+<a name="idp313242896"></a><h3>
+<a name="idp207089120-bb"></a><code class="computeroutput">variable_value</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> <span class="keyword">const</span> <span class="identifier">T</span> <span class="special">&amp;</span> <a name="idp127585232-bb"></a><span class="identifier">as</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> <span class="keyword">const</span> <span class="identifier">T</span> <span class="special">&amp;</span> <a name="idp207089680-bb"></a><span class="identifier">as</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>If stored value if of type T, returns that value. Otherwise, throws boost::bad_any_cast exception. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> <span class="identifier">T</span> <span class="special">&amp;</span> <a name="idp132028560-bb"></a><span class="identifier">as</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> <span class="identifier">T</span> <span class="special">&amp;</span> <a name="idp16441200-bb"></a><span class="identifier">as</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp139246640-bb"></a><span class="identifier">empty</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns true if no value is stored. </li>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp186795840-bb"></a><span class="identifier">empty</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>Returns true if no value is stored. </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp182777904-bb"></a><span class="identifier">defaulted</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp8587376-bb"></a><span class="identifier">defaulted</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Returns true if the value was not explicitly given, but has default value. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">const</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> <a name="idp178732464-bb"></a><span class="identifier">value</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">const</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> <a name="idp81025760-bb"></a><span class="identifier">value</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Returns the contained value. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> <a name="idp123706864-bb"></a><span class="identifier">value</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">any</span> <span class="special">&amp;</span> <a name="idp81027312-bb"></a><span class="identifier">value</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Returns the contained value. </p>
 </li>
 </ol></div>

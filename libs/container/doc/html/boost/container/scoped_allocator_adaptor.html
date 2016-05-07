@@ -90,14 +90,14 @@
   <span class="keyword">friend</span> <span class="keyword">void</span> <a class="link" href="scoped_allocator_adaptor.html#idp18609248-bb"><span class="identifier">swap</span></a><span class="special">(</span><a class="link" href="scoped_allocator_adaptor.html" title="Class template scoped_allocator_adaptor">scoped_allocator_adaptor</a> <span class="special">&amp;</span><span class="special">,</span> <a class="link" href="scoped_allocator_adaptor.html" title="Class template scoped_allocator_adaptor">scoped_allocator_adaptor</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp25241104"></a><h2>Description</h2>
+<a name="idp25332512"></a><h2>Description</h2>
 <p>This class is a C++03-compatible implementation of std::scoped_allocator_adaptor. The class template <a class="link" href="scoped_allocator_adaptor.html" title="Class template scoped_allocator_adaptor">scoped_allocator_adaptor</a> is an allocator template that specifies the memory resource (the outer allocator) to be used by a container (as any other allocator does) and also specifies an inner allocator resource to be passed to the constructor of every element within the container.</p>
 <p>This adaptor is instantiated with one outer and zero or more inner allocator types. If instantiated with only one allocator type, the inner allocator becomes the <a class="link" href="scoped_allocator_adaptor.html" title="Class template scoped_allocator_adaptor">scoped_allocator_adaptor</a> itself, thus using the same allocator resource for the container and every element within the container and, if the elements themselves are containers, each of their elements recursively. If instantiated with more than one allocator, the first allocator is the outer allocator for use by the container, the second allocator is passed to the constructors of the container's elements, and, if the elements themselves are containers, the third allocator is passed to the elements' elements, and so on. If containers are nested to a depth greater than the number of allocators, the last allocator is used repeatedly, as in the single-allocator case, for any remaining recursions.</p>
 <p>[<span class="bold"><strong>Note</strong></span>: The <a class="link" href="scoped_allocator_adaptor.html" title="Class template scoped_allocator_adaptor">scoped_allocator_adaptor</a> is derived from the outer allocator type so it can be substituted for the outer allocator type in most expressions. -end note]</p>
 <p>In the construct member functions, <code class="computeroutput">OUTERMOST(x)</code> is x if x does not have an <code class="computeroutput">outer_allocator()</code> member function and <code class="computeroutput">OUTERMOST(x.outer_allocator())</code> otherwise; <code class="computeroutput">OUTERMOST_ALLOC_TRAITS(x)</code> is <code class="computeroutput"><a class="link" href="allocator_traits.html" title="Struct template allocator_traits">allocator_traits</a>&lt;decltype(OUTERMOST(x))&gt;</code>.</p>
 <p>[<span class="bold"><strong>Note</strong></span>: <code class="computeroutput">OUTERMOST(x)</code> and <code class="computeroutput">OUTERMOST_ALLOC_TRAITS(x)</code> are recursive operations. It is incumbent upon the definition of <code class="computeroutput">outer_allocator()</code> to ensure that the recursion terminates. It will terminate for all instantiations of <a class="link" href="scoped_allocator_adaptor.html" title="Class template scoped_allocator_adaptor">scoped_allocator_adaptor</a>. -end note] </p>
 <div class="refsect2">
-<a name="idp25255840"></a><h3>
+<a name="idp25346736"></a><h3>
 <a name="boost.container.scoped_allocator_adaptortypes"></a><code class="computeroutput">scoped_allocator_adaptor</code> 
         public
        types</h3>
@@ -135,7 +135,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp25303760"></a><h3>
+<a name="idp25390000"></a><h3>
 <a name="boost.container.scoped_allocator_adaptorconstruct-copy-destruct"></a><code class="computeroutput">scoped_allocator_adaptor</code> 
         public
        construct/copy/destruct</h3>
@@ -177,7 +177,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp25383216"></a><h3>
+<a name="idp25459632"></a><h3>
 <a name="idp18535728-bb"></a><code class="computeroutput">scoped_allocator_adaptor</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
@@ -237,7 +237,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp25499728"></a><h3>
+<a name="idp25564704"></a><h3>
 <a name="idp18608688-bb"></a><code class="computeroutput">scoped_allocator_adaptor</code> friend functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
 <pre class="literallayout"><span class="keyword">friend</span> <span class="keyword">void</span> <a name="idp18609248-bb"></a><span class="identifier">swap</span><span class="special">(</span><a class="link" href="scoped_allocator_adaptor.html" title="Class template scoped_allocator_adaptor">scoped_allocator_adaptor</a> <span class="special">&amp;</span> l<span class="special">,</span> <a class="link" href="scoped_allocator_adaptor.html" title="Class template scoped_allocator_adaptor">scoped_allocator_adaptor</a> <span class="special">&amp;</span> r<span class="special">)</span><span class="special">;</span></pre>

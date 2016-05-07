@@ -28,45 +28,45 @@
 <span class="keyword">class</span> <a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="special">:</span> <span class="keyword">public</span> <span class="identifier">type_dispatcher</span> <span class="special">{</span>
 <span class="keyword">public</span><span class="special">:</span>
   <span class="comment">// <a class="link" href="dynamic_type_dispatcher.html#boost.log.dynamic_type_dispatcherconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="dynamic_type_dispatcher.html#idp24984816-bb"><span class="identifier">dynamic_type_dispatcher</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="dynamic_type_dispatcher.html#idp24985520-bb"><span class="identifier">dynamic_type_dispatcher</span></a><span class="special">(</span><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="special">&amp;</span> <a class="link" href="dynamic_type_dispatcher.html#idp24987200-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="dynamic_type_dispatcher.html#idp25287280-bb"><span class="identifier">dynamic_type_dispatcher</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="dynamic_type_dispatcher.html#idp25287984-bb"><span class="identifier">dynamic_type_dispatcher</span></a><span class="special">(</span><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="special">&amp;</span> <a class="link" href="dynamic_type_dispatcher.html#idp25289664-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="dynamic_type_dispatcher.html#idp24977952-bb">public member functions</a></span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">,</span> <span class="keyword">typename</span> VisitorT<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="dynamic_type_dispatcher.html#idp24978512-bb"><span class="identifier">register_type</span></a><span class="special">(</span><span class="identifier">VisitorT</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">dispatching_map</span><span class="special">::</span><span class="identifier">size_type</span> <a class="link" href="dynamic_type_dispatcher.html#idp24983072-bb"><span class="identifier">registered_types_count</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="dynamic_type_dispatcher.html#idp25280416-bb">public member functions</a></span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">,</span> <span class="keyword">typename</span> VisitorT<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="dynamic_type_dispatcher.html#idp25280976-bb"><span class="identifier">register_type</span></a><span class="special">(</span><span class="identifier">VisitorT</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">dispatching_map</span><span class="special">::</span><span class="identifier">size_type</span> <a class="link" href="dynamic_type_dispatcher.html#idp25285536-bb"><span class="identifier">registered_types_count</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp110714016"></a><h2>Description</h2>
+<a name="idp110662816"></a><h2>Description</h2>
 <p>The type dispatcher can be used to pass objects of arbitrary types from one component to another. With regard to the library, the type dispatcher can be used to extract attribute values.</p>
 <p>The dynamic type dispatcher can be initialized in run time and, therefore, can support different types, depending on runtime conditions. Each supported type is associated with a functional object that will be called when an object of the type is dispatched. </p>
 <div class="refsect2">
-<a name="idp110715424"></a><h3>
+<a name="idp110664224"></a><h3>
 <a name="boost.log.dynamic_type_dispatcherconstruct-copy-destruct"></a><code class="computeroutput">dynamic_type_dispatcher</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><a name="idp24984816-bb"></a><span class="identifier">dynamic_type_dispatcher</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp25287280-bb"></a><span class="identifier">dynamic_type_dispatcher</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Default constructor </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp24985520-bb"></a><span class="identifier">dynamic_type_dispatcher</span><span class="special">(</span><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="keyword">const</span> <span class="special">&amp;</span> that<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp25287984-bb"></a><span class="identifier">dynamic_type_dispatcher</span><span class="special">(</span><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="keyword">const</span> <span class="special">&amp;</span> that<span class="special">)</span><span class="special">;</span></pre>
 <p>Copy constructor </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="special">&amp;</span> <a name="idp24987200-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="keyword">const</span> <span class="special">&amp;</span> that<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="special">&amp;</span> <a name="idp25289664-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><a class="link" href="dynamic_type_dispatcher.html" title="Class dynamic_type_dispatcher">dynamic_type_dispatcher</a> <span class="keyword">const</span> <span class="special">&amp;</span> that<span class="special">)</span><span class="special">;</span></pre>
 <p>Copy assignment </p>
 </li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp110736112"></a><h3>
-<a name="idp24977952-bb"></a><code class="computeroutput">dynamic_type_dispatcher</code> public member functions</h3>
+<a name="idp110684896"></a><h3>
+<a name="idp25280416-bb"></a><code class="computeroutput">dynamic_type_dispatcher</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">,</span> <span class="keyword">typename</span> VisitorT<span class="special">&gt;</span> 
-  <span class="keyword">void</span> <a name="idp24978512-bb"></a><span class="identifier">register_type</span><span class="special">(</span><span class="identifier">VisitorT</span> <span class="keyword">const</span> <span class="special">&amp;</span> visitor<span class="special">)</span><span class="special">;</span></pre>
+  <span class="keyword">void</span> <a name="idp25280976-bb"></a><span class="identifier">register_type</span><span class="special">(</span><span class="identifier">VisitorT</span> <span class="keyword">const</span> <span class="special">&amp;</span> visitor<span class="special">)</span><span class="special">;</span></pre>
 <p>The method registers a new type</p>
 <p>
 </p>
@@ -85,7 +85,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">dispatching_map</span><span class="special">::</span><span class="identifier">size_type</span> <a name="idp24983072-bb"></a><span class="identifier">registered_types_count</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">dispatching_map</span><span class="special">::</span><span class="identifier">size_type</span> <a name="idp25285536-bb"></a><span class="identifier">registered_types_count</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>The method returns the number of registered types </p>
 </li>
 </ol></div>

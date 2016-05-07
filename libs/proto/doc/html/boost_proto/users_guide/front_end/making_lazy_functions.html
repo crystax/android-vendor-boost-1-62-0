@@ -99,7 +99,7 @@
             In the type computation above, <code class="computeroutput"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">result_of</span><span class="special">::</span><span class="identifier">as_child</span><span class="special">&lt;&gt;</span></code> is a metafunction that ensures
             its argument is a Proto expression type. If it isn't one already, it
             becomes a Proto terminal. We'll learn more about this metafunction, along
-            with <code class="computeroutput"><a class="link" href="../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>, its runtime counterpart,
+            with <code class="computeroutput"><a class="link" href="../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>, its runtime counterpart,
             <a class="link" href="customizing_expressions_in_your_domain/per_domain_as_child.html" title="Controlling How Child Expressions Are Captured">later</a>.
             For now, you can forget about it.
           </p></td></tr>
@@ -186,9 +186,9 @@
 <p>
           We could write a <code class="computeroutput"><span class="identifier">pow</span><span class="special">()</span></code>
           function using code like this, but it's verbose and error prone; it's too
-          easy to introduce subtle bugs by forgetting to call <code class="computeroutput"><a class="link" href="../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>
+          easy to introduce subtle bugs by forgetting to call <code class="computeroutput"><a class="link" href="../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>
           where necessary, resulting in code that seems to work but sometimes doesn't.
-          Proto provides a better way to construct expression nodes: <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29319984.html" title="Function make_expr">proto::make_expr()</a></code>.
+          Proto provides a better way to construct expression nodes: <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29012944.html" title="Function make_expr">proto::make_expr()</a></code>.
         </p>
 <h6>
 <a name="boost_proto.users_guide.front_end.making_lazy_functions.h1"></a>
@@ -196,7 +196,7 @@
           Functions Made Simple With <code class="literal">make_expr()</code></a>
         </h6>
 <p>
-          Proto provides a helper for building expression templates called <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29319984.html" title="Function make_expr">proto::make_expr()</a></code>. We can concisely define
+          Proto provides a helper for building expression templates called <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29012944.html" title="Function make_expr">proto::make_expr()</a></code>. We can concisely define
           the <code class="computeroutput"><span class="identifier">pow</span><span class="special">()</span></code>
           function with it as below.
         </p>
@@ -224,22 +224,22 @@
 <p>
           Subsequent template parameters to <code class="computeroutput"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">result_of</span><span class="special">::</span><span class="identifier">make_expr</span><span class="special">&lt;&gt;</span></code> represent child nodes. If a child
           type is not already a Proto expression, it is automatically made into a
-          terminal with <code class="computeroutput"><a class="link" href="../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>.
+          terminal with <code class="computeroutput"><a class="link" href="../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>.
           A type such as <code class="computeroutput"><span class="identifier">pow_fun</span><span class="special">&lt;</span><span class="identifier">Exp</span><span class="special">&gt;</span></code> results in terminal that is held by
           value, whereas a type like <code class="computeroutput"><span class="identifier">Arg</span>
           <span class="keyword">const</span> <span class="special">&amp;</span></code>
           (note the reference) indicates that the result should be held by reference.
         </p>
 <p>
-          In the function body is the runtime invocation of <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29319984.html" title="Function make_expr">proto::make_expr()</a></code>.
-          It closely mirrors the return type calculation. <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29319984.html" title="Function make_expr">proto::make_expr()</a></code>
+          In the function body is the runtime invocation of <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29012944.html" title="Function make_expr">proto::make_expr()</a></code>.
+          It closely mirrors the return type calculation. <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29012944.html" title="Function make_expr">proto::make_expr()</a></code>
           requires you to specify the node's tag type as a template parameter. The
           arguments to the function become the node's children. When a child should
           be stored by value, nothing special needs to be done. When a child should
           be stored by reference, you must use the <code class="computeroutput"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">ref</span><span class="special">()</span></code> function to wrap the argument.
         </p>
 <p>
-          And that's it! <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29319984.html" title="Function make_expr">proto::make_expr()</a></code>
+          And that's it! <code class="computeroutput"><a class="link" href="../../../boost/proto/make_expr_idp29012944.html" title="Function make_expr">proto::make_expr()</a></code>
           is the lazy person's way to make a lazy funtion.
         </p>
 </div>

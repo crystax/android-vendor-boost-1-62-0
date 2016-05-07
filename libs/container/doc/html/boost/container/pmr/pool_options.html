@@ -41,7 +41,7 @@
   <span class="identifier">std</span><span class="special">::</span><span class="identifier">size_t</span> <span class="identifier">largest_required_pool_block</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp24078912"></a><h2>Description</h2>
+<a name="idp24036672"></a><h2>Description</h2>
 <p>The members of <a class="link" href="pool_options.html" title="Struct pool_options">pool_options</a> comprise a set of constructor options for pool resources. The effect of each option on the pool resource behavior is described below:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>`std::size_t max_blocks_per_chunk`: The maximum number of blocks that will be allocated at once from the upstream memory resource to replenish a pool. If the value of `max_blocks_per_chunk` is zero or is greater than an implementation-defined limit, that limit is used instead. The implementation may choose to use a smaller value than is specified in this field and may use different values for different pools.</p></li></ul></div>
 <p>
@@ -50,7 +50,7 @@
 <p>
 </p>
 <div class="refsect2">
-<a name="idp24083344"></a><h3>
+<a name="idp24041104"></a><h3>
 <a name="boost.container.pmr.pool_optionsconstruct-copy-destruct"></a><code class="computeroutput">pool_options</code> 
         public
        construct/copy/destruct</h3>

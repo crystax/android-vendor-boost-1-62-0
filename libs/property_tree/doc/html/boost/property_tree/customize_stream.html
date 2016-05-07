@@ -7,7 +7,7 @@
 <link rel="home" href="../../index.html" title="Chapter&#160;1.&#160;Boost.PropertyTree">
 <link rel="up" href="../../header/boost/property_tree/stream_translator_hpp.html" title="Header &lt;boost/property_tree/stream_translator.hpp&gt;">
 <link rel="prev" href="../../header/boost/property_tree/stream_translator_hpp.html" title="Header &lt;boost/property_tree/stream_translator.hpp&gt;">
-<link rel="next" href="customize_strea_idp6673952.html" title="Struct template customize_stream&lt;Ch, Traits, Ch, void&gt;">
+<link rel="next" href="customize_strea_idp6360224.html" title="Struct template customize_stream&lt;Ch, Traits, Ch, void&gt;">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -20,7 +20,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="../../header/boost/property_tree/stream_translator_hpp.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../header/boost/property_tree/stream_translator_hpp.html"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="customize_strea_idp6673952.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="../../header/boost/property_tree/stream_translator_hpp.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../header/boost/property_tree/stream_translator_hpp.html"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="customize_strea_idp6360224.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="refentry">
 <a name="boost.property_tree.customize_stream"></a><div class="titlepage"></div>
@@ -34,18 +34,18 @@
 </span><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Ch<span class="special">,</span> <span class="keyword">typename</span> Traits<span class="special">,</span> <span class="keyword">typename</span> E<span class="special">,</span> <span class="keyword">typename</span> Enabler <span class="special">=</span> <span class="keyword">void</span><span class="special">&gt;</span> 
 <span class="keyword">struct</span> <a class="link" href="customize_stream.html" title="Struct template customize_stream">customize_stream</a> <span class="special">{</span>
 
-  <span class="comment">// <a class="link" href="customize_stream.html#idp6668848-bb">public static functions</a></span>
-  <span class="keyword">static</span> <span class="keyword">void</span> <a class="link" href="customize_stream.html#idp6669344-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">basic_ostream</span><span class="special">&lt;</span> <span class="identifier">Ch</span><span class="special">,</span> <span class="identifier">Traits</span> <span class="special">&gt;</span> <span class="special">&amp;</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">E</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">static</span> <span class="keyword">void</span> <a class="link" href="customize_stream.html#idp6671584-bb"><span class="identifier">extract</span></a><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">basic_istream</span><span class="special">&lt;</span> <span class="identifier">Ch</span><span class="special">,</span> <span class="identifier">Traits</span> <span class="special">&gt;</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">E</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="customize_stream.html#idp6355120-bb">public static functions</a></span>
+  <span class="keyword">static</span> <span class="keyword">void</span> <a class="link" href="customize_stream.html#idp6355616-bb"><span class="identifier">insert</span></a><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">basic_ostream</span><span class="special">&lt;</span> <span class="identifier">Ch</span><span class="special">,</span> <span class="identifier">Traits</span> <span class="special">&gt;</span> <span class="special">&amp;</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">E</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">static</span> <span class="keyword">void</span> <a class="link" href="customize_stream.html#idp6357856-bb"><span class="identifier">extract</span></a><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">basic_istream</span><span class="special">&lt;</span> <span class="identifier">Ch</span><span class="special">,</span> <span class="identifier">Traits</span> <span class="special">&gt;</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">E</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp38261984"></a><h2>Description</h2>
+<a name="idp38315008"></a><h2>Description</h2>
 <div class="refsect2">
-<a name="idp38262400"></a><h3>
-<a name="idp6668848-bb"></a><code class="computeroutput">customize_stream</code> public static functions</h3>
+<a name="idp38315424"></a><h3>
+<a name="idp6355120-bb"></a><code class="computeroutput">customize_stream</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><span class="keyword">static</span> <span class="keyword">void</span> <a name="idp6669344-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">basic_ostream</span><span class="special">&lt;</span> <span class="identifier">Ch</span><span class="special">,</span> <span class="identifier">Traits</span> <span class="special">&gt;</span> <span class="special">&amp;</span> s<span class="special">,</span> <span class="keyword">const</span> <span class="identifier">E</span> <span class="special">&amp;</span> e<span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">static</span> <span class="keyword">void</span> <a name="idp6671584-bb"></a><span class="identifier">extract</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">basic_istream</span><span class="special">&lt;</span> <span class="identifier">Ch</span><span class="special">,</span> <span class="identifier">Traits</span> <span class="special">&gt;</span> <span class="special">&amp;</span> s<span class="special">,</span> <span class="identifier">E</span> <span class="special">&amp;</span> e<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">static</span> <span class="keyword">void</span> <a name="idp6355616-bb"></a><span class="identifier">insert</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">basic_ostream</span><span class="special">&lt;</span> <span class="identifier">Ch</span><span class="special">,</span> <span class="identifier">Traits</span> <span class="special">&gt;</span> <span class="special">&amp;</span> s<span class="special">,</span> <span class="keyword">const</span> <span class="identifier">E</span> <span class="special">&amp;</span> e<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">static</span> <span class="keyword">void</span> <a name="idp6357856-bb"></a><span class="identifier">extract</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">basic_istream</span><span class="special">&lt;</span> <span class="identifier">Ch</span><span class="special">,</span> <span class="identifier">Traits</span> <span class="special">&gt;</span> <span class="special">&amp;</span> s<span class="special">,</span> <span class="identifier">E</span> <span class="special">&amp;</span> e<span class="special">)</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 </div>
@@ -61,7 +61,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="../../header/boost/property_tree/stream_translator_hpp.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../header/boost/property_tree/stream_translator_hpp.html"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="customize_strea_idp6673952.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="../../header/boost/property_tree/stream_translator_hpp.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../header/boost/property_tree/stream_translator_hpp.html"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../index.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="customize_strea_idp6360224.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

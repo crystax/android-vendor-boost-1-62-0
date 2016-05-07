@@ -49,7 +49,7 @@
             <code class="literal">as_child</code> vs. <code class="literal">as_expr</code></a>
           </h6>
 <p>
-            Proto lets you independently customize the behavior of <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code> and <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code>.
+            Proto lets you independently customize the behavior of <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code> and <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code>.
             Both accept an object <code class="literal">x</code> and return a Proto expression
             by turning <code class="literal">x</code> it into a Proto terminal if necessary.
             Although similar, the two functions are used in different situations
@@ -58,7 +58,7 @@
             you want.
           </p>
 <p>
-            To wit: <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code> is typically used by
+            To wit: <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code> is typically used by
             <span class="emphasis"><em>you</em></span> to turn an object into a Proto expression that
             is to be held in a local variable, as so:
           </p>
@@ -70,11 +70,11 @@
             is guaranteed to be a valid Proto expression. If <code class="computeroutput"><span class="identifier">x</span></code>
             is a non-Proto object, it is turned into a terminal expression that holds
             <code class="computeroutput"><span class="identifier">x</span></code> <span class="emphasis"><em>by value</em></span>.<sup>[<a name="boost_proto.users_guide.front_end.customizing_expressions_in_your_domain.per_domain_as_child.f0" href="#ftn.boost_proto.users_guide.front_end.customizing_expressions_in_your_domain.per_domain_as_child.f0" class="footnote">2</a>]</sup> If <code class="computeroutput"><span class="identifier">x</span></code> is a
-            Proto object already, <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code>
+            Proto object already, <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code>
             returns it <span class="emphasis"><em>by value</em></span> unmodified.
           </p>
 <p>
-            In contrast, <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>
+            In contrast, <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>
             is used internally by Proto to pre-process objects before making them
             children of another expression. Since it's internal to Proto, you don't
             see it explicitly, but it's there behind the scenes in expressions like
@@ -84,12 +84,12 @@
 </pre>
 <p>
             In this case, Proto builds a plus node from the two children. Both are
-            pre-processed by passing them to <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>
+            pre-processed by passing them to <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>
             before making them children of the new node. If <code class="computeroutput"><span class="identifier">x</span></code>
             is not a Proto expression, it becomes one by being wrapped in a Proto
-            terminal that holds it <span class="emphasis"><em>by reference</em></span>. If <code class="computeroutput"><span class="identifier">x</span></code> is already a Proto expression, <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code> returns it <span class="emphasis"><em>by
+            terminal that holds it <span class="emphasis"><em>by reference</em></span>. If <code class="computeroutput"><span class="identifier">x</span></code> is already a Proto expression, <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code> returns it <span class="emphasis"><em>by
             reference</em></span> unmodified. Contrast this with the above description
-            for <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code>.
+            for <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code>.
           </p>
 <p>
             The table below summarizes the above description.
@@ -169,32 +169,32 @@
 <tr><td align="left" valign="top"><p>
               There is one important place where Proto uses both <code class="computeroutput"><span class="identifier">as_expr</span></code>
               <span class="emphasis"><em>and</em></span> <code class="computeroutput"><span class="identifier">as_child</span></code>:
-              <code class="computeroutput"><a class="link" href="../../../../boost/proto/make_expr_idp29319984.html" title="Function make_expr">proto::make_expr()</a></code>. The <code class="computeroutput"><a class="link" href="../../../../boost/proto/make_expr_idp29319984.html" title="Function make_expr">proto::make_expr()</a></code> function requires
+              <code class="computeroutput"><a class="link" href="../../../../boost/proto/make_expr_idp29012944.html" title="Function make_expr">proto::make_expr()</a></code>. The <code class="computeroutput"><a class="link" href="../../../../boost/proto/make_expr_idp29012944.html" title="Function make_expr">proto::make_expr()</a></code> function requires
               you to specify for each child whether it should be held by value or
-              by reference. Proto uses <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code>
-              to pre-process the children to be held by value, and <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code> for the ones to be
+              by reference. Proto uses <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code>
+              to pre-process the children to be held by value, and <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code> for the ones to be
               held by reference.
             </p></td></tr>
 </table></div>
 <p>
-            Now that you know what <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>
-            and <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code> are, where they are
+            Now that you know what <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>
+            and <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code> are, where they are
             used, and what they do by default, you may decide that one or both of
             these functions should have different behavior for your domain. For instance,
-            given the above description of <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>,
+            given the above description of <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>,
             the following code is always wrong:
           </p>
 <pre class="programlisting"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">literal</span><span class="special">&lt;</span><span class="keyword">int</span><span class="special">&gt;</span> <span class="identifier">i</span><span class="special">(</span><span class="number">0</span><span class="special">);</span>
 <span class="keyword">auto</span> <span class="identifier">l</span> <span class="special">=</span> <span class="identifier">i</span> <span class="special">+</span> <span class="number">42</span><span class="special">;</span> <span class="comment">// This is WRONG! Don't do this.</span>
 </pre>
 <p>
-            Why is this wrong? Because <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>
+            Why is this wrong? Because <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>
             will turn the integer literal 42 into a Proto terminal that holds a reference
             to a temporary integer initialized with 42. The lifetime of that temporary
             ends at the semicolon, guaranteeing that the local <code class="computeroutput"><span class="identifier">l</span></code>
             is left holding a dangling reference to a deceased integer. What to do?
-            One answer is to use <code class="computeroutput"><a class="link" href="../../../../boost/proto/deep_copy_idp27970880.html" title="Function template deep_copy">proto::deep_copy()</a></code>.
-            Another is to customize the behavior of <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>
+            One answer is to use <code class="computeroutput"><a class="link" href="../../../../boost/proto/deep_copy_idp27663840.html" title="Function template deep_copy">proto::deep_copy()</a></code>.
+            Another is to customize the behavior of <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>
             for your domain. Read on for the details.
           </p>
 <h6>
@@ -243,7 +243,7 @@
           </h6>
 <p>
             Although less common, Proto also lets you customize the behavior of
-            <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code> on a per-domain basis.
+            <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code> on a per-domain basis.
             The technique is identical to that for <code class="literal">as_child</code>. See
             below:
           </p>
@@ -273,7 +273,7 @@
 <p>
             Let's look again at the problem described above involving the C++11
             <code class="computeroutput"><span class="keyword">auto</span></code> keyword and the default
-            behavior of <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code>.
+            behavior of <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code>.
           </p>
 <pre class="programlisting"><span class="identifier">proto</span><span class="special">::</span><span class="identifier">literal</span><span class="special">&lt;</span><span class="keyword">int</span><span class="special">&gt;</span> <span class="identifier">i</span><span class="special">(</span><span class="number">0</span><span class="special">);</span>
 <span class="keyword">auto</span> <span class="identifier">l</span> <span class="special">=</span> <span class="identifier">i</span> <span class="special">+</span> <span class="number">42</span><span class="special">;</span> <span class="comment">// This is WRONG! Don't do this.</span>
@@ -283,7 +283,7 @@
             to hold the value 42. The local <code class="computeroutput"><span class="identifier">l</span></code>
             will be left holding a dangling reference to it after its lifetime is
             over. What if we want Proto to make expressions safe to store this way
-            in local variables? We can do so very easily by making <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp32073264.html" title="Function as_child">proto::as_child()</a></code> behave just like <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code>. The following code
+            in local variables? We can do so very easily by making <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_child_idp31766224.html" title="Function as_child">proto::as_child()</a></code> behave just like <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code>. The following code
             achieves this:
           </p>
 <pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span> <span class="keyword">typename</span> <span class="identifier">E</span> <span class="special">&gt;</span>
@@ -337,7 +337,7 @@
 <div class="footnotes">
 <br><hr width="100" align="left">
 <div class="footnote"><p><sup>[<a id="ftn.boost_proto.users_guide.front_end.customizing_expressions_in_your_domain.per_domain_as_child.f0" href="#boost_proto.users_guide.front_end.customizing_expressions_in_your_domain.per_domain_as_child.f0" class="para">2</a>] </sup>
-              It's not always possible to hold something by value. By default, <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp32051296.html" title="Function as_expr">proto::as_expr()</a></code> makes an exception
+              It's not always possible to hold something by value. By default, <code class="computeroutput"><a class="link" href="../../../../boost/proto/as_expr_idp31744256.html" title="Function as_expr">proto::as_expr()</a></code> makes an exception
               for functions, abstract types, and iostreams (types derived from <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">ios_base</span></code>). These objects are held
               by reference. All others are held by value, even arrays.
             </p></div>

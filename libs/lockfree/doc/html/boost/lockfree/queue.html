@@ -48,27 +48,27 @@
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> 
     <a class="link" href="queue.html#idm19776-bb"><span class="identifier">queue</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">,</span> 
           <span class="keyword">typename</span> <span class="identifier">node_allocator</span><span class="special">::</span><span class="keyword">template</span> <span class="identifier">rebind</span><span class="special">&lt;</span> <span class="identifier">U</span> <span class="special">&gt;</span><span class="special">::</span><span class="identifier">other</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="queue.html#idp5865760-bb"><span class="special">~</span><span class="identifier">queue</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="queue.html#idp5785568-bb"><span class="special">~</span><span class="identifier">queue</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="queue.html#idm14720-bb">public member functions</a></span>
-  <span class="keyword">bool</span> <a class="link" href="queue.html#idm14160-bb"><span class="identifier">is_lock_free</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="queue.html#idp5812608-bb"><span class="identifier">reserve</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">void</span> <a class="link" href="queue.html#idp5815392-bb"><span class="identifier">reserve_unsafe</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5818176-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5821488-bb"><span class="identifier">push</span></a><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5824960-bb"><span class="identifier">bounded_push</span></a><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5829088-bb"><span class="identifier">unsynchronized_push</span></a><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5833280-bb"><span class="identifier">pop</span></a><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="queue.html#idp5836736-bb"><span class="identifier">pop</span></a><span class="special">(</span><span class="identifier">U</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5841328-bb"><span class="identifier">unsynchronized_pop</span></a><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="queue.html#idp5844784-bb"><span class="identifier">unsynchronized_pop</span></a><span class="special">(</span><span class="identifier">U</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="queue.html#idp5849472-bb"><span class="identifier">consume_one</span></a><span class="special">(</span><span class="identifier">Functor</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="queue.html#idp5853568-bb"><span class="identifier">consume_one</span></a><span class="special">(</span><span class="identifier">Functor</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="identifier">size_t</span> <a class="link" href="queue.html#idp5857536-bb"><span class="identifier">consume_all</span></a><span class="special">(</span><span class="identifier">Functor</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="identifier">size_t</span> <a class="link" href="queue.html#idp5861648-bb"><span class="identifier">consume_all</span></a><span class="special">(</span><span class="identifier">Functor</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="queue.html#idm14640-bb">public member functions</a></span>
+  <span class="keyword">bool</span> <a class="link" href="queue.html#idm14080-bb"><span class="identifier">is_lock_free</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="queue.html#idp5732496-bb"><span class="identifier">reserve</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">void</span> <a class="link" href="queue.html#idp5735280-bb"><span class="identifier">reserve_unsafe</span></a><span class="special">(</span><span class="identifier">size_type</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5738064-bb"><span class="identifier">empty</span></a><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5741376-bb"><span class="identifier">push</span></a><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5744848-bb"><span class="identifier">bounded_push</span></a><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5748896-bb"><span class="identifier">unsynchronized_push</span></a><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5753088-bb"><span class="identifier">pop</span></a><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="queue.html#idp5756544-bb"><span class="identifier">pop</span></a><span class="special">(</span><span class="identifier">U</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="queue.html#idp5761136-bb"><span class="identifier">unsynchronized_pop</span></a><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="queue.html#idp5764592-bb"><span class="identifier">unsynchronized_pop</span></a><span class="special">(</span><span class="identifier">U</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="queue.html#idp5769280-bb"><span class="identifier">consume_one</span></a><span class="special">(</span><span class="identifier">Functor</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="keyword">bool</span> <a class="link" href="queue.html#idp5773376-bb"><span class="identifier">consume_one</span></a><span class="special">(</span><span class="identifier">Functor</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="identifier">size_t</span> <a class="link" href="queue.html#idp5777344-bb"><span class="identifier">consume_all</span></a><span class="special">(</span><span class="identifier">Functor</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="identifier">size_t</span> <a class="link" href="queue.html#idp5781456-bb"><span class="identifier">consume_all</span></a><span class="special">(</span><span class="identifier">Functor</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp5755424"></a><h2>Description</h2>
+<a name="idp63328448"></a><h2>Description</h2>
 <p>The queue class provides a multi-writer/multi-reader queue, pushing and popping is lock-free, construction/destruction has to be synchronized. It uses a freelist for memory management, freed nodes are pushed to the freelist and not returned to the OS before the queue is destroyed.</p>
 <p><span class="bold"><strong>Policies:</strong></span> </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="fixed_sized.html" title="Struct template fixed_sized">boost::lockfree::fixed_sized</a>, defaults to <code class="computeroutput">boost::lockfree::fixed_sized&lt;false&gt;</code> <br>
@@ -94,7 +94,7 @@
 <p>
 </p>
 <div class="refsect2">
-<a name="idp5768256"></a><h3>
+<a name="idp63341280"></a><h3>
 <a name="boost.lockfree.queueconstruct-copy-destruct"></a><code class="computeroutput">queue</code> 
         public
        construct/copy/destruct</h3>
@@ -110,17 +110,17 @@
   <a name="idm19776-bb"></a><span class="identifier">queue</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">,</span> 
         <span class="keyword">typename</span> <span class="identifier">node_allocator</span><span class="special">::</span><span class="keyword">template</span> <span class="identifier">rebind</span><span class="special">&lt;</span> <span class="identifier">U</span> <span class="special">&gt;</span><span class="special">::</span><span class="identifier">other</span> <span class="keyword">const</span> <span class="special">&amp;</span> alloc<span class="special">)</span><span class="special">;</span></pre></li>
 <li class="listitem">
-<pre class="literallayout"><a name="idp5865760-bb"></a><span class="special">~</span><span class="identifier">queue</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idp5785568-bb"></a><span class="special">~</span><span class="identifier">queue</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Destroys queue, free all nodes from freelist. </p>
 </li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp5815200"></a><h3>
-<a name="idm14720-bb"></a><code class="computeroutput">queue</code> public member functions</h3>
+<a name="idp63388224"></a><h3>
+<a name="idm14640-bb"></a><code class="computeroutput">queue</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idm14160-bb"></a><span class="identifier">is_lock_free</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idm14080-bb"></a><span class="identifier">is_lock_free</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>
 </p>
 <div class="warning"><table border="0" summary="Warning">
@@ -141,7 +141,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp5812608-bb"></a><span class="identifier">reserve</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp5732496-bb"></a><span class="identifier">reserve</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
 <p>Allocate n nodes for freelist</p>
 <p>
 </p>
@@ -158,7 +158,7 @@
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idp5815392-bb"></a><span class="identifier">reserve_unsafe</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idp5735280-bb"></a><span class="identifier">reserve_unsafe</span><span class="special">(</span><span class="identifier">size_type</span> n<span class="special">)</span><span class="special">;</span></pre>
 <p>Allocate n nodes for freelist</p>
 <p>
 </p>
@@ -175,7 +175,7 @@
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5818176-bb"></a><span class="identifier">empty</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5738064-bb"></a><span class="identifier">empty</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Check if the queue is empty</p>
 <p>
 </p>
@@ -197,7 +197,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5821488-bb"></a><span class="identifier">push</span><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span> t<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5741376-bb"></a><span class="identifier">push</span><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span> t<span class="special">)</span><span class="special">;</span></pre>
 <p>Pushes object t to the queue.</p>
 <p>
 
@@ -226,7 +226,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5824960-bb"></a><span class="identifier">bounded_push</span><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span> t<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5744848-bb"></a><span class="identifier">bounded_push</span><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span> t<span class="special">)</span><span class="special">;</span></pre>
 <p>Pushes object t to the queue.</p>
 <p>
 
@@ -260,7 +260,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5829088-bb"></a><span class="identifier">unsynchronized_push</span><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span> t<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5748896-bb"></a><span class="identifier">unsynchronized_push</span><span class="special">(</span><span class="identifier">T</span> <span class="keyword">const</span> <span class="special">&amp;</span> t<span class="special">)</span><span class="special">;</span></pre>
 <p>Pushes object t to the queue.</p>
 <p>
 
@@ -294,7 +294,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5833280-bb"></a><span class="identifier">pop</span><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span> ret<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5753088-bb"></a><span class="identifier">pop</span><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span> ret<span class="special">)</span><span class="special">;</span></pre>
 <p>Pops object from queue.</p>
 <p>
 
@@ -323,7 +323,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp5836736-bb"></a><span class="identifier">pop</span><span class="special">(</span><span class="identifier">U</span> <span class="special">&amp;</span> ret<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp5756544-bb"></a><span class="identifier">pop</span><span class="special">(</span><span class="identifier">U</span> <span class="special">&amp;</span> ret<span class="special">)</span><span class="special">;</span></pre>
 <p>Pops object from queue.</p>
 <p>
 
@@ -357,7 +357,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5841328-bb"></a><span class="identifier">unsynchronized_pop</span><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span> ret<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">bool</span> <a name="idp5761136-bb"></a><span class="identifier">unsynchronized_pop</span><span class="special">(</span><span class="identifier">T</span> <span class="special">&amp;</span> ret<span class="special">)</span><span class="special">;</span></pre>
 <p>Pops object from queue.</p>
 <p>
 
@@ -386,7 +386,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp5844784-bb"></a><span class="identifier">unsynchronized_pop</span><span class="special">(</span><span class="identifier">U</span> <span class="special">&amp;</span> ret<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> U<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp5764592-bb"></a><span class="identifier">unsynchronized_pop</span><span class="special">(</span><span class="identifier">U</span> <span class="special">&amp;</span> ret<span class="special">)</span><span class="special">;</span></pre>
 <p>Pops object from queue.</p>
 <p>
 
@@ -420,7 +420,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp5849472-bb"></a><span class="identifier">consume_one</span><span class="special">(</span><span class="identifier">Functor</span> <span class="special">&amp;</span> f<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp5769280-bb"></a><span class="identifier">consume_one</span><span class="special">(</span><span class="identifier">Functor</span> <span class="special">&amp;</span> f<span class="special">)</span><span class="special">;</span></pre>
 <p>consumes one element via a functor</p>
 <p>pops one element from the queue and applies the functor on this object</p>
 <p>
@@ -443,7 +443,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp5853568-bb"></a><span class="identifier">consume_one</span><span class="special">(</span><span class="identifier">Functor</span> <span class="keyword">const</span> <span class="special">&amp;</span> f<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="keyword">bool</span> <a name="idp5773376-bb"></a><span class="identifier">consume_one</span><span class="special">(</span><span class="identifier">Functor</span> <span class="keyword">const</span> <span class="special">&amp;</span> f<span class="special">)</span><span class="special">;</span></pre>
 <p>consumes one element via a functor</p>
 <p>pops one element from the queue and applies the functor on this object</p>
 <p>
@@ -461,7 +461,7 @@
  </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="identifier">size_t</span> <a name="idp5857536-bb"></a><span class="identifier">consume_all</span><span class="special">(</span><span class="identifier">Functor</span> <span class="special">&amp;</span> f<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="identifier">size_t</span> <a name="idp5777344-bb"></a><span class="identifier">consume_all</span><span class="special">(</span><span class="identifier">Functor</span> <span class="special">&amp;</span> f<span class="special">)</span><span class="special">;</span></pre>
 <p>consumes all elements via a functor</p>
 <p>sequentially pops all elements from the queue and applies the functor on each object</p>
 <p>
@@ -484,7 +484,7 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="identifier">size_t</span> <a name="idp5861648-bb"></a><span class="identifier">consume_all</span><span class="special">(</span><span class="identifier">Functor</span> <span class="keyword">const</span> <span class="special">&amp;</span> f<span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Functor<span class="special">&gt;</span> <span class="identifier">size_t</span> <a name="idp5781456-bb"></a><span class="identifier">consume_all</span><span class="special">(</span><span class="identifier">Functor</span> <span class="keyword">const</span> <span class="special">&amp;</span> f<span class="special">)</span><span class="special">;</span></pre>
 <p>consumes all elements via a functor</p>
 <p>sequentially pops all elements from the queue and applies the functor on each object</p>
 <p>

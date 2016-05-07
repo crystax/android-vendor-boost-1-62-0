@@ -154,7 +154,7 @@
   <span class="keyword">friend</span> <span class="keyword">void</span> <a class="link" href="slist.html#idp19834560-bb"><span class="identifier">swap</span></a><span class="special">(</span><a class="link" href="slist.html" title="Class template slist">slist</a> <span class="special">&amp;</span><span class="special">,</span> <a class="link" href="slist.html" title="Class template slist">slist</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp29054128"></a><h2>Description</h2>
+<a name="idp29059600"></a><h2>Description</h2>
 <p>An slist is a singly linked list: a list where each element is linked to the next element, but not to the previous element. That is, it is a Sequence that supports forward but not backward traversal, and (amortized) constant time insertion and removal of elements. Slists, like lists, have the important property that insertion and splicing do not invalidate iterators to list elements, and that even removal invalidates only the iterators that point to the elements that are removed. The ordering of iterators may be changed (that is, slist&lt;T&gt;::iterator might have a different predecessor or successor after a list operation than it did before), but the iterators themselves will not be invalidated or made to point to different elements unless that invalidation or mutation is explicit.</p>
 <p>The main difference between slist and list is that list's iterators are bidirectional iterators, while slist's iterators are forward iterators. This means that slist is less versatile than list; frequently, however, bidirectional iterators are unnecessary. You should usually use slist unless you actually need the extra functionality of list, because singly linked lists are smaller and faster than double linked lists.</p>
 <p>Important performance note: like every other Sequence, slist defines the member functions insert and erase. Using these member functions carelessly, however, can result in disastrously slow programs. The problem is that insert's first argument is an iterator p, and that it inserts the new element(s) before p. This means that insert must find the iterator just before p; this is a constant-time operation for list, since list has bidirectional iterators, but for slist it must find that iterator by traversing the list from the beginning up to p. In other words: insert and erase are slow operations anywhere but near the beginning of the slist.</p>
@@ -162,7 +162,7 @@
 <p>
 </p>
 <div class="refsect2">
-<a name="idp29059072"></a><h3>Template Parameters</h3>
+<a name="idp29064544"></a><h3>Template Parameters</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">typename</span> T</pre>
@@ -175,7 +175,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp29067344"></a><h3>
+<a name="idp29072848"></a><h3>
 <a name="boost.container.slistconstruct-copy-destruct"></a><code class="computeroutput">slist</code> 
         public
        construct/copy/destruct</h3>
@@ -279,7 +279,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp29232032"></a><h3>
+<a name="idp29237504"></a><h3>
 <a name="idp19304064-bb"></a><code class="computeroutput">slist</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
@@ -804,7 +804,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp30015104"></a><h3>
+<a name="idp30020640"></a><h3>
 <a name="idp19804016-bb"></a><code class="computeroutput">slist</code> friend functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">

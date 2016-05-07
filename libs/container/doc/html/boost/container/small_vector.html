@@ -64,14 +64,14 @@
   <span class="keyword">void</span> <a class="link" href="small_vector.html#idp19966880-bb"><span class="identifier">swap</span></a><span class="special">(</span><a class="link" href="small_vector.html" title="Class template small_vector">small_vector</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp31008416"></a><h2>Description</h2>
+<a name="idp31014592"></a><h2>Description</h2>
 <p><a class="link" href="small_vector.html" title="Class template small_vector">small_vector</a> is a vector-like container optimized for the case when it contains few elements. It contains some preallocated elements in-place, which can avoid the use of dynamic storage allocation when the actual number of elements is below that preallocated threshold.</p>
 <p>`small_vector&lt;T, N, Allocator&gt;` is convertible to `small_vector_base&lt;T, Allocator&gt;` that is independent from the preallocated element capacity, so client code does not need to be templated on that N argument.</p>
 <p>All `boost::container::vector` member functions are inherited. See `vector` documentation for details.</p>
 <p>
 </p>
 <div class="refsect2">
-<a name="idp31011616"></a><h3>Template Parameters</h3>
+<a name="idp31017792"></a><h3>Template Parameters</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">typename</span> T</pre>
@@ -88,7 +88,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp31025552"></a><h3>
+<a name="idp31031728"></a><h3>
 <a name="boost.container.small_vectorconstruct-copy-destruct"></a><code class="computeroutput">small_vector</code> 
         public
        construct/copy/destruct</h3>
@@ -121,7 +121,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp31177184"></a><h3>
+<a name="idp31183904"></a><h3>
 <a name="idp19966320-bb"></a><code class="computeroutput">small_vector</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><span class="keyword">void</span> <a name="idp19966880-bb"></a><span class="identifier">swap</span><span class="special">(</span><a class="link" href="small_vector.html" title="Class template small_vector">small_vector</a> <span class="special">&amp;</span> other<span class="special">)</span><span class="special">;</span></pre></li></ol></div>
 </div>

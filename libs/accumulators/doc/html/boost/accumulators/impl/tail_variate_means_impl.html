@@ -6,8 +6,8 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="../../../index.html" title="Chapter&#160;1.&#160;Boost.Accumulators">
 <link rel="up" href="../../../statistics_library_reference.html#header.boost.accumulators.statistics.tail_variate_means_hpp" title="Header &lt;boost/accumulators/statistics/tail_variate_means.hpp&gt;">
-<link rel="prev" href="../extract/relative_tail__idp19242496.html" title="Global relative_tail_variate_means">
-<link rel="next" href="../tag/absolute_tail__idp19284352.html" title="Struct template absolute_tail_variate_means">
+<link rel="prev" href="../extract/relative_tail__idp18882560.html" title="Global relative_tail_variate_means">
+<link rel="next" href="../tag/absolute_tail__idp18924416.html" title="Struct template absolute_tail_variate_means">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -20,7 +20,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="../extract/relative_tail__idp19242496.html"><img src="../../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../../statistics_library_reference.html#header.boost.accumulators.statistics.tail_variate_means_hpp"><img src="../../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../tag/absolute_tail__idp19284352.html"><img src="../../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="../extract/relative_tail__idp18882560.html"><img src="../../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../../statistics_library_reference.html#header.boost.accumulators.statistics.tail_variate_means_hpp"><img src="../../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../tag/absolute_tail__idp18924416.html"><img src="../../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="refentry">
 <a name="boost.accumulators.impl.tail_variate_means_impl"></a><div class="titlepage"></div>
@@ -40,45 +40,45 @@
   <span class="keyword">typedef</span> <span class="identifier">iterator_range</span><span class="special">&lt;</span> <span class="keyword">typename</span> <span class="identifier">array_type</span><span class="special">::</span><span class="identifier">iterator</span> <span class="special">&gt;</span>               <a name="boost.accumulators.impl.tail_variate_means_impl.result_type"></a><span class="identifier">result_type</span><span class="special">;</span>
 
   <span class="comment">// <a class="link" href="tail_variate_means_impl.html#boost.accumulators.impl.tail_variate_means_implconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="tail_variate_means_impl.html#idp19282496-bb"><span class="identifier">tail_variate_means_impl</span></a><span class="special">(</span><span class="identifier">dont_care</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="tail_variate_means_impl.html#idp18922560-bb"><span class="identifier">tail_variate_means_impl</span></a><span class="special">(</span><span class="identifier">dont_care</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="tail_variate_means_impl.html#idp19279120-bb">public member functions</a></span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <span class="identifier">result_type</span> <a class="link" href="tail_variate_means_impl.html#idp19279680-bb"><span class="identifier">result</span></a><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="tail_variate_means_impl.html#idp18919184-bb">public member functions</a></span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <span class="identifier">result_type</span> <a class="link" href="tail_variate_means_impl.html#idp18919744-bb"><span class="identifier">result</span></a><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp27226720"></a><h2>Description</h2>
+<a name="idp56999840"></a><h2>Description</h2>
 <p>For all <span class="inlinemediaobject"><img src="../../../images/accumulators//form_46.png"></span>-th variates associated to the <span class="inlinemediaobject"><img src="../../../images/accumulators//form_57.png"></span> largest samples (or the <span class="inlinemediaobject"><img src="../../../images/accumulators//form_57.png"></span> smallest samples in case of the left tail), the absolute tail means <span class="inlinemediaobject"><img src="../../../images/accumulators//form_47.png"></span> are computed and returned as an iterator range. Alternatively, the relative tail means <span class="inlinemediaobject"><img src="../../../images/accumulators//form_48.png"></span> are returned, which are the absolute tail means normalized with the (non-coherent) sample tail mean <span class="inlinemediaobject"><img src="../../../images/accumulators//form_0.png"></span>.</p>
 <div class="equation">
-<a name="idp27242320"></a><p class="title"><b>Equation&#160;1.25.&#160;</b></p>
+<a name="idp57015520"></a><p class="title"><b>Equation&#160;1.25.&#160;</b></p>
 <div class="equation-contents"><div class="mediaobject" align="center"><img src="../../../images/accumulators//form_91.png" align="middle"></div></div>
 </div>
 <p><br class="equation-break"></p>
 <div class="equation">
-<a name="idp27245328"></a><p class="title"><b>Equation&#160;1.26.&#160;</b></p>
+<a name="idp57018528"></a><p class="title"><b>Equation&#160;1.26.&#160;</b></p>
 <div class="equation-contents"><div class="mediaobject" align="center"><img src="../../../images/accumulators//form_92.png" align="middle"></div></div>
 </div>
 <p><br class="equation-break"></p>
 <div class="equation">
-<a name="idp27248336"></a><p class="title"><b>Equation&#160;1.27.&#160;</b></p>
+<a name="idp57021536"></a><p class="title"><b>Equation&#160;1.27.&#160;</b></p>
 <div class="equation-contents"><div class="mediaobject" align="center"><img src="../../../images/accumulators//form_93.png" align="middle"></div></div>
 </div>
 <p><br class="equation-break"></p>
 <div class="equation">
-<a name="idp27251440"></a><p class="title"><b>Equation&#160;1.28.&#160;</b></p>
+<a name="idp57024640"></a><p class="title"><b>Equation&#160;1.28.&#160;</b></p>
 <div class="equation-contents"><div class="mediaobject" align="center"><img src="../../../images/accumulators//form_94.png" align="middle"></div></div>
 </div>
 <p><br class="equation-break"> </p>
 <div class="refsect2">
-<a name="idp27254544"></a><h3>
+<a name="idp57027744"></a><h3>
 <a name="boost.accumulators.impl.tail_variate_means_implconstruct-copy-destruct"></a><code class="computeroutput">tail_variate_means_impl</code> 
         public
        construct/copy/destruct</h3>
-<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><a name="idp19282496-bb"></a><span class="identifier">tail_variate_means_impl</span><span class="special">(</span><span class="identifier">dont_care</span><span class="special">)</span><span class="special">;</span></pre></li></ol></div>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><a name="idp18922560-bb"></a><span class="identifier">tail_variate_means_impl</span><span class="special">(</span><span class="identifier">dont_care</span><span class="special">)</span><span class="special">;</span></pre></li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idp27261152"></a><h3>
-<a name="idp19279120-bb"></a><code class="computeroutput">tail_variate_means_impl</code> public member functions</h3>
-<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <span class="identifier">result_type</span> <a name="idp19279680-bb"></a><span class="identifier">result</span><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span> args<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li></ol></div>
+<a name="idp57034288"></a><h3>
+<a name="idp18919184-bb"></a><code class="computeroutput">tail_variate_means_impl</code> public member functions</h3>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <span class="identifier">result_type</span> <a name="idp18919744-bb"></a><span class="identifier">result</span><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span> args<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li></ol></div>
 </div>
 </div>
 </div>
@@ -92,7 +92,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="../extract/relative_tail__idp19242496.html"><img src="../../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../../statistics_library_reference.html#header.boost.accumulators.statistics.tail_variate_means_hpp"><img src="../../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../tag/absolute_tail__idp19284352.html"><img src="../../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="../extract/relative_tail__idp18882560.html"><img src="../../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../../../statistics_library_reference.html#header.boost.accumulators.statistics.tail_variate_means_hpp"><img src="../../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../tag/absolute_tail__idp18924416.html"><img src="../../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

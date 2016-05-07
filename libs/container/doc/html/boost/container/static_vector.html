@@ -126,7 +126,7 @@
   <span class="keyword">static</span> <span class="identifier">size_type</span> <a class="link" href="static_vector.html#idp20900448-bb"><span class="identifier">max_size</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">noexcept</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp33320384"></a><h2>Description</h2>
+<a name="idp33327520"></a><h2>Description</h2>
 <p><a class="link" href="static_vector.html" title="Class template static_vector">static_vector</a> is a sequence container like <a class="link" href="vector.html" title="Class template vector">boost::container::vector</a> with contiguous storage that can change in size, along with the static allocation, low overhead, and fixed capacity of boost::array.</p>
 <p>A <a class="link" href="static_vector.html" title="Class template static_vector">static_vector</a> is a sequence that supports random access to elements, constant time insertion and removal of elements at the end, and linear time insertion and removal of elements at the beginning or in the middle. The number of elements in a <a class="link" href="static_vector.html" title="Class template static_vector">static_vector</a> may vary dynamically up to a fixed capacity because elements are stored within the object itself similarly to an array. However, objects are initialized as they are inserted into <a class="link" href="static_vector.html" title="Class template static_vector">static_vector</a> unlike C arrays or std::array which must construct all elements on instantiation. The behavior of <a class="link" href="static_vector.html" title="Class template static_vector">static_vector</a> enables the use of statically allocated elements in cases with complex object lifetime requirements that would otherwise not be trivially possible.</p>
 <p><b>Error Handling.&#160;</b>Insertion beyond the capacity result in throwing std::bad_alloc() if exceptions are enabled or calling throw_bad_alloc() if not enabled.</p>
@@ -135,7 +135,7 @@ std::out_of_range is thrown if out of bound access is performed in <code class="
 <p>
 </p>
 <div class="refsect2">
-<a name="idp33329296"></a><h3>Template Parameters</h3>
+<a name="idp33336432"></a><h3>Template Parameters</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">typename</span> Value</pre>
@@ -148,7 +148,7 @@ std::out_of_range is thrown if out of bound access is performed in <code class="
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp33336848"></a><h3>
+<a name="idp33343984"></a><h3>
 <a name="boost.container.static_vectorconstruct-copy-destruct"></a><code class="computeroutput">static_vector</code> 
         public
        construct/copy/destruct</h3>
@@ -610,7 +610,7 @@ std::out_of_range is thrown if out of bound access is performed in <code class="
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp33608416"></a><h3>
+<a name="idp33615552"></a><h3>
 <a name="idp20479408-bb"></a><code class="computeroutput">static_vector</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
@@ -2019,7 +2019,7 @@ std::out_of_range is thrown if out of bound access is performed in <code class="
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp34265552"></a><h3>
+<a name="idp34272672"></a><h3>
 <a name="idp20895632-bb"></a><code class="computeroutput">static_vector</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">

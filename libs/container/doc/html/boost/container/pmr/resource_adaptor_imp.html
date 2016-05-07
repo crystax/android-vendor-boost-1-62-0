@@ -56,7 +56,7 @@
   <span class="keyword">virtual</span> <span class="keyword">bool</span> <a class="link" href="resource_adaptor_imp.html#idp18331120-bb"><span class="identifier">do_is_equal</span></a><span class="special">(</span><span class="keyword">const</span> <a class="link" href="memory_resource.html" title="Class memory_resource">memory_resource</a> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span> <span class="keyword">noexcept</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp24198192"></a><h2>Description</h2>
+<a name="idp24155952"></a><h2>Description</h2>
 <p>An instance of resource_adaptor&lt;Allocator&gt; is an adaptor that wraps a <a class="link" href="memory_resource.html" title="Class memory_resource">memory_resource</a> interface around Allocator. In order that resource_adaptor&lt;X&lt;T&gt;&gt; and resource_adaptor&lt;X&lt;U&gt;&gt; are the same type for any allocator template X and types T and U, resource_adaptor&lt;Allocator&gt; is rendered as an alias to this class template such that Allocator is rebound to a char value type in every specialization of the class template. The requirements on this class template are defined below. In addition to the Allocator requirements, the parameter to resource_adaptor shall meet the following additional requirements:</p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>`typename allocator_traits&lt;Allocator&gt;:: pointer` shall be identical to `typename allocator_traits&lt;Allocator&gt;:: value_type*`.</p></li></ul></div>
 <p>
@@ -71,7 +71,7 @@
 <p>
 </p>
 <div class="refsect2">
-<a name="idp24205952"></a><h3>
+<a name="idp24163712"></a><h3>
 <a name="boost.container.pmr.resource_adaptor_impconstruct-copy-destruct"></a><code class="computeroutput">resource_adaptor_imp</code> 
         public
        construct/copy/destruct</h3>
@@ -107,7 +107,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp24256208"></a><h3>
+<a name="idp24299104"></a><h3>
 <a name="idp18300416-bb"></a><code class="computeroutput">resource_adaptor_imp</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
@@ -119,7 +119,7 @@
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp24271072"></a><h3>
+<a name="idp24313776"></a><h3>
 <a name="idp18321056-bb"></a><code class="computeroutput">resource_adaptor_imp</code> protected member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">

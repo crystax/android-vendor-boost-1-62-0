@@ -3,17 +3,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
 <title>Class sentry</title>
 <link rel="stylesheet" href="../../../../../../../doc/src/boostbook.css" type="text/css">
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="../../../index.html" title="Chapter&#160;1.&#160;Boost.Log v2">
-<link rel="up" href="../basic_formatting_ostream.html#idp102172928" title="Description">
+<link rel="up" href="../basic_formatting_ostream.html#idm45704573251760" title="Description">
 <link rel="prev" href="../basic_formatting_ostream.html" title="Class template basic_formatting_ostream">
-<link rel="next" href="../operator_idp24053840.html" title="Function template operator&lt;&lt;">
+<link rel="next" href="../operator_idm45668626248784.html" title="Function template operator&lt;&lt;">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr><td valign="top"><img alt="Boost C++ Libraries" width="277" height="86" src="../../../../../../../boost.png"></td></tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="../basic_formatting_ostream.html"><img src="../../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../basic_formatting_ostream.html#idp102172928"><img src="../../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../operator_idp24053840.html"><img src="../../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="../basic_formatting_ostream.html"><img src="../../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../basic_formatting_ostream.html#idm45704573251760"><img src="../../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../operator_idm45668626248784.html"><img src="../../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="refentry">
 <a name="boost.log.basic_formatting_ostream.sentry"></a><div class="titlepage"></div>
@@ -26,36 +26,36 @@
 
 </span>
 
-<span class="keyword">class</span> <a class="link" href="sentry.html" title="Class sentry">sentry</a> <span class="special">{</span>
+<span class="keyword">class</span> <a class="link" href="sentry.html" title="Class sentry">sentry</a> <span class="special">:</span> <span class="keyword">public</span> <span class="identifier">sentry</span> <span class="special">{</span>
 <span class="keyword">public</span><span class="special">:</span>
   <span class="comment">// <a class="link" href="sentry.html#boost.log.basic_formatting_ostream.sentryconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <span class="keyword">explicit</span> <a class="link" href="sentry.html#idp23842640-bb"><span class="identifier">sentry</span></a><span class="special">(</span><a class="link" href="../basic_formatting_ostream.html" title="Class template basic_formatting_ostream">basic_formatting_ostream</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <a class="link" href="sentry.html#idp23844192-bb"><span class="identifier">sentry</span></a><span class="special">(</span><span class="identifier">sentry</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">sentry</span> <span class="special">&amp;</span> <a class="link" href="sentry.html#idp23845168-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="identifier">sentry</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">explicit</span> <a class="link" href="sentry.html#idm45668626461792-bb"><span class="identifier">sentry</span></a><span class="special">(</span><a class="link" href="../basic_formatting_ostream.html" title="Class template basic_formatting_ostream">basic_formatting_ostream</a> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="sentry.html#idm45668626460240-bb"><span class="identifier">sentry</span></a><span class="special">(</span><span class="identifier">sentry</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="special">=</span> <span class="keyword">delete</span><span class="special">;</span>
+  <span class="identifier">sentry</span> <span class="special">&amp;</span> <a class="link" href="sentry.html#idm45668626458992-bb"><span class="keyword">operator</span><span class="special">=</span></a><span class="special">(</span><span class="identifier">sentry</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="special">=</span> <span class="keyword">delete</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="sentry.html#idp23839408-bb">public member functions</a></span>
-  <span class="keyword">explicit</span> <a class="link" href="sentry.html#idp23839968-bb"><span class="keyword">operator</span> <span class="keyword">bool</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">bool</span> <a class="link" href="sentry.html#idp23841360-bb"><span class="keyword">operator</span><span class="special">!</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="sentry.html#idm45668626465024-bb">public member functions</a></span>
+  <span class="keyword">explicit</span> <a class="link" href="sentry.html#idm45668626464464-bb"><span class="keyword">operator</span> <span class="keyword">bool</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">bool</span> <a class="link" href="sentry.html#idm45668626463072-bb"><span class="keyword">operator</span><span class="special">!</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idp102814272"></a><h2>Description</h2>
+<a name="idm45704572600192"></a><h2>Description</h2>
 <div class="refsect2">
-<a name="idp102814688"></a><h3>
+<a name="idm45704572599776"></a><h3>
 <a name="boost.log.basic_formatting_ostream.sentryconstruct-copy-destruct"></a><code class="computeroutput">sentry</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><span class="keyword">explicit</span> <a name="idp23842640-bb"></a><span class="identifier">sentry</span><span class="special">(</span><a class="link" href="../basic_formatting_ostream.html" title="Class template basic_formatting_ostream">basic_formatting_ostream</a> <span class="special">&amp;</span> strm<span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><a name="idp23844192-bb"></a><span class="identifier">sentry</span><span class="special">(</span><span class="identifier">sentry</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">sentry</span> <span class="special">&amp;</span> <a name="idp23845168-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="identifier">sentry</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">explicit</span> <a name="idm45668626461792-bb"></a><span class="identifier">sentry</span><span class="special">(</span><a class="link" href="../basic_formatting_ostream.html" title="Class template basic_formatting_ostream">basic_formatting_ostream</a> <span class="special">&amp;</span> strm<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><a name="idm45668626460240-bb"></a><span class="identifier">sentry</span><span class="special">(</span><span class="identifier">sentry</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="special">=</span> <span class="keyword">delete</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">sentry</span> <span class="special">&amp;</span> <a name="idm45668626458992-bb"></a><span class="keyword">operator</span><span class="special">=</span><span class="special">(</span><span class="identifier">sentry</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="special">=</span> <span class="keyword">delete</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idp102835888"></a><h3>
-<a name="idp23839408-bb"></a><code class="computeroutput">sentry</code> public member functions</h3>
+<a name="idm45704572575952"></a><h3>
+<a name="idm45668626465024-bb"></a><code class="computeroutput">sentry</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><span class="keyword">explicit</span> <a name="idp23839968-bb"></a><span class="keyword">operator</span> <span class="keyword">bool</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="keyword">bool</span> <a name="idp23841360-bb"></a><span class="keyword">operator</span><span class="special">!</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">explicit</span> <a name="idm45668626464464-bb"></a><span class="keyword">operator</span> <span class="keyword">bool</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">bool</span> <a name="idm45668626463072-bb"></a><span class="keyword">operator</span><span class="special">!</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 </div>
@@ -70,7 +70,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="../basic_formatting_ostream.html"><img src="../../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../basic_formatting_ostream.html#idp102172928"><img src="../../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../operator_idp24053840.html"><img src="../../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="../basic_formatting_ostream.html"><img src="../../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../basic_formatting_ostream.html#idm45704573251760"><img src="../../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../index.html"><img src="../../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../operator_idm45668626248784.html"><img src="../../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

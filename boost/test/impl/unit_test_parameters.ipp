@@ -24,6 +24,7 @@
 #include <boost/test/utils/basic_cstring/basic_cstring.hpp>
 #include <boost/test/utils/basic_cstring/compare.hpp>
 #include <boost/test/utils/basic_cstring/io.hpp>
+#include <boost/test/utils/iterator/token_iterator.hpp>
 
 #include <boost/test/debug.hpp>
 #include <boost/test/framework.hpp>
@@ -82,6 +83,7 @@ std::string LIST_LABELS       = "list_labels";
 std::string LOG_FORMAT        = "log_format";
 std::string LOG_LEVEL         = "log_level";
 std::string LOG_SINK          = "log_sink";
+std::string COMBINED_LOGGER   = "logger";
 std::string OUTPUT_FORMAT     = "output_format";
 std::string RANDOM_SEED       = "random";
 std::string REPORT_FORMAT     = "report_format";
@@ -136,6 +138,8 @@ register_parameters( rt::parameters_store& store )
 
     break_exec_path.add_cla_id( "--", BREAK_EXEC_PATH, "=" );    
     store.add( break_exec_path );
+
+    ///////////////////////////////////////////////
 
     rt::option build_info( BUILD_INFO, (
         rt::description = "Displays library build information.",
@@ -227,7 +231,7 @@ register_parameters( rt::parameters_store& store )
         rt::default_value = OF_INVALID,
         rt::optional_value = OF_CLF,
         rt::enum_values<unit_test::output_format>::value = 
-#if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST) && !defined(BOOST_NO_CXX11_UNIFIED_INITIALIZATION_SYNTAX)
+#if defined(BOOST_TEST_CLA_NEW_API)
         {
             { "HRF", OF_CLF },
             { "DOT", OF_DOT }
@@ -266,17 +270,19 @@ register_parameters( rt::parameters_store& store )
         rt::env_var = "BOOST_TEST_LOG_FORMAT",
         rt::default_value = OF_CLF,
         rt::enum_values<unit_test::output_format>::value =
-#if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST) && !defined(BOOST_NO_CXX11_UNIFIED_INITIALIZATION_SYNTAX)
+#if defined(BOOST_TEST_CLA_NEW_API)
         {
             { "HRF", OF_CLF },
             { "CLF", OF_CLF },
-            { "XML", OF_XML }
+            { "XML", OF_XML },
+            { "JUNIT", OF_JUNIT },
         },
 #else
         rt::enum_values_list<unit_test::output_format>()
             ( "HRF", OF_CLF )
             ( "CLF", OF_CLF )
             ( "XML", OF_XML )
+            ( "JUNIT", OF_JUNIT )
         ,
 #endif
         rt::help = "Parameter " + LOG_FORMAT + " allows to set the frameowrk's log format to one "
@@ -284,7 +290,7 @@ register_parameters( rt::parameters_store& store )
                    "parameter are the names of the output formats supplied by the framework. By "
                    "default the framework uses human readable format (HRF) for testing log. This "
                    "format is similar to compiler error format. Alternatively you can specify XML "
-                   "as log format. This format is easier to process by testing automation tools."
+                   "or JUNIT as log format, which are easier to process by testing automation tools."
     ));
 
     log_format.add_cla_id( "--", LOG_FORMAT, "=" );
@@ -298,7 +304,7 @@ register_parameters( rt::parameters_store& store )
         rt::env_var = "BOOST_TEST_LOG_LEVEL",
         rt::default_value = log_all_errors,
         rt::enum_values<unit_test::log_level>::value =
-#if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST) && !defined(BOOST_NO_CXX11_UNIFIED_INITIALIZATION_SYNTAX)
+#if defined(BOOST_TEST_CLA_NEW_API)
         {
             { "all"           , log_successful_tests },
             { "success"       , log_successful_tests },
@@ -361,7 +367,7 @@ register_parameters( rt::parameters_store& store )
         rt::description = "Specifies output format (both log and report).",
         rt::env_var = "BOOST_TEST_OUTPUT_FORMAT",
         rt::enum_values<unit_test::output_format>::value =
-#if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST) && !defined(BOOST_NO_CXX11_UNIFIED_INITIALIZATION_SYNTAX)
+#if defined(BOOST_TEST_CLA_NEW_API)
         {
             { "HRF", OF_CLF },
             { "CLF", OF_CLF },
@@ -386,6 +392,19 @@ register_parameters( rt::parameters_store& store )
     output_format.add_cla_id( "--", OUTPUT_FORMAT, "=" );
     output_format.add_cla_id( "-", "o", " " );
     store.add( output_format );
+
+    /////////////////////////////////////////////// combined logger option
+
+    rt::parameter<std::string,rt::REPEATABLE_PARAM> combined_logger( COMBINED_LOGGER, (
+        rt::description = "Specifies log level and sink for one or several log format",
+        rt::env_var = "BOOST_TEST_LOGGER",
+        rt::value_hint = "log_format:log_level:log_sink",
+        rt::help = "Parameter " + COMBINED_LOGGER + " allows to specify the logger type, level and sink\n"
+                   "in one command." 
+    ));
+
+    combined_logger.add_cla_id( "--", COMBINED_LOGGER, "=" );
+    store.add( combined_logger );
 
     ///////////////////////////////////////////////
 
@@ -416,7 +435,7 @@ register_parameters( rt::parameters_store& store )
         rt::env_var = "BOOST_TEST_REPORT_FORMAT",
         rt::default_value = OF_CLF,
         rt::enum_values<unit_test::output_format>::value =
-#if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST) && !defined(BOOST_NO_CXX11_UNIFIED_INITIALIZATION_SYNTAX)
+#if defined(BOOST_TEST_CLA_NEW_API)
         {
             { "HRF", OF_CLF },
             { "CLF", OF_CLF },
@@ -448,7 +467,7 @@ register_parameters( rt::parameters_store& store )
         rt::env_var = "BOOST_TEST_REPORT_LEVEL",
         rt::default_value = CONFIRMATION_REPORT,
         rt::enum_values<unit_test::report_level>::value =
-#if !defined(BOOST_NO_CXX11_HDR_INITIALIZER_LIST) && !defined(BOOST_NO_CXX11_UNIFIED_INITIALIZATION_SYNTAX)
+#if defined(BOOST_TEST_CLA_NEW_API)
         {
             { "confirm",  CONFIRMATION_REPORT },
             { "short",    SHORT_REPORT },

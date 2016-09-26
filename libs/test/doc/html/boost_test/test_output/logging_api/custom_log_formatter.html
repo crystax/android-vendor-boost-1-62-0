@@ -32,18 +32,30 @@
           <code class="computeroutput"><a class="link" href="../../../boost/unit_test/unit_test_log_formatter.html" title="Class unit_test_log_formatter">boost::unit_test::unit_test_log_formatter</a></code>.
         </p>
 <p>
-          Once implemented, add it to the set of log format using one of the two
-          functions:
+          It is possible to add a your own instance of a formatter to the set of
+          formats using one of the two functions:
         </p>
 <pre class="programlisting"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">unit_test</span><span class="special">::</span><span class="identifier">unit_test_log</span><span class="special">.</span><span class="identifier">set_formatter</span><span class="special">(</span> <span class="identifier">unit_test_log_formatter</span><span class="special">*</span> <span class="special">);</span>
+<span class="identifier">boost</span><span class="special">::</span><span class="identifier">unit_test</span><span class="special">::</span><span class="identifier">unit_test_log</span><span class="special">.</span><span class="identifier">add_formatter</span><span class="special">(</span> <span class="identifier">unit_test_log_formatter</span><span class="special">*</span> <span class="special">);</span>
 </pre>
+<div class="tip"><table border="0" summary="Tip">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../../../../../../../doc/src/images/tip.png"></td>
+<th align="left">Tip</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+            See <code class="computeroutput"><a class="link" href="../../../boost/unit_test/unit_test_log_t.html#idm45392558143984-bb">boost::unit_test::unit_test_log_t::set_formatter</a></code>
+            and <code class="computeroutput"><a class="link" href="../../../boost/unit_test/unit_test_log_t.html#idm45392558136816-bb">boost::unit_test::unit_test_log_t::add_formatter</a></code>
+            for more details
+          </p></td></tr>
+</table></div>
 <div class="warning"><table border="0" summary="Warning">
 <tr>
 <td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../../../../../../../doc/src/images/warning.png"></td>
 <th align="left">Warning</th>
 </tr>
 <tr><td align="left" valign="top"><p>
-            This call is equivalent to <code class="computeroutput"><a class="link" href="../../../boost/unit_test/unit_test_log_t.html#idm46221305681712-bb">boost::unit_test::unit_test_log_t::set_format</a></code>
+            The call to <code class="computeroutput"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">unit_test</span><span class="special">::</span><span class="identifier">unit_test_log</span><span class="special">.</span><span class="identifier">set_formatter</span></code> is equivalent to <code class="computeroutput"><a class="link" href="../../../boost/unit_test/unit_test_log_t.html#idm45392558150304-bb">boost::unit_test::unit_test_log_t::set_format</a></code>
             (<a class="link" href="log_ct_log_format.html" title="Predefined log format selection">see
             here</a>) as it disables all other formatters.
           </p></td></tr>
@@ -56,7 +68,7 @@
 <tr><td align="left" valign="top">
 <p>
             More details about the class implementing the formatting of the logs
-            can be found in the following reference sections.
+            can be found in the following reference sections:
           </p>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem">

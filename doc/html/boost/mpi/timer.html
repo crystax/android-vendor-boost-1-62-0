@@ -36,27 +36,27 @@
 <span class="keyword">class</span> <a class="link" href="timer.html" title="Class timer">timer</a> <span class="special">{</span>
 <span class="keyword">public</span><span class="special">:</span>
   <span class="comment">// <a class="link" href="timer.html#boost.mpi.timerconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <a class="link" href="timer.html#idm45775900877872-bb"><span class="identifier">timer</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <a class="link" href="timer.html#idm46563251722624-bb"><span class="identifier">timer</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="timer.html#idm45775900886160-bb">public member functions</a></span>
-  <span class="keyword">void</span> <a class="link" href="timer.html#idm45775900885600-bb"><span class="identifier">restart</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
-  <span class="keyword">double</span> <a class="link" href="timer.html#idm45775900883344-bb"><span class="identifier">elapsed</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">double</span> <a class="link" href="timer.html#idm45775900881728-bb"><span class="identifier">elapsed_max</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">double</span> <a class="link" href="timer.html#idm45775900880080-bb"><span class="identifier">elapsed_min</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="timer.html#idm46563251730912-bb">public member functions</a></span>
+  <span class="keyword">void</span> <a class="link" href="timer.html#idm46563251730352-bb"><span class="identifier">restart</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">double</span> <a class="link" href="timer.html#idm46563251728096-bb"><span class="identifier">elapsed</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">double</span> <a class="link" href="timer.html#idm46563251726480-bb"><span class="identifier">elapsed_max</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">double</span> <a class="link" href="timer.html#idm46563251724832-bb"><span class="identifier">elapsed_min</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="timer.html#idm45775900876176-bb">public static functions</a></span>
-  <span class="keyword">static</span> <span class="keyword">bool</span> <a class="link" href="timer.html#idm45775900875616-bb"><span class="identifier">time_is_global</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="timer.html#idm46563251720928-bb">public static functions</a></span>
+  <span class="keyword">static</span> <span class="keyword">bool</span> <a class="link" href="timer.html#idm46563251720368-bb"><span class="identifier">time_is_global</span></a><span class="special">(</span><span class="special">)</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idm46054581073296"></a><h2>Description</h2>
+<a name="idm45927875283184"></a><h2>Description</h2>
 <p>The <code class="computeroutput">timer</code> class is a simple wrapper around the MPI timing facilities that mimics the interface of the Boost Timer library. </p>
 <div class="refsect2">
-<a name="idm46054581071776"></a><h3>
+<a name="idm45927875281664"></a><h3>
 <a name="boost.mpi.timerconstruct-copy-destruct"></a><code class="computeroutput">timer</code> 
         public
        construct/copy/destruct</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><a name="idm45775900877872-bb"></a><span class="identifier">timer</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><a name="idm46563251722624-bb"></a><span class="identifier">timer</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Initializes the timer</p>
 <p>
 </p>
@@ -73,11 +73,11 @@
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idm46054581063360"></a><h3>
-<a name="idm45775900886160-bb"></a><code class="computeroutput">timer</code> public member functions</h3>
+<a name="idm45927875273248"></a><h3>
+<a name="idm46563251730912-bb"></a><code class="computeroutput">timer</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">void</span> <a name="idm45775900885600-bb"></a><span class="identifier">restart</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">void</span> <a name="idm46563251730352-bb"></a><span class="identifier">restart</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Restart the timer.</p>
 <p>
 </p>
@@ -93,24 +93,24 @@
 </table></div>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">double</span> <a name="idm45775900883344-bb"></a><span class="identifier">elapsed</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">double</span> <a name="idm46563251728096-bb"></a><span class="identifier">elapsed</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Return the amount of time that has elapsed since the last construction or reset, in seconds. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">double</span> <a name="idm45775900881728-bb"></a><span class="identifier">elapsed_max</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">double</span> <a name="idm46563251726480-bb"></a><span class="identifier">elapsed_max</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Return an estimate of the maximum possible value of elapsed(). Note that this routine may return too high a value on some systems. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">double</span> <a name="idm45775900880080-bb"></a><span class="identifier">elapsed_min</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">double</span> <a name="idm46563251724832-bb"></a><span class="identifier">elapsed_min</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>Returns the minimum non-zero value that <code class="computeroutput">elapsed()</code> may return. This is the resolution of the timer. </p>
 </li>
 </ol></div>
 </div>
 <div class="refsect2">
-<a name="idm46054581037632"></a><h3>
-<a name="idm45775900876176-bb"></a><code class="computeroutput">timer</code> public static functions</h3>
+<a name="idm45927875247456"></a><h3>
+<a name="idm46563251720928-bb"></a><code class="computeroutput">timer</code> public static functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
-<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">bool</span> <a name="idm45775900875616-bb"></a><span class="identifier">time_is_global</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">static</span> <span class="keyword">bool</span> <a name="idm46563251720368-bb"></a><span class="identifier">time_is_global</span><span class="special">(</span><span class="special">)</span><span class="special">;</span></pre>
 <p>Determines whether the elapsed time values are global times or local processor times. </p>
 </li></ol></div>
 </div>

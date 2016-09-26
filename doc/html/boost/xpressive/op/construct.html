@@ -35,45 +35,45 @@
 </span><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> T<span class="special">&gt;</span> 
 <span class="keyword">struct</span> <a class="link" href="construct.html" title="Struct template construct">construct</a> <span class="special">{</span>
 
-  <span class="comment">// <a class="link" href="construct.html#idm45775793742592-bb">public member functions</a></span>
-  <span class="identifier">T</span> <a class="link" href="construct.html#idm45775793742032-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> A0<span class="special">&gt;</span> <span class="identifier">T</span> <a class="link" href="construct.html#idm45775793740368-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="construct.html#idm46563144587344-bb">public member functions</a></span>
+  <span class="identifier">T</span> <a class="link" href="construct.html#idm46563144586784-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> A0<span class="special">&gt;</span> <span class="identifier">T</span> <a class="link" href="construct.html#idm46563144585120-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> A0<span class="special">,</span> <span class="keyword">typename</span> A1<span class="special">&gt;</span> 
-    <span class="identifier">T</span> <a class="link" href="construct.html#idm45775793737168-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">A1</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+    <span class="identifier">T</span> <a class="link" href="construct.html#idm46563144581920-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">A1</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
   <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> A0<span class="special">,</span> <span class="keyword">typename</span> A1<span class="special">,</span> <span class="keyword">typename</span> A2<span class="special">&gt;</span> 
-    <span class="identifier">T</span> <a class="link" href="construct.html#idm45775793732720-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">A1</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">A2</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+    <span class="identifier">T</span> <a class="link" href="construct.html#idm46563144577472-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">A1</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">,</span> <span class="identifier">A2</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idm46054384378576"></a><h2>Description</h2>
+<a name="idm45927678580032"></a><h2>Description</h2>
 <p>
 </p>
 <div class="refsect2">
-<a name="idm46054384377904"></a><h3>Template Parameters</h3>
+<a name="idm45927678579360"></a><h3>Template Parameters</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
 <pre class="literallayout"><span class="keyword">typename</span> T</pre>
 <p>The type of the object to construct. </p>
 </li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idm46054384374768"></a><h3>
-<a name="idm45775793742592-bb"></a><code class="computeroutput">construct</code> public member functions</h3>
+<a name="idm45927678576224"></a><h3>
+<a name="idm46563144587344-bb"></a><code class="computeroutput">construct</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
-<pre class="literallayout"><span class="identifier">T</span> <a name="idm45775793742032-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="identifier">T</span> <a name="idm46563144586784-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 </li>
 <li class="listitem">
-<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> A0<span class="special">&gt;</span> <span class="identifier">T</span> <a name="idm45775793740368-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span> a0<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+<pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> A0<span class="special">&gt;</span> <span class="identifier">T</span> <a name="idm46563144585120-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span> a0<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> A0<span class="special">,</span> <span class="keyword">typename</span> A1<span class="special">&gt;</span> 
-  <span class="identifier">T</span> <a name="idm45775793737168-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span> a0<span class="special">,</span> <span class="identifier">A1</span> <span class="keyword">const</span> <span class="special">&amp;</span> a1<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+  <span class="identifier">T</span> <a name="idm46563144581920-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span> a0<span class="special">,</span> <span class="identifier">A1</span> <span class="keyword">const</span> <span class="special">&amp;</span> a1<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 </li>
 <li class="listitem">
 <pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> A0<span class="special">,</span> <span class="keyword">typename</span> A1<span class="special">,</span> <span class="keyword">typename</span> A2<span class="special">&gt;</span> 
-  <span class="identifier">T</span> <a name="idm45775793732720-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span> a0<span class="special">,</span> <span class="identifier">A1</span> <span class="keyword">const</span> <span class="special">&amp;</span> a1<span class="special">,</span> <span class="identifier">A2</span> <span class="keyword">const</span> <span class="special">&amp;</span> a2<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
+  <span class="identifier">T</span> <a name="idm46563144577472-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">A0</span> <span class="keyword">const</span> <span class="special">&amp;</span> a0<span class="special">,</span> <span class="identifier">A1</span> <span class="keyword">const</span> <span class="special">&amp;</span> a1<span class="special">,</span> <span class="identifier">A2</span> <span class="keyword">const</span> <span class="special">&amp;</span> a2<span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre>
 <p>
 
 </p>

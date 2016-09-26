@@ -35,34 +35,34 @@
 </span><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Sample<span class="special">,</span> <span class="keyword">typename</span> VariateType<span class="special">,</span> <span class="keyword">typename</span> VariateTag<span class="special">&gt;</span> 
 <span class="keyword">struct</span> <a class="link" href="covariance_impl.html" title="Struct template covariance_impl">covariance_impl</a> <span class="special">:</span> <span class="keyword">public</span> <span class="identifier">accumulator_base</span> <span class="special">{</span>
   <span class="comment">// <a class="link" href="covariance_impl.html#boost.accumulators.impl.covariance_implconstruct-copy-destruct">construct/copy/destruct</a></span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <a class="link" href="covariance_impl.html#idm45776157473280-bb"><span class="identifier">covariance_impl</span></a><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <a class="link" href="covariance_impl.html#idm46563508288576-bb"><span class="identifier">covariance_impl</span></a><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
 
-  <span class="comment">// <a class="link" href="covariance_impl.html#idm45776157478192-bb">public member functions</a></span>
-  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="covariance_impl.html#idm45776157477632-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
-  <span class="identifier">result_type</span> <a class="link" href="covariance_impl.html#idm45776157475248-bb"><span class="identifier">result</span></a><span class="special">(</span><span class="identifier">dont_care</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
+  <span class="comment">// <a class="link" href="covariance_impl.html#idm46563508293488-bb">public member functions</a></span>
+  <span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <span class="keyword">void</span> <a class="link" href="covariance_impl.html#idm46563508292928-bb"><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span></a><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span><span class="special">)</span><span class="special">;</span>
+  <span class="identifier">result_type</span> <a class="link" href="covariance_impl.html#idm46563508290544-bb"><span class="identifier">result</span></a><span class="special">(</span><span class="identifier">dont_care</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span>
 <span class="special">}</span><span class="special">;</span></pre></div>
 <div class="refsect1">
-<a name="idm46054880422656"></a><h2>Description</h2>
+<a name="idm45928174626288"></a><h2>Description</h2>
 <p>An iterative Monte Carlo estimator for the covariance <span class="inlinemediaobject"><img src="../../../images/accumulators//form_75.png"></span>, where <span class="inlinemediaobject"><img src="../../../images/accumulators//form_76.png"></span> is a sample and <span class="inlinemediaobject"><img src="../../../images/accumulators//form_77.png"></span> is a variate, is given by:</p>
 <div class="equation">
-<a name="idm46054880414592"></a><p class="title"><b>Equation&#160;1.15.&#160;</b></p>
+<a name="idm45928174618240"></a><p class="title"><b>Equation&#160;1.15.&#160;</b></p>
 <div class="equation-contents"><div class="mediaobject" align="center"><img src="../../../images/accumulators//form_93.png" align="middle"></div></div>
 </div>
 <p><br class="equation-break"></p>
 <p><span class="inlinemediaobject"><img src="../../../images/accumulators//form_41.png"></span> and <span class="inlinemediaobject"><img src="../../../images/accumulators//form_79.png"></span> being the means of the samples and variates. </p>
 <div class="refsect2">
-<a name="idm46054880406720"></a><h3>
+<a name="idm45928174610368"></a><h3>
 <a name="boost.accumulators.impl.covariance_implconstruct-copy-destruct"></a><code class="computeroutput">covariance_impl</code> 
         public
        construct/copy/destruct</h3>
-<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <a name="idm45776157473280-bb"></a><span class="identifier">covariance_impl</span><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span> args<span class="special">)</span><span class="special">;</span></pre></li></ol></div>
+<div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <a name="idm46563508288576-bb"></a><span class="identifier">covariance_impl</span><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span> args<span class="special">)</span><span class="special">;</span></pre></li></ol></div>
 </div>
 <div class="refsect2">
-<a name="idm46054880396048"></a><h3>
-<a name="idm45776157478192-bb"></a><code class="computeroutput">covariance_impl</code> public member functions</h3>
+<a name="idm45928174599760"></a><h3>
+<a name="idm46563508293488-bb"></a><code class="computeroutput">covariance_impl</code> public member functions</h3>
 <div class="orderedlist"><ol class="orderedlist" type="1">
-<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <span class="keyword">void</span> <a name="idm45776157477632-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span> args<span class="special">)</span><span class="special">;</span></pre></li>
-<li class="listitem"><pre class="literallayout"><span class="identifier">result_type</span> <a name="idm45776157475248-bb"></a><span class="identifier">result</span><span class="special">(</span><span class="identifier">dont_care</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">typename</span> Args<span class="special">&gt;</span> <span class="keyword">void</span> <a name="idm46563508292928-bb"></a><span class="keyword">operator</span><span class="special">(</span><span class="special">)</span><span class="special">(</span><span class="identifier">Args</span> <span class="keyword">const</span> <span class="special">&amp;</span> args<span class="special">)</span><span class="special">;</span></pre></li>
+<li class="listitem"><pre class="literallayout"><span class="identifier">result_type</span> <a name="idm46563508290544-bb"></a><span class="identifier">result</span><span class="special">(</span><span class="identifier">dont_care</span><span class="special">)</span> <span class="keyword">const</span><span class="special">;</span></pre></li>
 </ol></div>
 </div>
 </div>

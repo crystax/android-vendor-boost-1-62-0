@@ -38,10 +38,27 @@
         </p>
 <pre class="programlisting"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">unit_test</span><span class="special">::</span><span class="identifier">unit_test_log</span><span class="special">.</span><span class="identifier">add_format</span><span class="special">(</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">unit_test</span><span class="special">::</span><span class="identifier">output_format</span> <span class="special">);</span>
 </pre>
-<p>
-          Note that <code class="computeroutput"><a class="link" href="../../../boost/unit_test/unit_test_log_t.html#idm46221305681712-bb">boost::unit_test::unit_test_log_t::set_format</a></code>
-          above disables all formatters but the one provided as argument.
-        </p>
+<div class="caution"><table border="0" summary="Caution">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Caution]" src="../../../../../../../doc/src/images/caution.png"></td>
+<th align="left">Caution</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+            <code class="computeroutput"><a class="link" href="../../../boost/unit_test/unit_test_log_t.html#idm45392558150304-bb">boost::unit_test::unit_test_log_t::set_format</a></code>
+            above disables all formatters but the one provided as argument.
+          </p></td></tr>
+</table></div>
+<div class="tip"><table border="0" summary="Tip">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../../../../../../../doc/src/images/tip.png"></td>
+<th align="left">Tip</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+            See <code class="computeroutput"><a class="link" href="../../../boost/unit_test/unit_test_log_t.html#idm45392558150304-bb">boost::unit_test::unit_test_log_t::set_format</a></code>
+            and <code class="computeroutput"><a class="link" href="../../../header/boost/test/detail/global_typedef_hpp.html#boost.unit_test.output_format">boost::unit_test::output_format</a></code>
+            for more details
+          </p></td></tr>
+</table></div>
 <p>
           In regular circumstances you shouldn't use this interface. Prefer to use
           runtime parameters <a class="link" href="../../utf_reference/rt_param_reference/log_format.html" title="log_format"><code class="computeroutput"><span class="special">--</span><span class="identifier">log_format</span></code></a>

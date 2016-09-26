@@ -1397,7 +1397,7 @@ auto d = xrange(param);
       <template-type-parameter name="T"/>
     </template><data-member name="value" specifiers="static"><type>T</type></data-member>
 </struct><enum name="report_level"><enumvalue name="INV_REPORT_LEVEL"/><enumvalue name="CONFIRMATION_REPORT"/><enumvalue name="SHORT_REPORT"/><enumvalue name="DETAILED_REPORT"/><enumvalue name="NO_REPORT"/></enum>
-<enum name="output_format"><enumvalue name="OF_INVALID"/><enumvalue name="OF_CLF"><purpose>compiler log format </purpose></enumvalue><enumvalue name="OF_XML"><purpose>XML format for report and log,. </purpose></enumvalue><enumvalue name="OF_JUNIT"><purpose>JUNIT format for report and log,. </purpose></enumvalue><enumvalue name="OF_DOT"><purpose>dot format for output content </purpose></enumvalue><purpose>Indicates the output format for the loggers or the test tree printing. </purpose></enum>
+<enum name="output_format"><enumvalue name="OF_INVALID"/><enumvalue name="OF_CLF"><purpose>compiler log format </purpose></enumvalue><enumvalue name="OF_XML"><purpose>XML format for report and log,. </purpose></enumvalue><enumvalue name="OF_JUNIT"><purpose>JUNIT format for report and log,. </purpose></enumvalue><enumvalue name="OF_CUSTOM_LOGGER"><purpose>User specified logger. </purpose></enumvalue><enumvalue name="OF_DOT"><purpose>dot format for output content </purpose></enumvalue><purpose>Indicates the output format for the loggers or the test tree printing. </purpose></enum>
 <enum name="test_unit_type"><enumvalue name="TUT_CASE"><default>= 0x01</default></enumvalue><enumvalue name="TUT_SUITE"><default>= 0x10</default></enumvalue><enumvalue name="TUT_ANY"><default>= 0x11</default></enumvalue></enum>
 <enum name="assertion_result"><enumvalue name="AR_FAILED"/><enumvalue name="AR_PASSED"/><enumvalue name="AR_TRIGGERED"/></enum>
 <typedef name="counter_t"><type>unsigned long</type></typedef>
@@ -1499,6 +1499,7 @@ em.register_exception_translator&lt;MyException&gt;( myExceptTr );
 <constructor specifiers="explicit"><parameter name="rc"><paramtype>int</paramtype></parameter></constructor>
 </struct><namespace name="impl">
 <function name="setup_for_execution"><type>void</type><parameter name=""><paramtype><classname>test_unit</classname> const &amp;</paramtype></parameter></function>
+<function name="setup_loggers"><type>void</type></function>
 </namespace>
 <function name="init"><type>void</type><parameter name="init_func"><paramtype>init_unit_test_func</paramtype><description><para>test module initialization routine </para></description></parameter><parameter name="argc"><paramtype>int</paramtype><description><para>command line arguments collection </para></description></parameter><parameter name="argv"><paramtype>char *</paramtype><description><para>command line arguments collection </para></description></parameter><purpose>This function performs initialization of the framework mono-state. </purpose><description><para>It needs to be called every time before the test is started. 
 </para></description></function>
@@ -1560,10 +1561,10 @@ em.register_exception_translator&lt;MyException&gt;( myExceptTr );
 <macro name="BOOST_TEST_SETUP_ASSERT" kind="functionlike"><macro-parameter name="cond"/><macro-parameter name="msg"/></macro>
 </header>
 <header name="boost/test/output/compiler_log_formatter.hpp">
-<namespace name="boost">
+<para>Contains the formatter for the Human Readable Format (HRF) </para><namespace name="boost">
 <namespace name="unit_test">
 <namespace name="output">
-<class name="compiler_log_formatter"><inherit access="public">boost::unit_test::unit_test_log_formatter</inherit><method-group name="public member functions">
+<class name="compiler_log_formatter"><inherit access="public">boost::unit_test::unit_test_log_formatter</inherit><purpose>Log formatter for the Human Readable Format (HRF) log format. </purpose><method-group name="public member functions">
 <method name="log_start" specifiers="virtual"><type>void</type><parameter name="os"><paramtype>std::ostream &amp;</paramtype><description><para>output stream to write a messages to </para></description></parameter><parameter name="test_cases_amount"><paramtype>counter_t</paramtype><description><para>total test case amount to be run </para></description></parameter><purpose>Invoked at the beginning of test module execution. </purpose><description><para>
 <para><emphasis role="bold">See Also:</emphasis><para>log_finish </para></para>
 </para></description></method>
@@ -2383,21 +2384,26 @@ Users/developers willing to implement their own formatter need to:<itemizedlist>
 </para></description></method>
 <method name="exception_caught" specifiers="virtual"><type>void</type><parameter name=""><paramtype><classname>execution_exception</classname> const &amp;</paramtype></parameter><purpose>Called when an exception is intercepted. </purpose><description><para>In case an exception is intercepted, this call happens before the call to test_unit_aborted in order to log additional data about the exception. </para></description></method>
 <method name="priority" specifiers="virtual"><type>int</type></method>
-<method name="set_stream"><type>void</type><parameter name=""><paramtype>std::ostream &amp;</paramtype></parameter><purpose>Sets the stream for all enabled loggers. </purpose></method>
+<method name="set_stream"><type>void</type><parameter name=""><paramtype>std::ostream &amp;</paramtype></parameter><purpose>Sets the stream for all loggers. </purpose><description><para>This will override the log sink/stream of all loggers, whether enabled or not. </para></description></method>
 <method name="set_stream"><type>void</type><parameter name=""><paramtype>output_format</paramtype></parameter><parameter name=""><paramtype>std::ostream &amp;</paramtype></parameter><purpose>Sets the stream for specific logger. </purpose><description><para><note><para>Has no effect if the specified format is not found </para></note>
 <formalpara><title>Since Boost 1.62 </title><para/></formalpara>
 </para></description></method>
-<method name="set_threshold_level"><type>void</type><parameter name=""><paramtype>log_level</paramtype></parameter><purpose>Sets the threshold level for all enabled loggers/formatters. </purpose></method>
+<method name="set_threshold_level"><type>void</type><parameter name=""><paramtype>log_level</paramtype></parameter><purpose>Sets the threshold level for all loggers/formatters. </purpose><description><para>This will override the log level of all loggers, whether enabled or not. </para></description></method>
 <method name="set_threshold_level"><type>void</type><parameter name=""><paramtype>output_format</paramtype></parameter><parameter name=""><paramtype>log_level</paramtype></parameter><purpose>Sets the threshold/log level of a specific format. </purpose><description><para><note><para>Has no effect if the specified format is not found </para></note>
 <formalpara><title>Since Boost 1.62 </title><para/></formalpara>
 </para></description></method>
 <method name="add_format"><type>void</type><parameter name=""><paramtype>output_format</paramtype></parameter><purpose>Add a format to the set of loggers. </purpose><description><para>Adding a logger means that the specified logger is enabled. The log level is managed by the formatter itself and specifies what events are forwarded to the underlying formatter. <formalpara><title>Since Boost 1.62 </title><para/></formalpara>
 </para></description></method>
-<method name="set_format"><type>void</type><parameter name=""><paramtype>output_format</paramtype></parameter><purpose>Sets the unique format of the logger. </purpose></method>
+<method name="set_format"><type>void</type><parameter name=""><paramtype>output_format</paramtype></parameter><purpose>Sets the format of the logger. </purpose><description><para>This will become the only active format of the logs. </para></description></method>
 <method name="get_formatter"><type><classname>unit_test_log_formatter</classname> *</type><parameter name=""><paramtype>output_format</paramtype></parameter><purpose>Returns the logger instance for a specific format. </purpose><description><para>
 <formalpara><title>Since Boost 1.62 </title><para/></formalpara>
-</para></description><returns><para>the logger/formatter instance, or <computeroutput>0</computeroutput> if the format is not found. </para></returns></method>
-<method name="set_formatter"><type>void</type><parameter name=""><paramtype><classname>unit_test_log_formatter</classname> *</paramtype></parameter><purpose>Sets the logger. </purpose><description><para>The specified logger becomes the unique one.</para><para><note><para>the ownership of the pointer is transfered to this instance. </para></note>
+</para></description><returns><para>the logger/formatter instance, or <computeroutput/>(unit_test_log_formatter*)0 if the format is not found. </para></returns></method>
+<method name="set_formatter"><type>void</type><parameter name=""><paramtype><classname>unit_test_log_formatter</classname> *</paramtype></parameter><purpose>Sets the logger instance. </purpose><description><para>The specified logger becomes the unique active one. The custom log formatter has the format <computeroutput>OF_CUSTOM_LOGGER</computeroutput>. If such a format exists already, its formatter gets replaced by the one given in argument.</para><para>The log level and output stream of the new formatter are taken from the currently active logger. In case several loggers are active, the order of priority is CUSTOM, HRF, XML, and JUNIT. If (unit_test_log_formatter*)0 is given as argument, the custom logger (if any) is removed.</para><para><note><para>The ownership of the pointer is transfered to the Boost.Test framework. This call is equivalent to<itemizedlist>
+<listitem><para>a call to <computeroutput>add_formatter</computeroutput> </para></listitem><listitem><para>a call to <computeroutput>set_format(OF_CUSTOM_LOGGER)</computeroutput> </para></listitem><listitem><para>a configuration of the newly added logger with a previously configured stream and log level. </para></listitem></itemizedlist>
+</para></note>
+</para></description></method>
+<method name="add_formatter"><type>void</type><parameter name="the_formatter"><paramtype><classname>unit_test_log_formatter</classname> *</paramtype></parameter><purpose>Adds a custom log formatter to the set of formatters. </purpose><description><para>The specified logger is added with the format <computeroutput>OF_CUSTOM_LOGGER</computeroutput>, such that it can be futher selected or its stream/log level can be specified. If there is already a custom logger (with <computeroutput>OF_CUSTOM_LOGGER</computeroutput>), then the existing one gets replaced by the one given in argument. The provided logger is added with an enabled state. If (unit_test_log_formatter*)0 is given as argument, the custom logger (if any) is removed and no other action is performed.</para><para><note><para>The ownership of the pointer is transfered to the Boost.Test framework. </para></note>
+<formalpara><title>Since Boost 1.62 </title><para/></formalpara>
 </para></description></method>
 <method name="set_checkpoint"><type>void</type><parameter name="file"><paramtype>const_string</paramtype></parameter><parameter name="line_num"><paramtype>std::size_t</paramtype></parameter><parameter name="msg"><paramtype>const_string</paramtype><default>const_string()</default></parameter></method>
 <method name="operator&lt;&lt;"><type><classname>unit_test_log_t</classname> &amp;</type><parameter name=""><paramtype><classname>log::begin</classname> const &amp;</paramtype></parameter></method>
